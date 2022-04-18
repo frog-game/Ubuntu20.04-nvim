@@ -1,0 +1,22 @@
+{
+    "diagnostic.errorSign": "✘",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": "•",
+    "languageserver":
+    {
+        "coc-clangd":
+        {
+            "command": "clangd",
+            "rootPatterns": ["compile_flags.txt",
+                "compile_commands.json"],
+                "filetypes":["c",
+                    "cc",
+                    "cpp",
+                    "c++",
+                    "objc",
+                    "objcpp"]
+        },
+    },
+    "Lua.telemetry.enable": true
+}

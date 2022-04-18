@@ -1,0 +1,16 @@
+build|build|around|
+work|workspaceFolder|around|
+wor|workspaceRoot|around|
+vims|vimspector|around|
+reque|require(modname)|sumneko-lua|f
+requ|require(modname)|sumneko-lua|f
+ordinal|ordinal|sumneko-lua|v
+EOF|EOF|around|
+EOF|EOF|around|
+EOF|EOF|around|
+vim|vim|around|
+CPlyer|CPlayer|sumneko-lua|m
+func|function ()|sumneko-lua|S
+fasd|fasd|around|
+COM|COMPLETION_WAITING_DOTS|around|
+EN|ENABLE_CORRECTION|around|

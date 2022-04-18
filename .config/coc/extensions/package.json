@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.21.3",
+    "coc-sumneko-lua": ">=0.0.25"
+  }
+}

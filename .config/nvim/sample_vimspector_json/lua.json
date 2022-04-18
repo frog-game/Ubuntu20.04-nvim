@@ -1,0 +1,17 @@
+{
+  "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json#",
+  "configurations": {
+    "lua": {
+      "adapter": "lua-local",
+      "filetypes": [ "lua" ],
+      "configuration": {
+        "request": "launch",
+        "type": "lua-local",
+        "cwd": "${workspaceFolder}/build",
+        "program": {
+          "lua": "lua",
+          "file": "${workspaceFolder}/skynet"
+        }
+      }
+    }
+  }

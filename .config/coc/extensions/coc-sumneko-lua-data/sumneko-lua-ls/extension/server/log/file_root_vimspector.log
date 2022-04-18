@@ -1,0 +1,189 @@
+[16:18:33.744][info] [#0:/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:65]: Lua Lsp startup, root: 	/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server
+[16:18:33.744][info] [#0:/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:66]: ROOT:	/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server
+[16:18:33.744][info] [#0:/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:67]: LOGPATH:	/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/log
+[16:18:33.744][info] [#0:/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:68]: METAPATH:	/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta
+[16:18:33.751][info] [#0:/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/main.lua:69]: VERSION:	3.0.2
+[16:18:33.948][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 3.150 MB
+        # 00 : 3.150 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:18:34.096][info] [#0:script/language.lua:135]: VSC language: en-us
+[16:18:34.096][info] [#0:script/language.lua:136]: LS  language: en-us
+[16:18:34.096][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///root/vimspector
+[16:18:34.097][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/log/file_root_vimspector.log
+[16:18:34.097][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///root/vimspector
+[16:18:34.310][info] [#0:script/provider/provider.lua:38]: Load config from client	file:///root/vimspector
+[16:18:34.411][info] [#0:script/provider/provider.lua:52]: Load config from client	fallback
+[16:18:34.512][info] [#0:script/library.lua:207]: Init builtin library at:	nil
+[16:18:34.528][info] [#0:script/library.lua:207]: Init builtin library at:	file:///root/vimspector
+[16:18:34.538][info] [#0:script/plugin.lua:80]: plugin path:	nil
+[16:18:34.538][info] [#0:script/plugin.lua:80]: plugin path:	nil
+[16:18:34.538][info] [#0:script/provider/completion.lua:43]: Enable completion.
+[16:18:34.540][info] [#0:script/workspace/workspace.lua:278]: Preload start:	file:///root/vimspector
+[16:18:34.543][info] [#0:script/workspace/workspace.lua:284]: Scan files at:	file:///root/vimspector
+[16:18:34.543][info] [#0:script/workspace/workspace.lua:278]: Preload start:	<fallback>
+[16:18:34.544][info] [#0:script/workspace/workspace.lua:294]: Scan library at:	file:///root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/LuaJIT%20en-us%20utf8
+[16:18:34.546][info] [#0:script/workspace/workspace.lua:294]: Scan library at:	file:///root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/3rd/love2d/library
+[16:18:34.561][info] [#0:script/workspace/workspace.lua:294]: Scan library at:	file:///root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/LuaJIT%20en-us%20utf8
+[16:18:34.563][info] [#0:script/workspace/workspace.lua:294]: Scan library at:	file:///root/.config/coc/extensions/coc-sumneko-lua-data/sumneko-lua-ls/extension/server/meta/3rd/love2d/library
+[16:18:34.970][info] [#0:script/workspace/workspace.lua:308]: Found 33 files at:	<fallback>
+[16:18:34.970][info] [#0:script/workspace/workspace.lua:308]: Found 37 files at:	file:///root/vimspector
+[16:18:35.279][info] [#0:script/workspace/loading.lua:154]: Loaded finish.
+[16:18:35.279][info] [#0:script/workspace/workspace.lua:310]: Preload finish at:	<fallback>
+[16:18:35.279][info] [#0:script/workspace/loading.lua:154]: Loaded finish.
+[16:18:35.279][info] [#0:script/workspace/workspace.lua:310]: Preload finish at:	file:///root/vimspector
+[16:18:35.280][info] [#0:script/provider/diagnostic.lua:388]: Diagnostics scope [file:///root/vimspector], files count:[37]
+[16:18:35.298][info] [#0:script/provider/diagnostic.lua:405]: Diagnostics scope [file:///root/vimspector] finished, takes [0.009] sec.
+[16:18:36.406][info] [#0:script/provider/diagnostic.lua:388]: Diagnostics scope [<fallback>], files count:[37]
+[16:18:36.409][info] [#0:script/provider/diagnostic.lua:405]: Diagnostics scope [<fallback>] finished, takes [0.003] sec.
+[16:19:46.301][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 40.824 MB
+        # 00 : 32.400 MB
+        # 01 : 2.138 MB
+        # 02 : 2.138 MB
+        # 03 : 2.009 MB
+        # 04 : 2.138 MB
+    --------------- Coroutine ---------------
+        Total:     537
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      537
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:22:31.188][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 41.015 MB
+        # 00 : 32.591 MB
+        # 01 : 2.138 MB
+        # 02 : 2.143 MB
+        # 03 : 2.138 MB
+        # 04 : 2.005 MB
+    --------------- Coroutine ---------------
+        Total:     537
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      537
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:23:07.380][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 39.629 MB
+        # 00 : 31.205 MB
+        # 01 : 2.009 MB
+        # 02 : 2.138 MB
+        # 03 : 2.138 MB
+        # 04 : 2.138 MB
+    --------------- Coroutine ---------------
+        Total:     530
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      530
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:26:16.113][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 38.740 MB
+        # 00 : 31.640 MB
+        # 01 : 2.138 MB
+        # 02 : 1.416 MB
+        # 03 : 1.408 MB
+        # 04 : 2.138 MB
+    --------------- Coroutine ---------------
+        Total:     537
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      537
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:26:45.904][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 39.865 MB
+        # 00 : 31.754 MB
+        # 01 : 2.138 MB
+        # 02 : 2.138 MB
+        # 03 : 2.218 MB
+        # 04 : 1.616 MB
+    --------------- Coroutine ---------------
+        Total:     538
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      538
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[16:27:11.981][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 39.072 MB
+        # 00 : 31.976 MB
+        # 01 : 1.183 MB
+        # 02 : 2.138 MB
+        # 03 : 1.636 MB
+        # 04 : 2.138 MB
+    --------------- Coroutine ---------------
+        Total:     538
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      538
+    --------------- Cache ---------------
+        Total: 2
+        Dead:  1
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
