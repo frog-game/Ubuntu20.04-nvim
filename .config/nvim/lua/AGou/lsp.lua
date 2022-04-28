@@ -50,7 +50,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- -------------------------- lsp server ----------------------
-local servers = { 'gopls', 'bashls', 'sqls','lua'}
+local servers = { 'gopls', 'bashls', 'sqls','sumneko_lua'}
 ---------------------------------------------------------------
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
