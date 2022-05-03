@@ -248,7 +248,7 @@ let g:dashboard_default_header = 'lambada'
 let g:dashboard_custom_section = {
    \ 'last_session'        :{
       \ 'description': ['  Reload last session                   SPC s l'],
-      \ 'command': 'SessionLoad'},
+      \ 'command': '<cmd>lua require("persistence").load({ last = true })<CR>'},
    \ 'find_history'        :{
       \ 'description': ['  Recently opened files                 SPC f h'],
       \ 'command': 'DashboardFindHistory'},
@@ -440,9 +440,9 @@ let g:mkdp_filetypes = ['markdown']
 " restore the session for the current directory
 nnoremap <leader>ss <cmd>lua require("persistence").load()<CR>
 " restore the last session
-nnoremap <leader>sl <cmd>lua require("persistence").load({ last = true })<CR>
+"nnoremap <leader>sl <cmd>lua require("persistence").load({ last = true })<CR>
 " stop Persistence => session won't be saved on exit
-nnoremap <leader>s <cmd>lua require("persistence").stop()<CR>
+"nnoremap <leader>s <cmd>lua require("persistence").stop()<CR>
 
 " ========= vim-visual-multi settings ==========
 let g:VM_maps = {}
