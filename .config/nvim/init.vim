@@ -6,7 +6,7 @@ set nocompatible              " be iMproved, required
 call plug#begin('~/.vim/plugged')
 
 " ========= colorscheme here. ==========
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Plug 'EdenEast/nightfox.nvim'
 " Plug 'morhetz/gruvbox'
@@ -192,9 +192,9 @@ endif
 
 " ============================== Colorscheme settings ============================== 
 " colorscheme gruvbox
-" colorscheme onedark
-" set bg=dark
-" let g:onedark_termcolors=256
+colorscheme onedark
+set bg=dark
+let g:onedark_termcolors=256
 " ===========================
 " Example config in VimScript
 " let g:tokyonight_style = "night"
@@ -234,7 +234,7 @@ let g:gruvbox_material_ui_contrast = 'high'
 let g:gruvbox_material_diagnostic_text_highlight = 1
 let g:gruvbox_material_better_performance = 1
 
-colorscheme gruvbox-material
+"colorscheme gruvbox-material
 
 " original colorscheme gruvbox configuration: https://github.com/morhetz/gruvbox/wiki/Configuration
 " colorscheme gruvbox
