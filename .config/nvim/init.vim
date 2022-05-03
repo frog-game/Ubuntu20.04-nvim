@@ -56,6 +56,7 @@ Plug 'akinsho/toggleterm.nvim'
 " All the lua functions.
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'simrat39/symbols-outline.nvim'
 
 
 " Plug 'Yggdroot/indentLine'
@@ -289,44 +290,8 @@ let g:startuptime_tries = 3
 " which-key plugin timeout delay.
 set timeoutlen=200
 
-" ========= tagbar settings ==========
-let g:tagbar_ctags_bin='/opt/homebrew/Cellar/ctags/5.8_2/bin/ctags'
-autocmd VimEnter *.go  Tagbar
-autocmd VimEnter *.md  Tagbar
-let g:tagbar_show_tag_count = 1
-let g:tagbar_wrap = 1
-let g:tagbar_zoomwidth = 0
-
-let g:tagbar_type_markdown = {
-            \ 'ctagsbin'  : 'mdctags',
-            \ 'ctagsargs' : '',
-            \ 'kinds'     : [
-            \     'a:h1:0:0',
-            \     'b:h2:0:0',
-            \     'c:h3:0:0',
-            \     'd:h4:0:0',
-            \     'e:h5:0:0',
-            \     'f:h6:0:0',
-            \ ],
-            \ 'sro'        : '::',
-            \ 'kind2scope' : {
-            \     'a' : 'h1',
-            \     'b' : 'h2',
-            \     'c' : 'h3',
-            \     'd' : 'h4',
-            \     'e' : 'h5',
-            \     'f' : 'h6',
-            \ },
-            \ 'scope2kind' : {
-            \     'h1' : 'a',
-            \     'h2' : 'b',
-            \     'h3' : 'c',
-            \     'h4' : 'd',
-            \     'h5' : 'e',
-            \     'h6' : 'f',
-            \}
-            \}
-
+" ========= simrat39/symbols-outline settings ==========
+nnoremap <C-p> :SymbolsOutline<CR>
 
 " ========= nvim-cmp settings ==========
 set completeopt=menu,menuone,noselect
@@ -447,15 +412,12 @@ let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 
 " ========= persistence(auto session) settings ==========
-
 " restore the session for the current directory
 nnoremap <leader>ss <cmd>lua require("persistence").load()<CR>
 " restore the last session
 nnoremap <leader>sl <cmd>lua require("persistence").load({ last = true })<CR>
 " stop Persistence => session won't be saved on exit
 nnoremap <leader>s <cmd>lua require("persistence").stop()<CR>
-
-
 
 " ========= vim-visual-multi settings ==========
 let g:VM_maps = {}
@@ -522,7 +484,6 @@ highlight link LspSagaFinderSelection Search
 " augroup end
 " ========= END coc.nvim witelist settings ==========
 
-
 " ========= illuminate settings ==========
 " Time in milliseconds (default 0)
 let g:Illuminate_delay = 3000
@@ -544,7 +505,6 @@ hi illuminatedWord cterm=underline gui=underline
 " highlight link EchoDocFloat Pmenu
 
 " ============= go.nvim settings ==========
-"
 " autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()
 " require('go').setup()
 "
