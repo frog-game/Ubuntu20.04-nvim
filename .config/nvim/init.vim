@@ -250,7 +250,7 @@ let g:dashboard_default_header = 'lambada'
 let g:dashboard_custom_section = {
    \ 'last_session'        :{
       \ 'description': ['  Reload last session                   SPC s l'],
-      \ 'command': 'DashboardFindHistory'},
+      \ 'command': function('loadsession')},
    \ 'find_history'        :{
       \ 'description': ['  Recently opened files                 SPC f h'],
       \ 'command': 'DashboardFindHistory'},
