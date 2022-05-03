@@ -23,8 +23,6 @@ Plug 'xiyaowong/nvim-transparent'
 Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
 " welcome page
 " Plug 'mhinz/vim-startify'
-" dashboard
-Plug 'goolord/alpha-nvim'
 " Speed up Neovim.
 Plug 'lewis6991/impatient.nvim'
 
@@ -243,12 +241,16 @@ let g:gruvbox_material_better_performance = 1
 "
 " ============================== Plugins settings ============================== 
 " ========= dashboard settings ==========
+function!loadsession()
+    :lua require("persistence").load({ last = true })
+endfunction
+
 let g:dashboard_default_header = 'lambada'
 
 let g:dashboard_custom_section = {
    \ 'last_session'        :{
       \ 'description': ['  Reload last session                   SPC s l'],
-      \ 'command': '<cmd>lua require("persistence").load({ last = true })<CR>'},
+      \ 'command': 'DashboardFindHistory'},
    \ 'find_history'        :{
       \ 'description': ['  Recently opened files                 SPC f h'],
       \ 'command': 'DashboardFindHistory'},
