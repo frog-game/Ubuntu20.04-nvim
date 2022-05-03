@@ -241,7 +241,7 @@ let g:gruvbox_material_better_performance = 1
 "
 " ============================== Plugins settings ============================== 
 " ========= dashboard settings ==========
-function!loadsession()
+function! loadsession()
     :lua require("persistence").load({ last = true })
 endfunction
 
