@@ -85,7 +85,8 @@ Plug 'folke/todo-comments.nvim'
 Plug 'folke/zen-mode.nvim'
 " works with zen-mode
 Plug 'folke/twilight.nvim'
-
+" dashboard
+Plug 'goolord/alpha-nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'voldikss/vim-translator'
 " lsp-color not support gruvbox_material colorscheme
@@ -152,7 +153,6 @@ Plug 'sindrets/diffview.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
-Plug 'glepnir/dashboard-nvim'
 "
 call plug#end()
 
