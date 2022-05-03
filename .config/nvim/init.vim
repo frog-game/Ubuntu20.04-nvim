@@ -154,8 +154,7 @@ Plug 'sindrets/diffview.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
-
-
+Plug 'glepnir/dashboard-nvim'
 "
 call plug#end()
 
