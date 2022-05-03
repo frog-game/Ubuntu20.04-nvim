@@ -241,16 +241,10 @@ let g:gruvbox_material_better_performance = 1
 "
 " ============================== Plugins settings ============================== 
 " ========= dashboard settings ==========
-function! loadsession()
-    :lua require("persistence").load({ last = true })
-endfunction
 
 let g:dashboard_default_header = 'lambada'
 
 let g:dashboard_custom_section = {
-   \ 'last_session'        :{
-      \ 'description': ['  Reload last session                   SPC s l'],
-      \ 'command': function('loadsession')},
    \ 'find_history'        :{
       \ 'description': ['  Recently opened files                 SPC f h'],
       \ 'command': 'DashboardFindHistory'},
