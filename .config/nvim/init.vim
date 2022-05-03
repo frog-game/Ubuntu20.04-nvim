@@ -863,7 +863,7 @@ autocmd FileType html nmap <Leader>rh :!npx http-server .<CR>
 
 
 " ============================== External Lua settings ============================== 
-lua require('AGou')
+lua require('core')
 " ============================== END External Lua settings ============================== 
 
 " ============================== External settings ============================== 
