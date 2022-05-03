@@ -1,4 +1,3 @@
-" AGou-ops VIMRC FILE         -- Update Date: 2022年02月15日17:12:52
 set nocompatible              " be iMproved, required
 
 " ============================== Plugin packages ============================== 
