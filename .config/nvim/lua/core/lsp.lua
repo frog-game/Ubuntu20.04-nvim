@@ -3,7 +3,7 @@ local nvim_lsp = require('lspconfig')
 local on_attach = function(_, bufnr)
     vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-    local opts = { noremap = true, silent = true }
+    local opts = { noremap = true }
     local map = vim.api.nvim_buf_set_keymap
     map(bufnr, 'n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     map(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
