@@ -7,7 +7,7 @@ local on_attach = function(_, bufnr)
     local map = vim.api.nvim_buf_set_keymap
 
     -- lspsaga keymappings
-    map(bufnr, "n", "tgr", "<cmd>Lspsaga rename<cr>", opts)
+    map(bufnr, "n", "tr", "<cmd>Lspsaga rename<cr>", opts)
     map(bufnr, "n", "tgx", "<cmd>Lspsaga code_action<cr>", opts)
     map(bufnr, "x", "tgx", ":<c-u>Lspsaga range_code_action<cr>", opts)
 
