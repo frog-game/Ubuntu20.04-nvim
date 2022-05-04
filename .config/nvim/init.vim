@@ -56,7 +56,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'simrat39/symbols-outline.nvim'
 
-
 " Plug 'Yggdroot/indentLine'
 Plug 'itchyny/vim-cursorword'
 
