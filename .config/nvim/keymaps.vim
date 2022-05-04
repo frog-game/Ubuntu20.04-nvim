@@ -115,7 +115,6 @@ nnoremap p ]p
 nnoremap P [p
 nnoremap ( %
 nnoremap ) %
-nnoremap <TAB> %
 
 " unset highlight
 " nnoremap <silent>no <cmd>noh<CR>
