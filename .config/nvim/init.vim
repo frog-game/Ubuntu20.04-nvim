@@ -7,9 +7,9 @@ call plug#begin('~/.vim/plugged')
 
 " ========= colorscheme here. ==========
 Plug 'joshdick/onedark.vim'
-" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-" Plug 'EdenEast/nightfox.nvim'
-" Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'EdenEast/nightfox.nvim'
+Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'EdenEast/nightfox.nvim'
@@ -189,21 +189,21 @@ endif
 
 " ============================== Colorscheme settings ============================== 
 " colorscheme gruvbox
-colorscheme onedark
-set bg=dark
-let g:onedark_termcolors=256
+" colorscheme onedark
+" set bg=dark
+" let g:onedark_termcolors=256
 " ===========================
 " Example config in VimScript
-" let g:tokyonight_style = "night"
-" let g:tokyonight_italic_functions = 1
-" let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
+let g:tokyonight_style = "night"
+let g:tokyonight_italic_functions = 1
+let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 " 
 "  Change the "hint" color to the "orange" color, and make the "error" color bright red
-" let g:tokyonight_colors = {
-"   \ 'hint': 'orange',
-"   \ 'error': '#ff0000'
-" \ }
-" colorscheme tokyonight
+let g:tokyonight_colors = {
+  \ 'hint': 'orange',
+   \ 'error': '#ff0000'
+ \ }
+ colorscheme tokyonight
 " ============================
 " colorscheme Duskfox
 " ============================
