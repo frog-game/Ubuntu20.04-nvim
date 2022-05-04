@@ -241,13 +241,6 @@ let g:gruvbox_material_better_performance = 1
 " ============================== Plugins settings ============================== 
 
 " ========= formatter settings ==========
-vim.api.nvim_exec([[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost *.js,*.rs,*.lua FormatWrite
-augroup END
-]], true)
-
 nnoremap <silent> <leader>fo :Format<CR>
 
 " ========= coc settings ==========
