@@ -50,7 +50,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- -------------------------- lsp server ----------------------
-local servers = { 'gopls', 'bashls', 'sqls','sumneko_lua'}
+local servers = { 'gopls', 'bashls', 'sqls'}
 ---------------------------------------------------------------
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
@@ -74,7 +74,7 @@ nvim_lsp.sumneko_lua.setup {
         Lua = {
             runtime = {
                 -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-                version = 'LuaJIT',
+                version = 'Lua 5.3',
                 -- Setup your lua path
                 path = runtime_path,
             },
