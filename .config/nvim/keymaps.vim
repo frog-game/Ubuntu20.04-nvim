@@ -83,7 +83,7 @@ nnoremap F <cmd>HopWord<cr>
 nmap <silent> <Leader>ts <Plug>TranslateW
 vmap <silent> <Leader>ts <Plug>TranslateWV
 
-" ========= vim-translate settings ========
+" ========= vim-bufferLine settings ========
 nmap <Tab> :BufferLineCycleNext<CR>
 nmap <S-Tab> :BufferLineCyclePrev<CR>
 
