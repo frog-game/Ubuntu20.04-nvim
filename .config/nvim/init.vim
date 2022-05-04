@@ -91,7 +91,6 @@ Plug 'voldikss/vim-translator'
 " lsp-color not support gruvbox_material colorscheme
 "Plug 'folke/lsp-colors.nvim'
 
-" Plug 'mhartington/formatter.nvim'
 Plug 'sbdchd/neoformat'
 " conflict with goto-preview plugin, fuckkkkkk.
 Plug 'beauwilliams/focus.nvim'
@@ -240,6 +239,16 @@ let g:gruvbox_material_better_performance = 1
 "
 "
 " ============================== Plugins settings ============================== 
+
+" ========= formatter settings ==========
+-- 代码保存自动格式化formatting
+	if client.resolved_capabilities.document_formatting then
+		vim.api.nvim_command [[augroup Format]]
+		vim.api.nvim_command [[autocmd! * <buffer>]]
+		vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+		vim.api.nvim_command [[augroup END]]
+	end
+end
 
 " ========= coc settings ==========
 " coc.vim START
