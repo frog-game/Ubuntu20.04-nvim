@@ -89,7 +89,7 @@ Plug 'goolord/alpha-nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'voldikss/vim-translator'
 " lsp-color not support gruvbox_material colorscheme
-Plug 'folke/lsp-colors.nvim'
+"Plug 'folke/lsp-colors.nvim'
 
 " Plug 'mhartington/formatter.nvim'
 Plug 'sbdchd/neoformat'
@@ -114,19 +114,19 @@ Plug 'phaazon/hop.nvim'
 
 Plug 'dense-analysis/ale'
 " lsp server
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'onsails/lspkind-nvim'
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'williamboman/nvim-lsp-installer'
+"Plug 'onsails/lspkind-nvim'
 
 " hrsh7th👍：https://github.com/hrsh7th
-Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 " Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-calc'
 Plug 'hrsh7th/cmp-emoji'
-Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+"Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 " Plug 'uga-rosa/cmp-dictionary'
@@ -134,11 +134,11 @@ Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 Plug 'octaltree/cmp-look'
 
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'lewis6991/gitsigns.nvim'
 
-Plug 'tami5/lspsaga.nvim'
+"Plug 'tami5/lspsaga.nvim'
 " Plug 'ray-x/lsp_signature.nvim'
 
 " debug toools
