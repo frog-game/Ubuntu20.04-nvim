@@ -7,25 +7,25 @@ local on_attach = function(_, bufnr)
     local map = vim.api.nvim_buf_set_keymap
 
     -- lspsaga keymappings
-    map(bufnr, "n", "gr", "<cmd>Lspsaga rename<cr>", opts)
-    map(bufnr, "n", "gx", "<cmd>Lspsaga code_action<cr>", opts)
-    map(bufnr, "x", "gx", ":<c-u>Lspsaga range_code_action<cr>", opts)
+    map(bufnr, "n", "tgr", "<cmd>Lspsaga rename<cr>", opts)
+    map(bufnr, "n", "tgx", "<cmd>Lspsaga code_action<cr>", opts)
+    map(bufnr, "x", "tgx", ":<c-u>Lspsaga range_code_action<cr>", opts)
 
-    map(bufnr, "n", "gF", "<cmd>lua require'lspsaga.provider'.lsp_finder()<cr>", opts)
-    map(bufnr, "n", "K",  "<cmd>Lspsaga hover_doc<cr>", opts)
-    map(bufnr, "n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
+    map(bufnr, "n", "tgF", "<cmd>lua require'lspsaga.provider'.lsp_finder()<cr>", opts)
+    map(bufnr, "n", "tK",  "<cmd>Lspsaga hover_doc<cr>", opts)
+    map(bufnr, "n", "tgo", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
     -- use goto preview instead as below.
-    -- map(bufnr, "n", "gp", "<cmd>Lspsaga preview_definition<cr>", opts)
-    map(bufnr, "n", "gs", "<cmd>Lspsaga signature_help<cr>", opts)
-    map(bufnr, "n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
-    map(bufnr, "n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
+    -- map(bufnr, "n", "tgp", "<cmd>Lspsaga preview_definition<cr>", opts)
+    map(bufnr, "n", "tgs", "<cmd>Lspsaga signature_help<cr>", opts)
+    map(bufnr, "n", "tgj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
+    map(bufnr, "n", "tgk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
     -- map(bufnr, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", opts)
     -- map(bufnr, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", opts)
     -- goto preview keymappigs
-    map(bufnr, "n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
-    map(bufnr, "n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>",opts)
-    map(bufnr, "n", "gP", "<cmd>lua require('goto-preview').close_all_win()<CR>", opts)
-    map(bufnr, "n", "gf", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
+    map(bufnr, "n", "tgp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
+    map(bufnr, "n", "tgpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>",opts)
+    map(bufnr, "n", "tgP", "<cmd>lua require('goto-preview').close_all_win()<CR>", opts)
+    map(bufnr, "n", "tgf", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
 end
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
