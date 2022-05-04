@@ -466,7 +466,7 @@ let g:scrollbar_shape = {
             \ }
 
 " ========= lspsaga.nvim settings ==========
-highlight link LspSagaFinderSelection Search
+"highlight link LspSagaFinderSelection Search
 " or
 " highlight link LspSagaFinderSelection guifg='#ff0000' guibg='#00ff00' gui='bold'
 "
@@ -696,7 +696,7 @@ let g:NERDToggleCheckAllLines = 1
 " ============================== Autocmd/Function settings ============================== 
 "
 
-autocmd ColorScheme * runtime lua/vim/lsp/diagnostic.lua
+"autocmd ColorScheme * runtime lua/vim/lsp/diagnostic.lua
 
 
 augroup YankHighlight
