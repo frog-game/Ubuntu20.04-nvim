@@ -83,6 +83,10 @@ nnoremap F <cmd>HopWord<cr>
 nmap <silent> <Leader>ts <Plug>TranslateW
 vmap <silent> <Leader>ts <Plug>TranslateWV
 
+" ========= vim-translate settings ========
+nmap <Tab> :BufferLineCycleNext<CR>
+nmap <S-Tab> :BufferLineCyclePrev<CR>
+
 " ========= vim-sneak settings ========
 " map f <Plug>Sneak_f
 " map F <Plug>Sneak_F
