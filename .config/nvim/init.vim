@@ -241,14 +241,14 @@ let g:gruvbox_material_better_performance = 1
 " ============================== Plugins settings ============================== 
 
 " ========= formatter settings ==========
--- 代码保存自动格式化formatting
-	if client.resolved_capabilities.document_formatting then
-		vim.api.nvim_command [[augroup Format]]
-		vim.api.nvim_command [[autocmd! * <buffer>]]
-		vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
-		vim.api.nvim_command [[augroup END]]
-	end
-end
+vim.api.nvim_exec([[
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost *.js,*.rs,*.lua FormatWrite
+augroup END
+]], true)
+
+nnoremap <silent> <leader>fo :Format<CR>
 
 " ========= coc settings ==========
 " coc.vim START
