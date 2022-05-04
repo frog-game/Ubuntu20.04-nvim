@@ -152,6 +152,7 @@ Plug 'sindrets/diffview.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
+Plug 'mhartington/formatter.nvim'
 "
 call plug#end()
 
