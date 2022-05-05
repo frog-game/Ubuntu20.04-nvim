@@ -49,7 +49,7 @@ telescope.setup {
         }
       }
     },
-  }
+  },
 
     prompt_prefix = " ",
     selection_caret = "➜ ",
