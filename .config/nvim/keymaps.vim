@@ -55,14 +55,6 @@ nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 " vmap <leader>s <Plug>(coc-codeaction-selected)
 " nmap <leader>s <Plug>(coc-codeaction-selected)
 
-" ========= telescope settings ========
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-
-" ========= fzf settings ========
-
 
 " ========= Trouble plugin settings ========
 nnoremap <leader>xx <cmd>TroubleToggle<cr>
