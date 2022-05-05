@@ -14,7 +14,7 @@ telescope.setup {
 
     prompt_prefix = "> ",
     selection_caret = " ",
-    path_display = { "truncate" },
+    path_display = { shorten = 10 },
     borderchars = {
     prompt = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     results = { "─", "▐", "─", "│", "╭", "▐", "▐", "╰" },
