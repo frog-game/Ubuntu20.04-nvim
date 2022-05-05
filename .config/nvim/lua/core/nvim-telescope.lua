@@ -129,19 +129,3 @@ telescope.setup {
 for i = 1, #extensions do
   telescope.load_extension(extensions[i])
 end
-
-vim.keymap.set("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files()<CR>")
-vim.keymap.set("n", "<leader>fg", "<cmd>lua require'telescope.builtin'.live_grep()<CR>")
-vim.keymap.set("n", "<leader>f?", "<cmd>lua require'telescope.builtin'.help_tags()<CR>")
-vim.keymap.set("n", "<leader>fh", "<cmd>lua require'telescope.builtin'.oldfiles()<CR>")
-vim.keymap.set("n", "<leader>fb", "<cmd>lua require'telescope.builtin'.marks()<CR>")
-vim.keymap.set("n", "<space>fe", "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>")
-vim.keymap.set("n", "<leader>fp", "<cmd>lua require'telescope'.extensions.project.project{}<CR>")
-vim.keymap.set("n", "<leader>fr", "<cmd>lua require'telescope'.extensions.frecency.frecency()<CR>")
-vim.keymap.set("n", "<leader>fm", "<cmd>lua require'telescope'.extensions.media_files.media_files()<CR>")
-vim.keymap.set("n", "<leader>fn", "<cmd>lua require'telescope'.extensions.notify.notify()<CR>")
-vim.keymap.set("n", "<leader>fde", "<cmd>lua require'telescope'.extensions.dap.commands()<CR>")
-vim.keymap.set("n", "<leader>fdc", "<cmd>lua require'telescope'.extensions.dap.configurations()<CR>")
-vim.keymap.set("n", "<leader>fdb", "<cmd>lua require'telescope'.extensions.dap.list_breakpoints()<CR>")
-vim.keymap.set("n", "<leader>fdv", "<cmd>lua require'telescope'.extensions.dap.variables()<CR>")
-vim.keymap.set("n", "<leader>fdf", "<cmd>lua require'telescope'.extensions.dap.frames()<CR>")
