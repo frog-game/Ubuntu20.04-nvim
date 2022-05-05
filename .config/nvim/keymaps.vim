@@ -56,11 +56,13 @@ nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 " nmap <leader>s <Plug>(coc-codeaction-selected)
 
 " ========= telescope settings ========
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false}) <CR>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep() <cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>ft <cmd>TodoTelescope<cr>
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+" ========= fzf settings ========
+
 
 " ========= Trouble plugin settings ========
 nnoremap <leader>xx <cmd>TroubleToggle<cr>
