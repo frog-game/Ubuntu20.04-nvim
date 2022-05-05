@@ -53,7 +53,15 @@ Plug 'akinsho/toggleterm.nvim'
 
 " All the lua functions.
 Plug 'nvim-lua/plenary.nvim'
+
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-hop.nvim'
+Plug 'nvim-telescope/telescope-project.nvim'
+Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
+Plug  'nvim-telescope/telescope-dap.nvim'
+
 Plug 'simrat39/symbols-outline.nvim'
 
 " Plug 'Yggdroot/indentLine'
