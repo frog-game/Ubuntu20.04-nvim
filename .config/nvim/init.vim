@@ -251,6 +251,25 @@ let g:gruvbox_material_better_performance = 1
 "
 " ============================== Plugins settings ============================== 
 
+" ========= telescope settings ==========
+let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
+nnoremap <leader>fp :Telescope find_files cwd='.FindRootDirectory().<CR>
+nnoremap <leader>ff <cmd>lua require'telescope.builtin'.find_files()<CR>
+nnoremap <leader>fg <cmd>lua require'telescope.builtin'.live_grep()<CR>
+nnoremap <leader>f? <cmd>lua require'telescope.builtin'.help_tags()<CR>
+nnoremap <leader>fh <cmd>lua require'telescope.builtin'.oldfiles()<CR>
+nnoremap <leader>fb <cmd>lua require'telescope.builtin'.marks()<CR>
+nnoremap <leader>fe <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>
+nnoremap <leader>fp <cmd>lua require'telescope'.extensions.project.project{}<CR>
+nnoremap <leader>fr <cmd>lua require'telescope'.extensions.frecency.frecency()<CR>
+nnoremap <leader>fm <cmd>lua require'telescope'.extensions.media_files.media_files()<CR>
+nnoremap <leader>fn <cmd>lua require'telescope'.extensions.notify.notify()<CR>
+nnoremap <leader>fde <cmd>lua require'telescope'.extensions.dap.commands()<CR>
+nnoremap <leader>fdc <cmd>lua require'telescope'.extensions.dap.configurations()<CR>
+nnoremap <leader>fdb <cmd>lua require'telescope'.extensions.dap.list_breakpoints()<CR>
+nnoremap <leader>fdv <cmd>lua require'telescope'.extensions.dap.variables()<CR>
+nnoremap <leader>fdf <cmd>lua require'telescope'.extensions.dap.frames()<CR>
+
 " ========= formatter settings ==========
 nnoremap <silent> <leader>fo :Format<CR>
 
