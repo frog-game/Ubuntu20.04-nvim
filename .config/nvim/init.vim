@@ -62,6 +62,7 @@ Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'nvim-telescope/telescope-media-files.nvim'
 Plug  'nvim-telescope/telescope-dap.nvim'
 Plug  'rcarriga/nvim-notify'
+Plug 'mfussenegger/nvim-dap'
 
 Plug 'simrat39/symbols-outline.nvim'
 
