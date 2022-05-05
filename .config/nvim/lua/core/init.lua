@@ -6,7 +6,7 @@ require('core.nvim-bufferline')
 -- require'lspconfig'.bashls.setup{} -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls
 require('core.nvim-tree')
 require('core.nvim-transparent')
-require('core.nvim-cmp')
+--require('core.nvim-cmp')
 --require('core.nvim-lsp-installer')
 require('core.nvim-treesitter')
 require('core.nvim-gitsigns')
