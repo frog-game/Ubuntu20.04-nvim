@@ -40,7 +40,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 Plug 'windwp/nvim-autopairs'
 Plug 'lukas-reineke/indent-blankline.nvim'
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " Plug 'm-demare/hlargs.nvim'
 
 " Plug 'sheerun/vim-polyglot'
@@ -48,8 +48,8 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/toggleterm.nvim'
 " not longer use fzf, just use telescope
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 
 " All the lua functions.
 Plug 'nvim-lua/plenary.nvim'
