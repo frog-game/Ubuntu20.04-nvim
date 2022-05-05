@@ -253,7 +253,7 @@ let g:gruvbox_material_better_performance = 1
 
 " ========= telescope settings ==========
 let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
-nnoremap <expr> sp ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'
+nnoremap <expr><leader>ffr ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'
 nnoremap <leader>ff <cmd>lua require'telescope.builtin'.find_files()<CR>
 nnoremap <leader>fg <cmd>lua require'telescope.builtin'.live_grep()<CR>
 nnoremap <leader>f? <cmd>lua require'telescope.builtin'.help_tags()<CR>
