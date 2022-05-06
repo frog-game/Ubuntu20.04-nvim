@@ -137,16 +137,9 @@ map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
 
 
-" tab quick swich
-map <leader>th :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tj :tabnext<cr>
-map <leader>tk :tabprev<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprev<cr>
-map <leader>te :tabedit<cr>
-map <leader>td :tabclose<cr>
-map <leader>tm :tabm<cr>
+" 复制粘贴
+vnoremap <Leader>y "+y "复制到系统剪切板
+nmap <Leader>p "+p "粘贴系统剪切板
 
 " custom command
 " 避免手残输错
