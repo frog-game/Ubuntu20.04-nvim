@@ -92,16 +92,16 @@ nnoremap <leader>h :UndotreeToggle <bar> :UndotreeFocus<CR>
 
 " =========================================
 " Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
+"nnoremap p p=`]<C-o>
+"nnoremap P P=`]<C-o>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-q> <C-w>q
-nnoremap p ]p
-nnoremap P [p
+"nnoremap p ]p
+"nnoremap P [p
 nnoremap ( %
 nnoremap ) %
 
@@ -139,9 +139,9 @@ map <Esc>[1;3C :bp<CR>
 
 " 复制粘贴
 "复制到系统剪切板
-vnoremap <Leader>y "+y 
+"vnoremap <Leader>y "+y 
 "粘贴系统剪切板
-nmap <Leader>p "+p 
+"nmap <Leader>p "+p 
 
 " custom command
 " 避免手残输错
