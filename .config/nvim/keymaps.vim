@@ -99,7 +99,7 @@ nnoremap P P=`]<C-o>
 " copy to system clipboard
 " vnoremap <leader>y "+y
 vnoremap <C-c> "+y
-vnoremap <leader>p "+p
+vnoremap <C-p> "+p
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
