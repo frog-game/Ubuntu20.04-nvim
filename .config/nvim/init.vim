@@ -956,10 +956,6 @@ if filereadable($HOME . "/.config/nvim/shpy-autoheader.vim")
     source $HOME/.config/nvim/shpy-autoheader.vim
 endif
 
-if filereadable($HOME . "/.config/nvim/mswin.vim")
-    source $HOME/.config/nvim/mswin.vim
-endif
-
 " =========== load coc-go plug config ===========
 " if filereadable($HOME . ".config/nvim/coc-go.vim")
 "     source ~/.config/nvim/coc-go.vim
