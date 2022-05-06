@@ -409,7 +409,7 @@ let g:startuptime_tries = 3
 set timeoutlen=200
 
 " ========= simrat39/symbols-outline settings ==========
-nnoremap <C-p> :SymbolsOutline<CR>
+nnoremap <C-l> :SymbolsOutline<CR>
 
 " ========= nvim-cmp settings ==========
 set completeopt=menu,menuone,noselect
