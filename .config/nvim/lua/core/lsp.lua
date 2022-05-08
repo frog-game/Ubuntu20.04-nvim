@@ -18,7 +18,6 @@ Itkey_on_attach = function(client, bufnr)
 
  buf_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
  buf_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
- buf_set_keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
  buf_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
   -- map(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
  buf_set_keymap("n", "<leader>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
@@ -34,7 +33,7 @@ Itkey_on_attach = function(client, bufnr)
  buf_set_keymap("n", "<leader>so", [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]], opts)
 
   -- lspsaga keymappings
-  buf_set_keymap("n", "gr", "<cmd>Lspsaga rename<cr>", opts)
+  buf_set_keymap("n", "rn", "<cmd>Lspsaga rename<cr>", opts)
   buf_set_keymap("n", "gx", "<cmd>Lspsaga code_action<cr>", opts)
   buf_set_keymap("x", "gx", ":<c-u>Lspsaga range_code_action<cr>", opts)
 
@@ -42,17 +41,17 @@ Itkey_on_attach = function(client, bufnr)
   buf_set_keymap("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
   buf_set_keymap("n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
   -- use goto preview instead as below.
-  -- map(bufnr, "n", "gp", "<cmd>Lspsaga preview_definition<cr>", opts)
+ buf_set_keymap("n", "gp", "<cmd>Lspsaga preview_definition<cr>", opts)
  buf_set_keymap("n", "gs", "<cmd>Lspsaga signature_help<cr>", opts)
  buf_set_keymap("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
  buf_set_keymap("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
   -- map(bufnr, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", opts)
   -- map(bufnr, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", opts)
   -- goto preview keymappigs
- buf_set_keymap("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
- buf_set_keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", opts)
- buf_set_keymap("n", "gP", "<cmd>lua require('goto-preview').close_all_win()<CR>", opts)
- buf_set_keymap("n", "gF", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
+   buf_set_keymap("n", "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()", opts)
+   buf_set_keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()", opts)
+   buf_set_keymap("n", "gP",  "<cmd>lua require('goto-preview').close_all_win()", opts)
+   buf_set_keymap("n", "gF", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
 
   -- 代码保存自动格式化formatting
   if client.resolved_capabilities.document_formatting then
