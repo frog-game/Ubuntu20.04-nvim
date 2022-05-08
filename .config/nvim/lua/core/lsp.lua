@@ -36,16 +36,16 @@ Itkey_on_attach = function(client, bufnr)
   buf_set_keymap("n", "rn", "<cmd>Lspsaga rename<cr>", opts)
   buf_set_keymap("n", "gx", "<cmd>Lspsaga code_action<cr>", opts)
   buf_set_keymap("x", "gx", ":<c-u>Lspsaga range_code_action<cr>", opts)
-
-  buf_set_keymap("n", "gf", "<cmd>lua require'lspsaga.provider'.lsp_finder()<cr>", opts)
   buf_set_keymap("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
   buf_set_keymap("n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
+  buf_set_keymap("n", "gf", "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", opts)
 
   -- goto preview keymappigs
-   buf_set_keymap("n", "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()", opts)
-   buf_set_keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()", opts)
-   buf_set_keymap("n", "gP",  "<cmd>lua require('goto-preview').close_all_win()", opts)
+   buf_set_keymap("n", "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)
+   buf_set_keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", opts)
+   buf_set_keymap("n", "gP",  "<cmd>lua require('goto-preview').close_all_win()<CR>", opts)
    buf_set_keymap("n", "gF", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
+
 
   -- 代码保存自动格式化formatting
   if client.resolved_capabilities.document_formatting then
