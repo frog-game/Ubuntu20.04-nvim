@@ -40,13 +40,7 @@ Itkey_on_attach = function(client, bufnr)
   buf_set_keymap("n", "gf", "<cmd>lua require'lspsaga.provider'.lsp_finder()<cr>", opts)
   buf_set_keymap("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
   buf_set_keymap("n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", opts)
-  -- use goto preview instead as below.
- buf_set_keymap("n", "gp", "<cmd>Lspsaga preview_definition<cr>", opts)
- buf_set_keymap("n", "gs", "<cmd>Lspsaga signature_help<cr>", opts)
- buf_set_keymap("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
- buf_set_keymap("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
-  -- map(bufnr, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", opts)
-  -- map(bufnr, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", opts)
+
   -- goto preview keymappigs
    buf_set_keymap("n", "gpd", "<cmd>lua require('goto-preview').goto_preview_definition()", opts)
    buf_set_keymap("n", "gpi", "<cmd>lua require('goto-preview').goto_preview_implementation()", opts)
