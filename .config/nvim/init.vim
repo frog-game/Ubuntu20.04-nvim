@@ -148,9 +148,6 @@ Plug 'octaltree/cmp-look'
 
 Plug 'lewis6991/gitsigns.nvim'
 
-"Plug 'tami5/lspsaga.nvim'
-" Plug 'ray-x/lsp_signature.nvim'
-
 " debug toools
 Plug 'puremourning/vimspector'
 " Plug 'mfussenegger/nvim-dap'
@@ -174,6 +171,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'onsails/lspkind-nvim'
+Plug 'tami5/lspsaga.nvim'
+Plug 'ray-x/lsp_signature.nvim'
     
 call plug#end()
 
