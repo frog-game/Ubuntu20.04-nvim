@@ -161,7 +161,7 @@ Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
 Plug 'mhartington/formatter.nvim'
 
--- language
+"--language
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
