@@ -48,12 +48,34 @@ telescope.setup {
     sorting_strategy = "descending",
     layout_strategy = "horizontal",
     layout_config = {
-      horizontal = {
-        mirror = false,
-      },
-      vertical = {
-        mirror = false,
-      },
+     bottom_pane = {
+            height = 25,
+            preview_cutoff = 120,
+            prompt_position = "top"
+          },
+          center = {
+            height = 0.4,
+            preview_cutoff = 40,
+            prompt_position = "top",
+            width = 0.5
+          },
+          cursor = {
+            height = 0.9,
+            preview_cutoff = 40,
+            width = 0.8
+          },
+          horizontal = {
+            height = 0.9,
+            preview_cutoff = 120,
+            prompt_position = "bottom",
+            width = 0.8
+          },
+          vertical = {
+            height = 0.9,
+            preview_cutoff = 40,
+            prompt_position = "bottom",
+            width = 0.8
+          },
     },
     file_sorter = require("telescope.sorters").get_fuzzy_file,
     file_ignore_patterns = {},
