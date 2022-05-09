@@ -141,7 +141,7 @@ cmp.setup({
         { name = 'vsnip' }, -- For vsnip users.
         -- { name = "luasnip" },
         -- { name = "buffer" ,keyword_pattern = [[\k]] ,priority = 90},
-        { name = "cmp_tabnine" , priority = 15},
+        -- { name = "cmp_tabnine" , priority = 15},
         { name = "path" },
         {name = 'emoji', insert = true},
         {
