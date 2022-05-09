@@ -85,7 +85,7 @@ telescope.setup {
     color_devicons = true,
     use_less = true,
     path_display = {},
-    initial_mode = "instert",
+    initial_mode = "insert",
     set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,
     grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
