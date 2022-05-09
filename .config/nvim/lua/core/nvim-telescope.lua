@@ -47,34 +47,22 @@ telescope.setup {
     sorting_strategy = "descending",
     layout_strategy = "horizontal",
     layout_config = {
-     bottom_pane = {
-            height = 25,
-            preview_cutoff = 120,
-            prompt_position = "top"
-          },
-          center = {
-            height = 0.4,
-            preview_cutoff = 40,
-            prompt_position = "top",
-            width = 0.5
-          },
-          cursor = {
-            height = 0.9,
-            preview_cutoff = 120,
-            width = 10
-          },
+         horizontal = {
+          preview_width = function(_, cols, _)
+            return math.floor(cols * 0.6)
+          end,
+        },
+        vertical = {
+          width = 0.9,
+          height = 0.95,
+          preview_height = 0.5,
+        },
+
+        flex = {
           horizontal = {
-            height = 0.9,
-            preview_cutoff = 120,
-            prompt_position = "bottom",
-            width = 0.8
+            preview_width = 0.9,
           },
-          vertical = {
-            height = 0.9,
-            preview_cutoff = 40,
-            prompt_position = "bottom",
-            width = 0.8
-          },
+        },
     },
     file_sorter = require("telescope.sorters").get_fuzzy_file,
     file_ignore_patterns = {},
@@ -85,7 +73,7 @@ telescope.setup {
     color_devicons = true,
     use_less = true,
     path_display = {},
-    initial_mode = "normal",
+    initial_mode = "instert",
     set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,
     grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
