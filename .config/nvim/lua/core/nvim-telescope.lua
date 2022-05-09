@@ -30,27 +30,66 @@ end
 
 telescope.setup {
   defaults = {
-			initial_mode = "insert",
-			prompt_prefix = "  ",
-			selection_caret = " ",
-			entry_prefix = " ",
-			scroll_strategy = "limit",
-			results_title = false,
-			borderchars = { " ", " ", " ", " ", " ", " ", " ", " " },
-			layout_strategy = "horizontal",
-			path_display = { "absolute" },
-			file_ignore_patterns = {},
-			layout_config = {
-				prompt_position = "bottom",
-				horizontal = {
-					preview_width = 0.5,
-				},
-			},
-			file_previewer = require("telescope.previewers").vim_buffer_cat.new,
-			grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-			qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
-			file_sorter = require("telescope.sorters").get_fuzzy_file,
-			generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
+    vimgrep_arguments = {
+      "rg",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+    },
+ 
+    prompt_prefix = " ",
+    selection_caret = "➜ ",
+    entry_prefix = "  ",
+    selection_strategy = "reset",
+    sorting_strategy = "descending",
+    layout_strategy = "horizontal",
+    layout_config = {
+     bottom_pane = {
+            height = 25,
+            preview_cutoff = 120,
+            prompt_position = "top"
+          },
+          center = {
+            height = 0.4,
+            preview_cutoff = 40,
+            prompt_position = "top",
+            width = 0.5
+          },
+          cursor = {
+            height = 0.9,
+            preview_cutoff = 120,
+            width = 10
+          },
+          horizontal = {
+            height = 0.9,
+            preview_cutoff = 120,
+            prompt_position = "bottom",
+            width = 0.8
+          },
+          vertical = {
+            height = 0.9,
+            preview_cutoff = 40,
+            prompt_position = "bottom",
+            width = 0.8
+          },
+    },
+    file_sorter = require("telescope.sorters").get_fuzzy_file,
+    file_ignore_patterns = {},
+    generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
+    winblend = 0,
+    border = {},
+    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+    color_devicons = true,
+    use_less = true,
+    path_display = {},
+    initial_mode = "normal",
+    set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
+    file_previewer = require("telescope.previewers").vim_buffer_cat.new,
+    grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
+    qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
     
  mappings = {
       i = {
@@ -117,7 +156,9 @@ telescope.setup {
         ["?"] = actions.which_key,
         ["<c-t>"] = trouble.open_with_trouble,
       },
-    }, 
+    },
+    -- Developer configurations: Not meant for general override
+    buffer_previewer_maker = require("telescope.previewers").buffer_previewer_maker,
   },
   extensions = {
     fzf = {
