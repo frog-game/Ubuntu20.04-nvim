@@ -139,9 +139,9 @@ map <Esc>[1;3C :bp<CR>
 
 " 复制粘贴
 "复制到系统剪切板
-vnoremap <Leader>y "+y 
+"vnoremap <Leader>y "+y 
 "粘贴系统剪切板
-nmap <Leader>p "+p 
+"nmap <Leader>p "+p 
 
 " custom command
 " 避免手残输错
