@@ -61,7 +61,7 @@ telescope.setup {
           },
           cursor = {
             height = 0.9,
-            preview_cutoff = 40,
+            preview_cutoff = 120,
             width = 0.8
           },
           horizontal = {
