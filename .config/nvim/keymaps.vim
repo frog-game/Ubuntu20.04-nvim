@@ -20,10 +20,10 @@ nmap <A-Down> :lua require('smart-splits').resize_down()<CR>
 nmap <A-Up> :lua require('smart-splits').resize_up()<CR>
 nmap <A-Right> :lua require('smart-splits').resize_right()<CR>
 " delete something without yank
-nnoremap d "_d
-nnoremap D "_D
-noremap H ^
-noremap L $
+"nnoremap d "_d
+"nnoremap D "_D
+"noremap H ^
+"noremap L $
 nnoremap / /\v
 vnoremap / /\v
 vnoremap // y/<c-r>"<cr>
