@@ -40,7 +40,6 @@ telescope.setup {
       "--smart-case",
     },
  
-    prompt_prefix = "  ",
     selection_caret = "➜ ",
     entry_prefix = "  ",
     selection_strategy = "reset",
