@@ -140,7 +140,7 @@ Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 " Plug 'uga-rosa/cmp-dictionary'
-"Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' } 电脑性能太差，换电脑在加这个AI 加的时候搜索关键字tabnine 把相关注释的都打开
+"Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' } "电脑性能太差，换电脑在加这个AI 加的时候搜索关键字tabnine 把相关注释的都打开
 Plug 'octaltree/cmp-look'
 
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
