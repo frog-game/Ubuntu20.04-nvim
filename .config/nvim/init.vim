@@ -173,6 +173,9 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'onsails/lspkind-nvim'
 Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
+
+"copy
+Plug 'chrismetcalf/yankring-vim'
     
 call plug#end()
 
