@@ -269,10 +269,8 @@ let g:gruvbox_material_better_performance = 1
 let g:yankring_history_dir = $HOME.'/.vim/'
 "修改历史文件名
 let g:yankring_history_file = '.yankring_history'
-"<leader>m选择上一个复制的文本
-let g:yankring_replace_n_pkey = '<Leader>m'
-"<leader>n选择下一个复制的文本
-let g:yankring_replace_n_pkey = '<Leader>n'
+"指定条目的最小长度为2个字符
+let yankring_min_element_length = 2
 "<leader>y显示yankring中的内容
 nmap <Leader>y :YRShow<CR>
 
