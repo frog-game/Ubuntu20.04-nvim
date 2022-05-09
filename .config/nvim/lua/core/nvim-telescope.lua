@@ -45,7 +45,7 @@ telescope.setup {
     entry_prefix = "  ",
     selection_strategy = "reset",
     sorting_strategy = "descending",
-   layout_strategy = "horizontal",
+    layout_strategy = "horizontal",
     layout_config = {
      bottom_pane = {
             height = 25,
