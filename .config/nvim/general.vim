@@ -18,7 +18,7 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
-set modifiable                   设置能修改缓冲区，便于telescope 上能把剪切板上的东西粘贴到缓冲区 
+set modifiable                   "设置能修改缓冲区，便于telescope 上能把剪切板上的东西粘贴到缓冲区 
 " set gcr=a:blnkon0              "Disable cursor blink
 " guicursor settings
 " highlight Cursor gui=reverse guifg=black guibg=#AAC689
