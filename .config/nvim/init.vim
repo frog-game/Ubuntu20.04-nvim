@@ -175,7 +175,7 @@ Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
 
 "copy
-Plug 'vim-scripts/YankRing.vim'
+
     
 call plug#end()
 
@@ -263,16 +263,6 @@ let g:gruvbox_material_better_performance = 1
 "
 "
 " ============================== Plugins settings ============================== 
-
-" ========= YankRing settings ========= 
-"将yankring的历史文件夹移到~/.vim
-let g:yankring_history_dir = $HOME.'/.vim/'
-"修改历史文件名
-let g:yankring_history_file = '.yankring_history'
-"指定条目的最小长度为2个字符
-let yankring_min_element_length = 2
-"<leader>y显示yankring中的内容
-nmap <Leader>y :YRShow<CR>
 
 " ========= telescope settings ==========
 let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
