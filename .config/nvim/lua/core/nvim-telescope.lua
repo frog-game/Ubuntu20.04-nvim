@@ -40,7 +40,7 @@ telescope.setup {
       "--smart-case",
     },
  
-    prompt_prefix = "",
+    prompt_prefix = "",
     selection_caret = "➜ ",
     entry_prefix = "  ",
     selection_strategy = "reset",
@@ -85,7 +85,7 @@ telescope.setup {
     color_devicons = true,
     use_less = true,
     path_display = {},
-    initial_mode = "insert",
+    initial_mode = "normal",
     set_env = { ["COLORTERM"] = "truecolor" }, -- default = nil,
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,
     grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
