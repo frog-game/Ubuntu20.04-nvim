@@ -175,7 +175,7 @@ Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
 
 "copy
-Plug 'chrismetcalf/yankring-vim'
+Plug 'vim-scripts/YankRing.vim'
     
 call plug#end()
 
