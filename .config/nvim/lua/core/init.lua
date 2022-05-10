@@ -25,7 +25,7 @@ require('core.nvim-goto-preview')
 require('core.nvim-smart-splits')
 require('core.nvim-symbols-outline')
 require('core.nvim-dashboard')
---require('core.formatter')
+require('core.formatter')
 require'hop'.setup{}
 
 -- -------------------------- 其他简单lua插件配置项 --------------------------------------------
