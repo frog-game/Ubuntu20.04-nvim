@@ -132,7 +132,7 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
-#map <space> /
+nnoremap <esc> :noh<return><esc>
 map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
 
