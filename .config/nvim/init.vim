@@ -798,8 +798,7 @@ set termguicolors " this variable must be enabled for colors to be applied prope
 " a list of groups can be found at `:help nvim_tree_highlight`
 " highlight NvimTreeFolderIcon guibg=blue
 
-let g:auto_save = 1  " enable AutoSave on Vim startup
-let g:auto_save_events = [“InsertLeave”, “TextChanged”, “TextChangedI”, “CursorHoldI”, “CompleteDone”]
+let g:auto_save = 5  " enable AutoSave on Vim startup
 
 let g:instant_markdown_slow = 1
 
