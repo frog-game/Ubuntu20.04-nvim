@@ -32,12 +32,12 @@ formatter.setup(
 )
 
 --配置保存文件自动格式化代码
-vim.api.nvim_exec(
-  [[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost *.rs,*.lua FormatWrite
-augroup END
-]],
-  true
-)
+--vim.api.nvim_exec(
+ -- [[
+--augroup FormatAutogroup
+ -- autocmd!
+ -- autocmd BufWritePost *.rs,*.lua FormatWrite
+--augroup END
+--]],
+--  true
+--)
