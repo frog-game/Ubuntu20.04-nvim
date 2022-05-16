@@ -174,7 +174,9 @@ Plug 'onsails/lspkind-nvim'
 Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
 
-"copy
+"ranger
+Plug 'francoiscabrol/ranger.vim'
+ Plug 'rbgrouleff/bclose.vim'
 
     
 call plug#end()
