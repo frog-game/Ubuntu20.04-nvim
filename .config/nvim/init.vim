@@ -173,6 +173,10 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'onsails/lspkind-nvim'
 Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
+
+"ranger
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
     
 call plug#end()
 
@@ -260,6 +264,11 @@ let g:gruvbox_material_better_performance = 1
 "
 "
 " ============================== Plugins settings ============================== 
+
+" ========= ranger settings ==========
+let g:ranger_map_keys = 0
+nnoremap <silent> <M-o> :Ranger<CR>
+tnoremap <silent> <M-o> <C-\><C-n>:Ranger<CR>
 
 " ========= telescope settings ==========
 let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
