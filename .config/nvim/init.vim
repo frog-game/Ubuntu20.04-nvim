@@ -175,8 +175,7 @@ Plug 'tami5/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
 
 "ranger
-Plug 'francoiscabrol/ranger.vim'
- Plug 'rbgrouleff/bclose.vim'
+Plug 'kevinhwang91/rnvimr'
 
     
 call plug#end()
