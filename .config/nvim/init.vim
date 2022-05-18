@@ -178,7 +178,9 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'kevinhwang91/rnvimr'
 
 "批量替换文字
-Plug 'brooth/far.vim'
+"Plug 'brooth/far.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'windwp/nvim-spectre'
     
 call plug#end()
 
@@ -268,7 +270,18 @@ let g:gruvbox_material_better_performance = 1
 " ============================== Plugins settings ============================== 
 
 " ========= far settings ==========
-let g:far#enable_undo=1
+"let g:far#enable_undo=1
+
+
+" ========= nvim-spectre settings ==========
+nnoremap <leader>S <cmd>lua require('spectre').open()<CR>
+
+"search current word
+nnoremap <leader>sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>
+vnoremap <leader>s <cmd>lua require('spectre').open_visual()<CR>
+"  search in current file
+nnoremap <leader>sp viw:lua require('spectre').open_file_search()<cr>
+" run command :Spectre
 
 " ========= rnvimr settings ==========
 " Make Ranger replace Netrw and be the file explorer
