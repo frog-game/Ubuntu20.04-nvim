@@ -177,7 +177,8 @@ Plug 'ray-x/lsp_signature.nvim'
 "rnvimr
 Plug 'kevinhwang91/rnvimr'
 
-let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
+"批量替换文字
+Plug 'brooth/far.vim'
     
 call plug#end()
 
@@ -266,6 +267,9 @@ let g:gruvbox_material_better_performance = 1
 "
 " ============================== Plugins settings ============================== 
 
+" ========= far settings ==========
+let g:far#enable_undo=1
+
 " ========= rnvimr settings ==========
 " Make Ranger replace Netrw and be the file explorer
 let g:rnvimr_enable_ex = 1
@@ -292,7 +296,7 @@ let g:rnvimr_enable_bw = 1
 let g:rnvimr_shadow_winblend = 70
 
 " Draw border with both
-let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
+let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set viewmode multipaneh']
 
 " Link CursorLine into RnvimrNormal highlight in the Floating window
 highlight link RnvimrNormal CursorLine
