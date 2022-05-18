@@ -121,7 +121,7 @@ telescope.setup {
         ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
         ["<C-l>"] = actions.complete_tag,
         ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
-        ["<c-t>"] = trouble.open_with_trouble,
+        ["<m-t>"] = trouble.open_with_trouble,
       },
 
       n = {
@@ -160,7 +160,7 @@ telescope.setup {
         ["<PageDown>"] = actions.results_scrolling_down,
 
         ["?"] = actions.which_key,
-        ["<c-t>"] = trouble.open_with_trouble,
+        ["<m-t>"] = trouble.open_with_trouble,
       },
     },
     -- Developer configurations: Not meant for general override
