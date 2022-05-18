@@ -178,7 +178,7 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'kevinhwang91/rnvimr'
 
 "批量替换文字
-"Plug 'brooth/far.vim'
+Plug 'brooth/far.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'windwp/nvim-spectre'
     
@@ -270,8 +270,7 @@ let g:gruvbox_material_better_performance = 1
 " ============================== Plugins settings ============================== 
 
 " ========= far settings ==========
-"let g:far#enable_undo=1
-
+let g:far#enable_undo=1
 
 " ========= nvim-spectre settings ==========
 nnoremap <leader>S <cmd>lua require('spectre').open()<CR>
