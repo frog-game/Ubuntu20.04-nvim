@@ -22,13 +22,17 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 
 sudo apt-get update
 
+#Cannot initiate the connection to dl.yarnpkg.com:443 
+sudo apt -y install curl
+sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
 #卸载nodejs
 sudo apt-get -y remove --purge nodejs
 sudo apt-get -y remove --purge nodejs-legacy
 sudo apt-get -y autoremove
 
 #安装nodejs npm
-sudo apt -y install curl
+
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs
