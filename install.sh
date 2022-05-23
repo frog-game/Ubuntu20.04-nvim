@@ -105,11 +105,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo chsh -s `which zsh`
 
 #go安装
-wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
+sudo wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
 
-tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
-echo "PATH=$PATH:/usr/local/go/bin" >> /etc/profile
-source /etc/profile
+sudo tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
+sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile
+sudo source /etc/profile
 
 #安装lazygit
 sudo add-apt-repository ppa:lazygit-team/release
