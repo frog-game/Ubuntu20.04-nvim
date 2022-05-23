@@ -22,9 +22,14 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
-
 sudo apt-get update
-sudo apt-get upgrade
+
+#安装nodejs npm
+sudo apt-get install nodejs
+sudo apt install nodejs-legacy
+sudo apt install npm
+sudo npm install n -g
+sudo n stable
 
 #安装unzip
 sudo apt-get -y update
