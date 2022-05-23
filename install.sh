@@ -29,6 +29,14 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 
+#tab键盘失效
+sudo apt -y install rpm
+rpm -qa | grep bash-*
+sudo apt-get install bash-completion
+
+#ubuntu中source ~/.bash_profile时提示 source: not found
+sudo dpkg-reconfigure dash #执行过程中的选项选择no
+
 #安装unzip
 sudo apt-get -y update
 sudo apt-get -y install unzip
