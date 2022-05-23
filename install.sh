@@ -4,7 +4,7 @@ sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #换源
 sudo rm -rf /etc/apt/sources.list
-vi /etc/apt/sources.list
+touch /etc/apt/sources.list
 chmod 777 /etc/apt/sources.list
 sudo echo "#添加阿里源
 deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
