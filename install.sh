@@ -101,7 +101,7 @@ sudo apt-get -y install ripgrep
 
 #安装zsh和oh-my-zsh
 sudo apt -y install zsh
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
@@ -118,4 +118,4 @@ source /etc/profile
 go get github.com/jesseduffield/lazygit
 
 #删除冗余文件
-sudo rm -rf install.sh wget-log* .wget-hsts
+sudo rm -rf wget-log* .wget-hsts
