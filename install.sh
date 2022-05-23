@@ -1,6 +1,7 @@
 #为了防止异常中断
 pkill -9 apt
 sudo rm /var/lib/apt/lists/lock
+sudo  rm /var/lib/dpkg/lock-frontend
 
 #修改时区
 sudo rm -f /etc/localtime
