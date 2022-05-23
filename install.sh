@@ -35,7 +35,7 @@ rpm -qa | grep bash-*
 sudo apt-get install bash-completion
 
 #ubuntu中source ~/.bash_profile时提示 source: not found
-sudo dpkg-reconfigure dash #执行过程中的选项选择no
+#sudo dpkg-reconfigure dash #执行过程中的选项选择no
 
 #安装unzip
 sudo apt-get -y update
