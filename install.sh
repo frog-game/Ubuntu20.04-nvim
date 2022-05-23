@@ -23,7 +23,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted u
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse multiverse" >> /etc/apt/sources.list
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse multiverse" >> chmod 777 /etc/apt/sources.list
 
 #安装unzip
 sudo apt-get -y update
@@ -80,6 +80,7 @@ sudo apt -y install yarn
 #安装nerd-fonts字体
 sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
 sudo apt-get -y install fontconfig #是fc-cache -fv生效
+sudo rm -rf /usr/share/fonts/SourceCodePro
 wget -c https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
 sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
 cd /usr/share/fonts/SourceCodePro
