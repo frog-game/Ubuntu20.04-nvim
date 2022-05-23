@@ -117,7 +117,9 @@ sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile
 source /etc/profile
 
 #安装lazygit
-go get github.com/jesseduffield/lazygit
+sudo add-apt-repository ppa:lazygit-team/release
+sudo apt-get update
+sudo apt-get -y install lazygit
 
 #删除冗余文件
 sudo rm -rf wget-log* .wget-hsts
