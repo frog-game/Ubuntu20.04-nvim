@@ -118,4 +118,4 @@ source /etc/profile
 go get github.com/jesseduffield/lazygit
 
 #删除冗余文件
-rm -rf install.sh wget-log* .wget-hsts
+sudo rm -rf install.sh wget-log* .wget-hsts
