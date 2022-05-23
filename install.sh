@@ -1,7 +1,7 @@
 #为了防止异常中断
 pkill -9 apt
 sudo rm /var/lib/apt/lists/lock
-sudo  rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/dpkg/lock-frontend
 
 #修改时区
 sudo rm -f /etc/localtime
@@ -79,10 +79,10 @@ sudo apt -y install yarn
 sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
 sudo apt-get -y install fontconfig #是fc-cache -fv生效
 sudo rm -rf /usr/share/fonts/SourceCodePro
-wget -c https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+sudo wget -c https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
 sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
 cd /usr/share/fonts/SourceCodePro
-mkdir -p ~/.local/share/fonts
+sudo mkdir -p ~/.local/share/fonts
 sudo mkfontscale # 生成核心字体信息
 sudo mkfontdir # 生成字体文件夹
 sudo fc-cache -fv # 刷新系统字体缓存
