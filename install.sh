@@ -23,9 +23,9 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 sudo apt-get update
 
 #安装nodejs npm
-sudo apt-get install nodejs
-sudo apt install nodejs-legacy
-sudo apt install npm
+sudo apt-get -y install nodejs
+sudo apt -y install nodejs-legacy
+sudo apt -y install npm
 sudo npm install n -g
 sudo n stable
 
