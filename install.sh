@@ -22,8 +22,17 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 
 sudo apt-get update
 
+#卸载nodejs
+sudo apt-get -y remove --purge nodejs
+sudo apt-get -y remove --purge nodejs-legacy
+sudo apt-get -y autoremove
+
 #安装nodejs npm
-sudo apt-get -y install nodejs
+sudo apt -y install curl
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get update
+sudo apt-get install -y nodejs
+
 sudo apt -y install npm
 sudo npm cache clean -f
 sudo npm install -g n
