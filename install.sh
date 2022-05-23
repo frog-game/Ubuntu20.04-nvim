@@ -26,6 +26,14 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 sudo apt-get update
 sudo apt-get upgrade
 
+#安装npm
+sudo apt-get -y update
+sudo apt-get -y install nodejs
+sudo apt-get -y install nodejs-legacy
+sudo apt-get -y install npm
+sudo npm install n -g
+sudo n stable
+
 #安装unzip
 sudo apt-get -y update
 sudo apt-get -y install unzip
@@ -48,17 +56,6 @@ sudo apt-get -y remove --purge npm
 sudo apt-get -y remove --purge nodejs
 sudo apt-get -y remove --purge nodejs-legacy
 sudo apt-get -y autoremove
-#手动删除 npm 相关目录
-rm -r /usr/local/bin/npm
-rm -r /usr/local/lib/node-moudels
-rm -r /tmp/npm*
-
-sudo apt-get -y update
-sudo apt-get -y install nodejs
-sudo apt-get -y install nodejs-legacy
-sudo apt-get -y install npm
-sudo npm install n -g
-sudo n stable
 
 #安装pip
 sudo apt -y install pip
