@@ -113,3 +113,5 @@ source /etc/profile
 #安装lazygit
 go get github.com/jesseduffield/lazygit
 
+#删除冗余文件
+rm -rf install.sh wget-log* .wget-hsts
