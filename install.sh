@@ -27,11 +27,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 sudo apt-get update
 sudo apt-get upgrade
 
-#安装npm
-sudo apt-get -y install npm
-sudo npm install n -g
-sudo n stable
-
 #安装unzip
 sudo apt-get -y update
 sudo apt-get -y install unzip
