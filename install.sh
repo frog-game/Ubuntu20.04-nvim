@@ -23,8 +23,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted u
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse multiverse" >> /etc/apt/sources.list
-chmod 777 /etc/apt/sources.list
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse multiverse" >> sudo tee -a /etc/apt/sources.list
 
 #安装unzip
 sudo apt-get -y update
