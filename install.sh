@@ -87,7 +87,7 @@ sudo apt -y install yarn
 sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
 sudo apt-get -y install fontconfig #是fc-cache -fv生效
 sudo rm -rf /usr/share/fonts/SourceCodePro
-sudo wget -c https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
 sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
 cd /usr/share/fonts/SourceCodePro
 sudo mkdir -p ~/.local/share/fonts
@@ -95,6 +95,7 @@ sudo mkfontscale # 生成核心字体信息
 sudo mkfontdir # 生成字体文件夹
 sudo fc-cache -fv # 刷新系统字体缓存
 fc-list #查看已经安装的
+sudo rm -rf SourceCodePro.zip
 
 #安装 live grep
 sudo apt-get -y install ripgrep
@@ -111,16 +112,19 @@ git restore ~/.zshrc
 source ~/.zshrc
 
 #go安装
-sudo wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
-
-sudo tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
-sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile
-source /etc/profile
+sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
+sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile
+source $HOME/.profile
+sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
-sudo add-apt-repository ppa:lazygit-team/release
-sudo apt-get update
-sudo apt-get -y install lazygit
+git clone https://github.com/jesseduffield/lazygit.git
+cd lazygit
+go install
+source ~/.zshrc
+sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
 
 #删除冗余文件
 sudo rm -rf wget-log* .wget-hsts README.md
