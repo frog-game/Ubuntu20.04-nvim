@@ -20,8 +20,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 sudo apt-get update
 
 #安装nodejs npm
