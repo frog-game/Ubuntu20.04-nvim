@@ -106,6 +106,8 @@ git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$H
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
 sudo chsh -s `which zsh`
+git restore .zshrc
+source .zshrc
 
 #go安装
 sudo wget https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz
