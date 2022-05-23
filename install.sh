@@ -24,7 +24,6 @@ sudo apt-get update
 
 #安装nodejs npm
 sudo apt-get -y install nodejs
-sudo apt -y install nodejs-legacy
 sudo apt -y install npm
 sudo npm cache clean -f
 sudo npm install -g n
