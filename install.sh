@@ -28,9 +28,6 @@ sudo apt-get update
 sudo apt-get upgrade
 
 #安装npm
-sudo apt-get -y update
-sudo apt-get -y install nodejs
-sudo apt-get -y install nodejs-legacy
 sudo apt-get -y install npm
 sudo npm install n -g
 sudo n stable
@@ -50,13 +47,6 @@ cd /tmp
 wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
 sudo apt -y install ./nvim-linux64.deb 
 cd ..
-
-# 卸载安装更新nodejs
-#apt-get 卸载
-sudo apt-get -y remove --purge npm
-sudo apt-get -y remove --purge nodejs
-sudo apt-get -y remove --purge nodejs-legacy
-sudo apt-get -y autoremove
 
 #安装pip
 sudo apt -y install pip
