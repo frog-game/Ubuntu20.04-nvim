@@ -2,6 +2,7 @@
 pkill -9 apt
 sudo rm /var/lib/apt/lists/lock
 sudo rm /var/lib/dpkg/lock-frontend
+sudo apt autoremove
 
 #修改时区
 sudo rm -f /etc/localtime
