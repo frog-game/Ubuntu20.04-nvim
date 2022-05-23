@@ -27,7 +27,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted 
 
 #安装unzip
 sudo apt-get -y update
-sudo apt-get -y intall unzip
+sudo apt-get -y install unzip
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
@@ -50,7 +50,6 @@ sudo apt-get -y autoremove
 #手动删除 npm 相关目录
 rm -r /usr/local/bin/npm
 rm -r /usr/local/lib/node-moudels
-find / -name npm
 rm -r /tmp/npm*
 
 sudo apt-get -y update
