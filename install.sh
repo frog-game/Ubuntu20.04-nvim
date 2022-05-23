@@ -1,10 +1,13 @@
+#为了防止异常中断
+pkill -9 apt
+sudo rm /var/lib/apt/lists/lock
+
 #修改时区
 sudo rm -f /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #换源
 sudo rm -rf /etc/apt/sources.list
-sudo rm /var/lib/apt/lists/lock
 sudo echo "#添加阿里源
 deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
