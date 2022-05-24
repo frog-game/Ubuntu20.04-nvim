@@ -115,6 +115,7 @@ source ~/.zshrc
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
 sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
+sudo rm -rf $HOME/.profile
 sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile
 source $HOME/.profile
 sudo rm -rf go1.18.2.linux-amd64.tar.gz
