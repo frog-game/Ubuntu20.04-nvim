@@ -22,7 +22,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install git
 
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
-sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo DEBIAN_FRONTEND=noninteractive apt-key add -
 
 #卸载nodejs
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs
