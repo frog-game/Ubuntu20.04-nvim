@@ -115,6 +115,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sudo chsh -s `which zsh`
 git restore ~/.zshrc
 source ~/.zshrc
+git restore ~/.p10k.zsh
+source ~/.p10k.zsh
 
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
