@@ -18,34 +18,34 @@ sudo rm -f /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #安装git：
-sudo apt -y install git
+sudo DEBIAN_FRONTEND=noninteractive apt -y install git
 
 #Cannot initiate the connection to dl.yarnpkg.com:443 
-sudo apt -y install curl
+sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
 #卸载nodejs
-sudo apt-get -y remove --purge nodejs
-sudo apt-get -y remove --purge nodejs-legacy
-sudo apt-get -y autoremove
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs-legacy
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
 
 #安装nodejs npm
 
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get update
-sudo apt-get install -y nodejs
+sudo DEBIAN_FRONTEND=noninteractive vapt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
-sudo apt -y install npm
+sudo DEBIAN_FRONTEND=noninteractive apt -y install npm
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 
 #ubuntu中source ~/.bash_profile时提示 source: not found
-sudo dpkg-reconfigure dash #执行过程中的选项选择no
+sudo DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash -n #执行过程中的选项选择no
 
 #安装unzip
-sudo apt-get -y update
-sudo apt-get -y install unzip
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y update
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
@@ -56,31 +56,31 @@ rm -rf $(pwd)/nvim
 mkdir /tmp
 cd /tmp
 wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-sudo apt -y install ./nvim-linux64.deb 
+sudo DEBIAN_FRONTEND=noninteractive apt -y install ./nvim-linux64.deb 
 cd ..
 
 #安装pip
-sudo apt -y install pip
+sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
 
 #安装vim-plug插件
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #安装cargo
-sudo apt -y install cargo
+sudo DEBIAN_FRONTEND=noninteractive apt -y install cargo
 
 #安装yarn
-#sudo apt -y remove cmdtest
-#sudo apt -y remove yarn
+#sudo DEBIAN_FRONTEND=noninteractive apt -y remove cmdtest
+#sudo DEBIAN_FRONTEND=noninteractive apt -y remove yarn
 #curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 #echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-#sudo apt -y update
-#sudo apt -y install yarn
-sudo npm install yarn -g
+#sudo DEBIAN_FRONTEND=noninteractive  apt -y update
+#sudo DEBIAN_FRONTEND=noninteractive apt -y install yarn
+sudo DEBIAN_FRONTEND=noninteractive npm install yarn -g
 
 #安装nerd-fonts字体
-sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
-sudo apt-get -y install fontconfig #是fc-cache -fv生效
-sudo rm -rf /usr/share/fonts/SourceCodePro
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install fontconfig #是fc-cache -fv生效
+sudo DEBIAN_FRONTEND=noninteractive rm -rf /usr/share/fonts/SourceCodePro
 sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
 sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
 cd /usr/share/fonts/SourceCodePro
