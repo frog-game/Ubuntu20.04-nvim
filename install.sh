@@ -20,7 +20,11 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
-sudo apt-get update
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+#安装git：
+sudo  apt -y install git
 
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo apt -y install curl
