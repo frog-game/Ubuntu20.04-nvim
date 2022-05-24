@@ -24,7 +24,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 #安装git：
-sudo  apt -y install git
+sudo apt -y install git
 
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo apt -y install curl
@@ -86,7 +86,7 @@ sudo apt -y install cargo
 #echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 #sudo apt -y update
 #sudo apt -y install yarn
-npm install yarn -g
+sudo npm install yarn -g
 
 #安装nerd-fonts字体
 sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
