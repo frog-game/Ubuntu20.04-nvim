@@ -11,8 +11,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
 sudo apt autoremove
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
 #修改时区
 sudo rm -f /etc/localtime
