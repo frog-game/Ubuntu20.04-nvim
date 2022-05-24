@@ -75,7 +75,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install cargo
 #echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 #sudo DEBIAN_FRONTEND=noninteractive  apt -y update
 #sudo DEBIAN_FRONTEND=noninteractive apt -y install yarn
-sudo DEBIAN_FRONTEND=noninteractive npm install yarn -g
+sudo npm install yarn -g
 
 #安装nerd-fonts字体
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
@@ -93,7 +93,7 @@ sudo rm -rf SourceCodePro.zip
 cd ~/
 
 #安装 live grep
-sudo apt-get -y install ripgrep
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
 
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
@@ -115,7 +115,7 @@ sudo rm -rf go1.18.2.linux-amd64.tar.gz
 nvim -c 'PlugInStall'
 
 #安装zsh和oh-my-zsh
-sudo apt -y install zsh
+sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
 chsh -s /bin/zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
