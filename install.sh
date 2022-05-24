@@ -106,17 +106,15 @@ sudo rm -rf SourceCodePro.zip
 sudo apt-get -y install ripgrep
 
 #安装zsh和oh-my-zsh
-sudo rm -rf ~/.oh-my-zsh
 sudo apt -y install zsh
+chsh -s /bin/zsh
+sudo rm -rf ~/.oh-my-zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
-sudo chsh -s `which zsh`
 git restore ~/.zshrc
 source ~/.zshrc
-git restore ~/.p10k.zsh
-source ~/.p10k.zsh
 
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
