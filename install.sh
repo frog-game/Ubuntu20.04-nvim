@@ -1,13 +1,3 @@
-#为了防止异常中断
-pkill -9 apt
-sudo rm /var/lib/apt/lists/lock
-sudo rm /var/lib/dpkg/lock-frontend
-sudo apt autoremove
-
-#修改时区
-sudo rm -f /etc/localtime
-sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
 #换源
 sudo rm -rf /etc/apt/sources.list
 sudo echo "# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
@@ -20,8 +10,13 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
+sudo apt autoremove
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
+#修改时区
+sudo rm -f /etc/localtime
+sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #安装git：
 sudo apt -y install git
