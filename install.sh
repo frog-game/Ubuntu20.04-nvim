@@ -109,6 +109,7 @@ sudo apt-get -y install ripgrep
 sudo apt -y install zsh
 chsh -s /bin/zsh
 sudo rm -rf ~/.oh-my-zsh
+sudo rm -rf ~/.zshrc.*
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -132,6 +133,3 @@ sudo rm -rf go1.18.2.linux-amd64.tar.gz
 #go install
 #source ~/.zshrc
 #sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
-
-#删除冗余文件
-sudo rm -rf wget-log* .wget-hsts README.md
