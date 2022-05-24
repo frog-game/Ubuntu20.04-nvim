@@ -123,3 +123,6 @@ sudo rm -rf go1.18.2.linux-amd64.tar.gz
 #go install
 #source ~/.zshrc
 #sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
+
+#nvim
+nvim + PlugInStall
