@@ -101,27 +101,27 @@ chsh -s /bin/zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k | zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions | zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting | zsh
-git restore ~/.zshrc | zsh
-source ~/.zshrc | zsh
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
+git restore ~/.zshrc
+source ~/.zshrc
 
 #go安装
-sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz | zsh
-sudo rm -rf /usr/local/go | zsh
-sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz | zsh
-sudo rm -rf $HOME/.profile | zsh
-sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile | zsh
-source $HOME/.profile | zsh
-sudo rm -rf go1.18.2.linux-amd64.tar.gz | zsh
+sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go
+sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
+sudo rm -rf $HOME/.profile
+sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile
+source $HOME/.profile
+sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
-#git clone https://github.com/jesseduffield/lazygit.git | zsh
-#cd lazygit | zsh
-#go install | zsh
-#source ~/.zshrc | zsh
-#sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc | zsh
+#git clone https://github.com/jesseduffield/lazygit.git
+#cd lazygit
+#go install
+#source ~/.zshrc 
+#sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
 
 #nvim
-nvim -c 'PlugInStall' | zsh
+nvim -c 'PlugInStall'
