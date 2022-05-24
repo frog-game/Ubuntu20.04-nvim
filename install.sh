@@ -101,11 +101,13 @@ chsh -s /bin/zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+exit
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
 git restore ~/.zshrc
 source ~/.zshrc
+exit
 
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
@@ -125,3 +127,6 @@ sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #nvim
 nvim -c 'PlugInStall'
+
+#重启
+sudo reboot
