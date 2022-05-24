@@ -120,11 +120,11 @@ source $HOME/.profile
 sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
-git clone https://github.com/jesseduffield/lazygit.git
-cd lazygit
-go install
-source ~/.zshrc
-sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
+#git clone https://github.com/jesseduffield/lazygit.git
+#cd lazygit
+#go install
+#source ~/.zshrc
+#sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
 
 #删除冗余文件
 sudo rm -rf wget-log* .wget-hsts README.md
