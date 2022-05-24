@@ -80,12 +80,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 sudo apt -y install cargo
 
 #安装yarn
-sudo apt -y remove cmdtest
-sudo apt -y remove yarn
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt -y update
-sudo apt -y install yarn
+#sudo apt -y remove cmdtest
+#sudo apt -y remove yarn
+#curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+#echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+#sudo apt -y update
+#sudo apt -y install yarn
+npm install yarn -g
 
 #安装nerd-fonts字体
 sudo apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
@@ -108,7 +109,6 @@ sudo apt-get -y install ripgrep
 sudo rm -rf ~/.oh-my-zsh
 sudo apt -y install zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-sudo wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O - | sh
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
