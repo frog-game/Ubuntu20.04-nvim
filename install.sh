@@ -111,9 +111,6 @@ sudo rm -rf go1.18.2.linux-amd64.tar.gz
 #source ~/.zshrc 
 #sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
 
-#nvim
-nvim -c 'PlugInStall'
-
 #安装zsh和oh-my-zsh
 sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
 chsh -s /bin/zsh
