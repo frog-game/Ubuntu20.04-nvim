@@ -170,6 +170,9 @@ Plug 'kevinhwang91/rnvimr'
 "Plug 'brooth/far.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'windwp/nvim-spectre'
+
+"文本对齐插件
+Plug 'junegunn/vim-easy-align'
     
 call plug#end()
 
@@ -257,6 +260,12 @@ let g:gruvbox_material_better_performance = 1
 "
 "
 " ============================== Plugins settings ============================== 
+" ========= vim-easy-align settings ==========
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " ========= far settings ==========
 "let g:far#enable_undo=1
