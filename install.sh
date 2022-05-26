@@ -13,6 +13,10 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted 
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
+#安装python3
+sudo apt-get install python3
+sudo ln -s /usr/bin/python3.8 /usr/bin/python
+
 #修改时区
 sudo rm -f /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
