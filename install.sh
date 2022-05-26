@@ -99,6 +99,10 @@ cd ~/
 #安装 live grep
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
 
+#pip3安装ranger
+pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
+pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
+
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
