@@ -113,7 +113,11 @@ source $HOME/.profile
 sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
-#git clone https://github.com/jesseduffield/lazygit.git
+wget https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
+tar xvf lazygit.tgz
+sudo mv lazygit /usr/local/bin/
+sudo rm -rf lazygit.tgz
+
 #cd lazygit
 #go install
 #source ~/.zshrc 
