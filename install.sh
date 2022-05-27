@@ -52,6 +52,9 @@ sudo DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash -n #执行过程中的
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 
+#安装multitail
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
+
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
 cp -r $(pwd)/nvim/. $(pwd)/
