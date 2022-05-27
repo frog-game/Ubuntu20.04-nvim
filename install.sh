@@ -118,11 +118,6 @@ tar xvf lazygit.tgz
 sudo mv lazygit /usr/local/bin/
 sudo rm -rf lazygit.tgz
 
-#cd lazygit
-#go install
-#source ~/.zshrc 
-#sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
-
 #安装zsh和oh-my-zsh
 sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
 chsh -s /bin/zsh
