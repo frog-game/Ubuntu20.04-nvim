@@ -122,9 +122,7 @@ pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
 sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
-sudo rm -rf $HOME/.profile
-sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile
-source $HOME/.profile
+sudo ln -fs /usr/local/go/bin/go /usr/local/bin/go
 sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
