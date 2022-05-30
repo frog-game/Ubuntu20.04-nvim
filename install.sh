@@ -8,10 +8,26 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted u
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+
+#安装python3.8
+sudo DEBIAN_FRONTEND=noninteractive apt-get install python3.8
+sudo ln -s /usr/bin/python3.8 /usr/bin/python
+sudo DEBIAN_FRONTEND=noninteractive apt install python3-pip
 
 #修改时区
 sudo rm -f /etc/localtime
@@ -46,6 +62,9 @@ sudo DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash -n #执行过程中的
 #安装unzip
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
+
+#安装multitail
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
@@ -95,21 +114,22 @@ cd ~/
 #安装 live grep
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
 
+#pip3安装ranger
+pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
+pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
+
 #go安装
 sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go
 sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
-sudo rm -rf $HOME/.profile
-sudo echo "PATH=$PATH:/usr/local/go/bin" | sudo tee -a $HOME/.profile
-source $HOME/.profile
+sudo ln -fs /usr/local/go/bin/go /usr/local/bin/go
 sudo rm -rf go1.18.2.linux-amd64.tar.gz
 
 #安装lazygit
-#git clone https://github.com/jesseduffield/lazygit.git
-#cd lazygit
-#go install
-#source ~/.zshrc 
-#sudo echo "alias lg='lazygit'" | sudo tee -a ~/.zshrc
+wget https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
+tar xvf lazygit.tgz
+sudo mv lazygit /usr/local/bin/
+sudo rm -rf lazygit.tgz
 
 #安装zsh和oh-my-zsh
 sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
