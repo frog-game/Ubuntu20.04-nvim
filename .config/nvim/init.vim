@@ -290,7 +290,7 @@ let g:rnvimr_draw_border = 0
 let g:rnvimr_hide_gitignore = 1
 
 " Change the border's color
-let g:rnvimr_border_attr = {'fg': 14, 'bg': -1}
+let g:rnvimr_border_attr = {'fg': 15, 'bg': -1}
 
 " Make Neovim wipe the buffers corresponding to the files deleted by Ranger
 let g:rnvimr_enable_bw = 1
