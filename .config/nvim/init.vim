@@ -29,7 +29,6 @@ Plug 'lewis6991/impatient.nvim'
 " ========= useful tools here. ==========
 
 Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " windows size auto resize
 Plug 'camspiers/lens.vim'
 Plug '907th/vim-auto-save'
