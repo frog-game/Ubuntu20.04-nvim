@@ -117,8 +117,6 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" netrw
-
 " nnoremap - :Explore<CR>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -149,39 +147,3 @@ command W w
 command WQ wq
 command Wq wq
 command QA qa
-
-" ================ F1-F12 Hotkey Settings =====================
-" trun off F1 help page, just use `:help`.
-noremap <F1> <Esc>"
-" F2 show line number or not
-function! HideNumber()
-  if(&relativenumber == &number)
-    set relativenumber! number!
-  elseif(&number)
-    set number!
-  else
-    set relativenumber!
-  endif
-  set number?
-endfunc
-nnoremap <F2> :call HideNumber()<CR>
-" F3 show print char
-" nnoremap <F3> :set list! list?<CR>
-" F3 transparent terminal
-nnoremap <F3> :TransparentToggle<CR>
-" F4 wrap line on|off
-nnoremap <F4> :set wrap! wrap?<CR>
-" set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
-                                "    paste mode, where you can paste mass data
-                                "    that won't be autoindented
-" F6 turn on|off syntax, speed up read large file
-" nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
-" disbale paste mode when leaving insert mode
-" au InsertLeave * set nopaste
-" F8 turn on tagbar
-" nmap <F8> :TagbarToggle<CR>
-
-
-
-
-
