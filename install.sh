@@ -42,6 +42,9 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install git
 #git 次不需要再次输入账号密码
 git config --global credential.helper store
 
+#git不监听文件权限变化
+git config core.fileMode false
+
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo DEBIAN_FRONTEND=noninteractive apt-key add -
