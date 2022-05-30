@@ -124,6 +124,7 @@ cd ~/
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
 
 #pip3安装ranger
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ranger
 pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
 pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
 
