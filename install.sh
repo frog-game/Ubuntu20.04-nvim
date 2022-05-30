@@ -24,6 +24,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
+# 给lua-language-server 设置权限
+sudo chmod -R a=rwx $HOME/.local/share/nvim/
+
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get install python3.8
 sudo ln -s /usr/bin/python3.8 /usr/bin/python
