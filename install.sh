@@ -36,6 +36,9 @@ sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #安装git：
 sudo DEBIAN_FRONTEND=noninteractive apt -y install git
 
+#git 次不需要再次输入账号密码
+git config --global credential.helper store
+
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo DEBIAN_FRONTEND=noninteractive apt-key add -
