@@ -149,8 +149,6 @@ command W w
 command WQ wq
 command Wq wq
 command QA qa
-" 用户自定义命令首字母必须大写
-command DebugGolang execute "!cp -a ~/.config/nvim/debug-template/go-template/.vimspector.json ."
 
 " ================ F1-F12 Hotkey Settings =====================
 " trun off F1 help page, just use `:help`.
