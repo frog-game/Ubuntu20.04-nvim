@@ -133,7 +133,6 @@ Plug 'puremourning/vimspector'
 " Plug 'rcarriga/nvim-dap-ui'
 
 " Plug 'mfussenegger/nvim-dap'
-Plug 'sindrets/diffview.nvim'
 
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
