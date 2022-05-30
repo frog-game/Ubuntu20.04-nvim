@@ -126,12 +126,6 @@ Plug 'dense-analysis/ale'
 
 Plug 'lewis6991/gitsigns.nvim'
 
-" debug toools
-" Plug 'mfussenegger/nvim-dap'
-" Plug 'rcarriga/nvim-dap-ui'
-
-" Plug 'mfussenegger/nvim-dap'
-
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
