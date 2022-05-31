@@ -16,8 +16,6 @@ Plug 'EdenEast/nightfox.nvim'
 
 " ========= appearence here. ==========
 
-Plug 'nvim-lualine/lualine.nvim'
-" Plug 'feline-nvim/feline.nvim'
 Plug 'xiyaowong/nvim-transparent'
 " Plug 'junegunn/goyo.vim'
 Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -166,7 +164,8 @@ Plug 'windwp/nvim-spectre'
 Plug 'junegunn/vim-easy-align'
 
 "底部栏
-Plug 'nvim-lualine/lualine.nvim'
+"Plug 'nvim-lualine/lualine.nvim'
+Plug 'feline-nvim/feline.nvim'
     
 call plug#end()
 
