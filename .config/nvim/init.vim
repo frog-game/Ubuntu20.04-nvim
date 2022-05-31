@@ -165,7 +165,9 @@ Plug 'junegunn/vim-easy-align'
 
 "底部栏
 "Plug 'nvim-lualine/lualine.nvim'
-Plug 'feline-nvim/feline.nvim'
+"Plug 'feline-nvim/feline.nvim'
+Plug 'glepnir/spaceline.vim'
+Plug 'ryanoasis/vim-devicons' or 'kyazdani42/nvim-web-devicons' --neovim only
     
 call plug#end()
 
