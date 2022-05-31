@@ -261,6 +261,11 @@ highlight Normal guibg=NONE ctermbg=None
 "
 "
 " ============================== Plugins settings ============================== 
+
+" ========= spaceline.vim settings ==========
+ let g:spaceline_seperate_style= 'arrow'
+ let g:spaceline_git_branch_icon= ''
+    
 " ========= vim-easy-align settings ==========
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
