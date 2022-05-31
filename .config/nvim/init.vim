@@ -167,7 +167,7 @@ Plug 'junegunn/vim-easy-align'
 "Plug 'nvim-lualine/lualine.nvim'
 "Plug 'feline-nvim/feline.nvim'
 Plug 'glepnir/spaceline.vim'
-Plug 'ryanoasis/vim-devicons' or 'kyazdani42/nvim-web-devicons' --neovim only
+Plug 'ryanoasis/vim-devicons'
     
 call plug#end()
 
