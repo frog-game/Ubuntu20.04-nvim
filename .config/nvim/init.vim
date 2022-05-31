@@ -200,52 +200,58 @@ endif
 
 " ============================== Colorscheme settings ============================== 
 " colorscheme gruvbox
-" colorscheme onedark
+ colorscheme onedark
 " set bg=dark
 " let g:onedark_termcolors=256
 " ===========================
 " Example config in VimScript
-let g:tokyonight_style = "night"
-let g:tokyonight_italic_functions = 1
-let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
-" 
-"  Change the "hint" color to the "orange" color, and make the "error" color bright red
-let g:tokyonight_colors = {
-  \ 'hint': 'orange',
-   \ 'error': '#ff0000'
- \ }
- colorscheme tokyonight
-" ============================
-" colorscheme Duskfox
-" ============================
-" ========= gruvbox_material settings =======
-" https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
-" Important!!
-if has('termguicolors')
-    set termguicolors
-endif
-" For dark version.
-set background=dark
+" let g:tokyonight_style = "night"
+" let g:tokyonight_italic_functions = 1
+" let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
+" " 
+ "  Change the "hint" color to the "orange" color, and make the "error" color bright red
+" let g:tokyonight_colors = {
+"   \ 'hint': 'orange',
+"    \ 'error': '#ff0000'
+"  \ }
+"  colorscheme tokyonight
+" " ============================
+"colorscheme Duskfox
+" " ============================
+" " ========= gruvbox_material settings =======
+" " https://github.com/sainnhe/gruvbox-material/blob/master/doc/gruvbox-material.txt
+" " Important!!
+" if has('termguicolors')
+"     set termguicolors
+" endif
+" " For dark version.
+"set background=dark
 " For light version.
 " set background=light
 " Set contrast.
 " This configuration option should be placed before `colorscheme gruvbox-material`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_enable_italic = 1
-let g:gruvbox_material_enable_bold = 1
+" let g:gruvbox_material_background = 'hard'
+" let g:gruvbox_material_enable_italic = 1
+" let g:gruvbox_material_enable_bold = 1
 " only support GUI client
-let g:gruvbox_material_cursor = 'auto'
-let g:gruvbox_material_transparent_background = 0
-let g:gruvbox_material_menu_selection_background = 'green'
-let g:gruvbox_material_ui_contrast = 'high'
-let g:gruvbox_material_diagnostic_text_highlight = 1
-let g:gruvbox_material_better_performance = 1
+" let g:gruvbox_material_cursor = 'auto'
+" let g:gruvbox_material_transparent_background = 0
+" let g:gruvbox_material_menu_selection_background = 'green'
+" let g:gruvbox_material_ui_contrast = 'high'
+" let g:gruvbox_material_diagnostic_text_highlight = 1
+" let g:gruvbox_material_better_performance = 1
 
-"colorscheme gruvbox-material
+" colorscheme gruvbox-material
 
 " original colorscheme gruvbox configuration: https://github.com/morhetz/gruvbox/wiki/Configuration
-" colorscheme gruvbox
+"colorscheme gruvbox
+
+"开启光亮光标行
+set cursorline 
+hi CursorLine cterm=NONE ctermbg=black ctermfg=green  guibg=black guifg=green  
+
+highlight Normal guibg=NONE ctermbg=None
 
 " ============================== END colorscheme settings ============================== 
 "
