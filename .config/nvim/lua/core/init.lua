@@ -1,6 +1,6 @@
 require('impatient')
 require('core.lsp')
-require('core.nvim-lualine')
+--require('core.nvim-lualine')
 require('core.nvim-bufferline')
 require('core.nvim-transparent')
 require('core.nvim-cmp')
