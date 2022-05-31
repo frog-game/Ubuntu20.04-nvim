@@ -164,6 +164,9 @@ Plug 'windwp/nvim-spectre'
 
 "文本对齐插件
 Plug 'junegunn/vim-easy-align'
+
+"底部栏
+Plug 'nvim-lualine/lualine.nvim'
     
 call plug#end()
 
