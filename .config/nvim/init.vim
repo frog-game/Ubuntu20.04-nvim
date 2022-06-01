@@ -254,12 +254,6 @@ endif
 " original colorscheme gruvbox configuration: https://github.com/morhetz/gruvbox/wiki/Configuration
 "colorscheme gruvbox
 
-"开启光亮光标行
-set cursorline 
-hi CursorLine cterm=NONE ctermbg=black ctermfg=green  guibg=black guifg=green  
-
-highlight Normal guibg=NONE ctermbg=None
-
 " ============================== END colorscheme settings ============================== 
 "
 "
@@ -1036,5 +1030,11 @@ endif
 if filereadable($HOME . "/.config/nvim/custom.vim")
     source $HOME/.config/nvim/custom.vim
 endif
+
+"开启光亮光标行
+set cursorline 
+hi CursorLine cterm=NONE ctermbg=black ctermfg=green  guibg=black guifg=green  
+
+highlight Normal guibg=NONE ctermbg=None
 " ============================== THE END. ============================== 
 " ====================================================================== 
