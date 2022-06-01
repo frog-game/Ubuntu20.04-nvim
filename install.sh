@@ -128,13 +128,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ranger
 pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
 pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
 
-#go安装
-sudo wget https://dl.google.com/go/go1.18.2.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go
-sudo tar -C tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
-sudo ln -fs /usr/local/go/bin/go /usr/local/bin/go
-sudo rm -rf go1.18.2.linux-amd64.tar.gz
-
 #安装lazygit
 wget https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
 tar xvf lazygit.tgz
