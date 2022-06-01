@@ -168,6 +168,9 @@ Plug 'junegunn/vim-easy-align'
 "Plug 'feline-nvim/feline.nvim'
 Plug 'glepnir/spaceline.vim'
 Plug 'ryanoasis/vim-devicons'
+
+"quickfix window better
+Plug 'kevinhwang91/nvim-bqf', { 'run': ':TSUpdate' }
     
 call plug#end()
 
