@@ -75,6 +75,9 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 #安装multitail
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 
+#安装lua-fmt
+sudo npm i -g lua-fmt
+
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
 cp -r $(pwd)/nvim/. $(pwd)/
