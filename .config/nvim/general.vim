@@ -41,7 +41,7 @@ set noshowmode
 set cursorline                  " set cursorline, highlight current line.
 set guifont=Consolas:h14:cANSI:qDRAFT
 " set cursorcolumn              " set cursorline, highlight current column.
-set mouse=a                     " to disable, use `set mouse-=a`.
+set mouse=v                     " to disable, use `set mouse-=v`.
 set mousehide                   " hide the mouse cursor when typing.
 set hidden
 set vb
