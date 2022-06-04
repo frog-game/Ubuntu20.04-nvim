@@ -134,11 +134,6 @@ nnoremap <esc> :noh<return><esc>
 map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
 
-
-" ================ copy paste ===========================
-vnoremap <Leader>y "+y "复制到系统剪切板
-nmap <Leader>p "+p "粘贴系统剪切板
-
 " custom command
 " 避免手残输错
 command W w
