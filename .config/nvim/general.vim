@@ -129,7 +129,3 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set wildignorecase
 set smartcase       " ...unless we type a capital
-
-" ================ copy paste ===========================
-vnoremap <Leader>y "+y "复制到系统剪切板
-nmap <Leader>p "+p "粘贴系统剪切板
