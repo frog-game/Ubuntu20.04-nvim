@@ -135,11 +135,9 @@ map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
 
 
-" 复制粘贴
-"复制到系统剪切板
-"vnoremap <Leader>y "+y 
-"粘贴系统剪切板
-"nmap <Leader>p "+p 
+" ================ copy paste ===========================
+vnoremap <Leader>y "+y "复制到系统剪切板
+nmap <Leader>p "+p "粘贴系统剪切板
 
 " custom command
 " 避免手残输错
