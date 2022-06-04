@@ -75,6 +75,9 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 #安装multitail
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 
+#安装剪切板
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk vim-gtk3
+
 #安装lua-fmt
 sudo npm i -g lua-fmt
 
