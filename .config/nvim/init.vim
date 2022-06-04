@@ -1033,7 +1033,7 @@ endif
 
 "开启光亮光标行
 set cursorline 
-hi CursorLine cterm=NONE ctermbg=black ctermfg=green  guibg=black guifg=green  
+hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE  guibg=black guifg=NONE  
 
 highlight Normal guibg=NONE ctermbg=None
 " ============================== THE END. ============================== 
