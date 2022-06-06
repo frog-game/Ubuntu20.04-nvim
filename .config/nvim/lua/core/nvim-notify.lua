@@ -26,9 +26,10 @@ vim.notify.setup(notify_opts)
 -- vim.notify("hello world", "info", {title = "info"})
 
 -- 显示历史弹窗记录
-vim.keybinds.gmap(
+ local opts = {noremap = true, silent = true}
+ vim.api.nvim_buf_set_keymap(
     "n",
     "<leader>fn",
     "<cmd>lua require('telescope').extensions.notify.notify()<CR>",
-    vim.keybinds.opts
+    opts
 )
