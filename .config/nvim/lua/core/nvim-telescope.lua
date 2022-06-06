@@ -100,7 +100,6 @@ telescope.setup {
         ["<C-k>"] = actions.move_selection_previous,
 
         ["<C-d>"] = actions.close,
-        ["<esc>"] = actions.close,
 --
         ["<Down>"] = actions.move_selection_next,
         ["<Up>"] = actions.move_selection_previous,
@@ -130,8 +129,7 @@ telescope.setup {
         ["<C-k>"] = actions.move_selection_previous,
         
         ["<C-d>"] = actions.close,
-        ["<esc>"] = actions.close,
-        
+
         ["<CR>"] = actions.select_default,
         ["<C-s>"] = actions.select_horizontal,
         --["<C-v>"] = actions.select_vertical,
