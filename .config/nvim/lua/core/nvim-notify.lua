@@ -11,25 +11,8 @@ local notify_opts = {
     timeout = 2000
 }
 
--- 如果是透明背景，则需要设置背景色
-if vim.g.background_transparency then
-    notify_opts.background_colour = "#ffffff"
-end
+notify_opts.background_colour = "#ffffff"
 
 vim.notify = require("notify")
 
 vim.notify.setup(notify_opts)
--- 使用案例：
--- 信息、级别、标题
--- 级别有：info、warn、error、debug、trace
--- 示例：
--- vim.notify("hello world", "info", {title = "info"})
-
--- 显示历史弹窗记录
- local opts = {noremap = true, silent = true}
- vim.api.nvim_buf_set_keymap(
-    "n",
-    "<leader>fn",
-    "<cmd>lua require('telescope').extensions.notify.notify()<CR>",
-    opts
-)
