@@ -127,7 +127,8 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'rmagatti/goto-preview'
 Plug 'github/copilot.vim'
-Plug 'mhartington/formatter.nvim'
+"格式化
+"Plug 'mhartington/formatter.nvim'
 
 "language
 Plug 'neovim/nvim-lspconfig'
