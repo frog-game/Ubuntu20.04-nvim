@@ -96,7 +96,6 @@ Plug 'goolord/alpha-nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'voldikss/vim-translator'
 
-Plug 'sbdchd/neoformat'
 " conflict with goto-preview plugin, fuckkkkkk.
 Plug 'beauwilliams/focus.nvim'
 " not working.....
@@ -407,8 +406,6 @@ nnoremap <leader>fdc <cmd>lua require'telescope'.extensions.dap.configurations()
 nnoremap <leader>fdb <cmd>lua require'telescope'.extensions.dap.list_breakpoints()<CR>
 nnoremap <leader>fdv <cmd>lua require'telescope'.extensions.dap.variables()<CR>
 nnoremap <leader>fdf <cmd>lua require'telescope'.extensions.dap.frames()<CR>
-
-" ========= neoformat settings ==========
 
 " ========= indentline settings ==========
 " " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
