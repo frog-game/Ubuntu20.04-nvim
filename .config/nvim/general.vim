@@ -12,7 +12,7 @@ set number                      "Line numbers are good
 " odd, cannot use coc when setting paste option
 " set paste                       " set paste mode default
 " --------------------------- neovim auto reload file from disk -----------------------------
-"set autoread                    " Auto reload file content from disk
+set autoread                    " Auto reload file content from disk
 set clipboard=unnamed           " Add clipboard support
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
