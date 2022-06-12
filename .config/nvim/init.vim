@@ -660,10 +660,6 @@ let g:cursorword_delay = 0
 nnoremap <C-n> :NvimTreeToggle<CR>
 set termguicolors " this variable must be enabled for colors to be applied properly
 
-
-"let g:auto_save = 3  " enable AutoSave on Vim startup
-"let g:instant_markdown_slow = 1
-
 set t_Co=256
 
 " --------- nerdcommenter plguin settings
@@ -754,7 +750,6 @@ autocmd FileType coffee,javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType html,htmldjango,xhtml,haml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=0
 autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
-autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
 
 " syntax support
 autocmd Syntax javascript set syntax=jquery   " JQuery syntax support
