@@ -170,6 +170,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'glepnir/spaceline.vim'
 Plug 'ryanoasis/vim-devicons'
 
+"自动保存
+Plug 'Pocco81/AutoSave.nvim'
+
 "quickfix window better
 Plug 'kevinhwang91/nvim-bqf', { 'run': ':TSUpdate' }
     
