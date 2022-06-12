@@ -26,7 +26,6 @@ Plug 'lewis6991/impatient.nvim'
 
 " ========= useful tools here. ==========
 
-Plug 'plasticboy/vim-markdown'
 " windows size auto resize
 Plug 'camspiers/lens.vim'
 Plug '907th/vim-auto-save'
@@ -471,8 +470,6 @@ highlight default link Visual default
 " let g:auto_session_root_dir = '~/.vim/sessions/'
 " nnoremap <leader>ss <cmd>SaveSession<CR>
 nnoremap <leader>sd <cmd>!rm -f ~/.config/nvim/sessions/*<CR>
-
-" ========= instant-markdown settings ==========
 
 " ========= persistence(auto session) settings ==========
 " restore the session for the current directory
