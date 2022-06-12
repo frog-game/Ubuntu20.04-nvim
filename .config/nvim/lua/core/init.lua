@@ -27,6 +27,7 @@ require('core.nvim-spectre')
 require('core.nvim-tree')
 require('core.nvim-bqf')
 require('core.nvim-notify')
+require('core.nvim-autosave')
 require'hop'.setup{}
 
 -- -------------------------- 其他简单lua插件配置项 --------------------------------------------
