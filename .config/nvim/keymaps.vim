@@ -144,7 +144,7 @@ map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
 
 "一次复制，多次粘贴
-nmap <Leader>p "+p
+nmap <Leader>p "0p
 
 " custom command
 " 避免手残输错
