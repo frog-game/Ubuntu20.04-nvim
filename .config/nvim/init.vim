@@ -763,8 +763,8 @@ nnoremap <C-n> :NvimTreeToggle<CR>
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 
-let g:auto_save = 3  " enable AutoSave on Vim startup
-let g:instant_markdown_slow = 1
+"let g:auto_save = 3  " enable AutoSave on Vim startup
+"let g:instant_markdown_slow = 1
 
 set t_Co=256
 
