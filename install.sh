@@ -1,25 +1,49 @@
 #换源
 sudo rm -rf /etc/apt/sources.list
-sudo echo "# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+sudo echo "deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
 
-deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ jammy-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+
+deb http://mirrors.163.com/ubuntu/ focal main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ focal-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ focal-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
