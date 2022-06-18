@@ -97,7 +97,8 @@ nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 " map T <Plug>Sneak_T
 
 " ========= other settings ========
-nnoremap <leader>u :UndotreeToggle | :UndotreeFocus<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
+nnoremap <leader>uf :UndotreeToggle<CR>
 
 " =========================================
 " Auto indent pasted text
