@@ -171,6 +171,9 @@ Plug 'ryanoasis/vim-devicons'
 "自动保存
 Plug 'Pocco81/AutoSave.nvim'
 
+"撤销
+ Plug 'mbbill/undotree'
+
 "quickfix window better
 Plug 'kevinhwang91/nvim-bqf', { 'run': ':TSUpdate' }
     
@@ -731,6 +734,18 @@ endif
 au BufNewFile,BufRead *.vundle set filetype=vim
 
 " ================ Persistent Undo ==================
+if has("persistent_undo")
+   let target_path = expand('~/.vim/backups')
+
+    " create the directory and any parent directories
+    " if the location does not exist.
+    if !isdirectory(target_path)
+        call mkdir(target_path, "p", 0700)
+    endif
+
+    let &undodir=target_path
+    set undofile
+endif
 
 " indent for different filetype
 autocmd FileType php,ruby,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
