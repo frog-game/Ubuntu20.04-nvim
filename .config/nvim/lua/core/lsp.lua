@@ -46,13 +46,13 @@ Itkey_on_attach = function(client, bufnr)
    buf_set_keymap("n", "gF", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)
   
    -- 代码保存自动格式化formatting
-  if client.resolved_capabilities.document_formatting then
-    vim.api.nvim_command [[augroup Format]]
-    vim.api.nvim_command [[autocmd! * <buffer>]]
+  --if client.resolved_capabilities.document_formatting then
+    --vim.api.nvim_command [[augroup Format]]
+    --vim.api.nvim_command [[autocmd! * <buffer>]]
     --vim.api.nvim_command [[autocmd BufWritePre <buffer> EslintFixAll]]
-    vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
-    vim.api.nvim_command [[augroup END]]
-  end
+    --vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+   -- vim.api.nvim_command [[augroup END]]
+ -- end
 end
 
 -- Add additional capabilities supported by nvim-cmp
