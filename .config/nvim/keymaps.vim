@@ -98,7 +98,7 @@ nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 " ========= other settings ========
 nnoremap <leader>u :UndotreeToggle<CR>
-nnoremap <leader>uf :UndotreeToggle<CR>
+nnoremap <leader>uf :UndotreeFocus<CR>
 
 " =========================================
 " Auto indent pasted text
