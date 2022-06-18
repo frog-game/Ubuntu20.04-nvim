@@ -265,19 +265,12 @@ endif
 " ============================== END colorscheme settings ============================== 
 "
  "===========================================json format ==========================
- function! neoformat#formatters#{{ filetype }}#{{ formatter name }}() abort
-    return {
-        \ 'exe': '{{ formatter name }}',
-        \ 'args': ['-s 4', '-q'],
-        \ 'stdin': 1
-        \ }
-endfunction
-
- let g:neoformat_json_jsonpp = {
+let g:neoformat_json_jsonpp = {
        'exe': "json_pp",
        'args': ['-json_opt', 'utf8,pretty'],
        'stdin': 1
        }
+       
 let g:neoformat_enabled_json = ['jsonpp']
 "
 " ============================== Plugins settings ============================== 
