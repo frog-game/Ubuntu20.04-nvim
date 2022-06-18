@@ -12,6 +12,8 @@ set number                      "Line numbers are good
 " odd, cannot use coc when setting paste option
 " set paste                       " set paste mode default
 " --------------------------- neovim auto reload file from disk ----------------------------
+set nobackup            " 设置不备份
+set noswapfile          " 禁止生成临时文件
 set autoread            " 文件在vim之外修改过，自动重新读入
 "set autowrite           " 设置自动保存
 set confirm             " 在处理未保存或只读文件的时候，弹出确认-
