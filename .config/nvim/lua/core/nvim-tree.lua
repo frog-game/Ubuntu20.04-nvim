@@ -25,6 +25,8 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   reload_on_bufenter = false,
   respect_buf_cwd = false,
   view = {
+    adaptive_size = false,
+    centralize_selection = false,
     width = 30,
     height = 30,
     hide_root_folder = false,
@@ -44,6 +46,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     add_trailing = false,
     group_empty = false,
     highlight_git = false,
+    full_name = false,
     highlight_opened_files = "none",
     root_folder_modifier = ":~",
     indent_markers = {
@@ -51,6 +54,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       icons = {
         corner = "└ ",
         edge = "│ ",
+        item = "│ ",
         none = "  ",
       },
     },
@@ -120,6 +124,10 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     custom = {},
     exclude = {},
   },
+  filesystem_watchers = {
+    enable = false,
+    interval = 100,
+  },
   git = {
     enable = true,
     ignore = true,
@@ -152,7 +160,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   trash = {
-    cmd = "trash",
+    cmd = "gio trash",
     require_confirm = true,
   },
   live_filter = {
@@ -169,6 +177,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       diagnostics = false,
       git = false,
       profile = false,
+      watcher = false,
     },
   },
 } -- END_DEFAULT_OPTS
