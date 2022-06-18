@@ -173,6 +173,9 @@ Plug 'Pocco81/AutoSave.nvim'
 
 "撤销
  "Plug 'mbbill/undotree'
+ 
+ "格式化
+ Plug 'sbdchd/neoformat'
 
 "quickfix window better
 Plug 'kevinhwang91/nvim-bqf', { 'run': ':TSUpdate' }
