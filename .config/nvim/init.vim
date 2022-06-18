@@ -82,7 +82,7 @@ Plug 'numToStr/Comment.nvim'
 " Plug 'roxma/nvim-yarp'
 " Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'mbbill/undotree'
+
 " session manager
 Plug 'folke/persistence.nvim'
 
