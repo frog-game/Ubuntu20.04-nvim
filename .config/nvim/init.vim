@@ -697,10 +697,12 @@ let g:NERDToggleCheckAllLines = 1
 
 
 " ============================== Autocmd/Function settings ============================== 
-"
-
 "autocmd ColorScheme * runtime lua/vim/lsp/diagnostic.lua
 
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 
 augroup YankHighlight
     autocmd!
