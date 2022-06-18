@@ -1,15 +1,18 @@
--- init.lua
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then
+  return
+end
 
--- empty setup using defaults: add your own options
-require'nvim-tree'.setup {
-}
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+if not config_status_ok then
+  return
+end
 
--- OR
+local tree_cb = nvim_tree_config.nvim_tree_callback
 
 -- setup with all defaults
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
--- nested options are documented by accessing them with `.` (eg: `:help nvim-tree.view.mappings.list`).
-require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
+nvim_tree.setup { -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
   create_in_closed_folder = false,
   disable_netrw = false,
@@ -18,16 +21,14 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
   open_on_setup = false,
-  open_on_setup_file = false,
+  open_on_setup_file = true,
   open_on_tab = false,
   sort_by = "name",
   update_cwd = false,
-  reload_on_bufenter = false,
+  reload_on_bufenter = true,
   respect_buf_cwd = false,
   view = {
-    adaptive_size = false,
-    centralize_selection = false,
-    width = 30,
+    width = 32,
     height = 30,
     hide_root_folder = false,
     side = "left",
@@ -38,15 +39,18 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     mappings = {
       custom_only = false,
       list = {
-        -- user mappings go here
+        { key = {"<CR>", "l", "<2-LeftMouse>"}, cb = tree_cb("edit") },
+        { key = "v", cb = tree_cb("vsplit") },
+        { key = "s", cb = tree_cb("split") },
+        { key = "h", cb = tree_cb "close_node" },
+        { key = "o", cb = tree_cb("system_open") },
       },
     },
   },
   renderer = {
     add_trailing = false,
-    group_empty = false,
-    highlight_git = false,
-    full_name = false,
+    group_empty = true,
+    highlight_git = true,
     highlight_opened_files = "none",
     root_folder_modifier = ":~",
     indent_markers = {
@@ -54,7 +58,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       icons = {
         corner = "└ ",
         edge = "│ ",
-        item = "│ ",
         none = "  ",
       },
     },
@@ -110,7 +113,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     args = {},
   },
   diagnostics = {
-    enable = false,
+    enable = true,
     show_on_dirs = false,
     icons = {
       hint = "",
@@ -120,13 +123,9 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     custom = {},
     exclude = {},
-  },
-  filesystem_watchers = {
-    enable = false,
-    interval = 100,
   },
   git = {
     enable = true,
@@ -140,9 +139,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       global = false,
       restrict_above_cwd = false,
     },
-    expand_all = {
-      max_folder_discovery = 300,
-    },
     open_file = {
       quit_on_open = false,
       resize_window = true,
@@ -155,12 +151,9 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
         },
       },
     },
-    remove_file = {
-      close_window = true,
-    },
   },
   trash = {
-    cmd = "gio trash",
+    cmd = "trash",
     require_confirm = true,
   },
   live_filter = {
@@ -177,7 +170,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       diagnostics = false,
       git = false,
       profile = false,
-      watcher = false,
     },
   },
 } -- END_DEFAULT_OPTS
