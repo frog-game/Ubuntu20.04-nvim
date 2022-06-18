@@ -264,7 +264,9 @@ endif
 
 " ============================== END colorscheme settings ============================== 
 "
- "===========================================json format ==========================
+" ============================== Plugins settings ============================== 
+
+ "============================neoformat settings ==========
  let g:neoformat_json_jsonpp = {
       \ 'exe': "json_pp",
       \ 'args': ['-json_opt', 'utf8,pretty'],
@@ -272,8 +274,22 @@ endif
       \ }
 
 let g:neoformat_enabled_json = ['jsonpp']
-"
-" ============================== Plugins settings ============================== 
+
+function! neoformat#formatters#lua#luafmt() abort
+    return {
+        \ 'exe': 'luafmt',
+        \ 'args': ['--stdin'],
+        \ 'stdin': 1,
+        \ }
+endfunction
+
+let g:neoformat_lua_luafmt = {
+      \ 'exe': "luafmt",
+      \ 'args': ['--stdin'],
+      \ 'stdin': 1
+      \ }
+
+let g:neoformat_enabled_lua = ['luafmt']
 
 " ========= nvim-notify settings ==========
 nnoremap <leader>fn :Telescope notify<CR> 
