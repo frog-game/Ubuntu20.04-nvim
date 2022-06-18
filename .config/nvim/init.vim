@@ -275,14 +275,6 @@ endif
 
 let g:neoformat_enabled_json = ['jsonpp']
 
-function! neoformat#formatters#lua#luafmt() abort
-    return {
-        \ 'exe': 'luafmt',
-        \ 'args': ['--stdin'],
-        \ 'stdin': 1,
-        \ }
-endfunction
-
 let g:neoformat_lua_luafmt = {
       \ 'exe': "luafmt",
       \ 'args': ['--stdin'],
