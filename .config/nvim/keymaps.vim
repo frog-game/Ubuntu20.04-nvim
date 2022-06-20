@@ -112,6 +112,8 @@ map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
+
+" 清除上次搜索高亮显示
 nnoremap <esc> :noh<return><esc>
 map <Esc>[1;3D :bn<CR>
 map <Esc>[1;3C :bp<CR>
