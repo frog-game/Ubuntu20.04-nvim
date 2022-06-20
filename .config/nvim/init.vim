@@ -594,56 +594,17 @@ hi illuminatedWord cterm=underline gui=underline
 let g:move_key_modifier = 'C'
 
 " ========= floaterm settings[NOT USED] ==========
-" autocmd User FloatermOpen        " triggered after opening a new/existed floaterm
-" hi FloatermNC guibg=gray
 
 " ========= toggleterm settings ==========
 autocmd TermEnter term://*toggleterm#*
             \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 
-" By applying the mappings this way you can pass a count to your
-" mapping to open a specific window.
-" For example: 2<C-t> will open terminal 2
 nnoremap <silent><leader>tt <Cmd>exe v:count1 . "ToggleTerm"<CR>
 inoremap <silent><leader>tt <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
 nnoremap <silent><leader>gg <Cmd>lua _LAZYGIT_TOGGLE()<CR>
 
-" ========= current cursor settings ==========
-" " Twins of word under cursor:
-" let g:vim_current_word#highlight_twins = 1
-" The word under cursor:
-" let g:vim_current_word#highlight_current_word = 1
-" autocmd BufAdd NERD_tree_*,your_buffer_name.rb,*.js :let b:vim_current_word_disabled_in_this_buffer = 1
-" " hi CurrentWord ctermbg=53
-" " hi CurrentWordTwins ctermbg=237
-" " let g:vim_current_word#highlight_only_in_focused_window = 1
-" " hi CurrentWordTwins guifg=#XXXXXX guibg=#XXXXXX gui=underline,bold,italic ctermfg=XXX ctermbg=XXX cterm=underline,bold,italic
-" hi CurrentWord guifg=0 guibg=163 gui=underline,bold,italic ctermfg=0 ctermbg=163 cterm=underline,bold,italic
-
 " ========== vim-cursor settings ===========
-" let g:cursorword_highlight = 0
 let g:cursorword_delay = 0
-" autocmd Colorscheme * highlight CursorWord0 cterm=underline gui=underline ctermbg=52 guibg=#303030
-" autocmd Colorscheme * highlight CursorWord1 cterm=underline gui=underline ctermbg=52 guibg=#303030
-" highlight CursorWord0 cterm=underline gui=underline guisp=#ebcb8b
-" highlight CursorWord1 cterm=underline gui=underline guisp=#ebcb8b
-" augroup cursorword
-"   autocmd!
-"   autocmd VimEnter,ColorScheme * call MyHighlight()
-" augroup END
-" 
-" function! MyHighlight() abort
-"   highlight CursorWord0 cterm=bold,underline gui=bold,underline
-" 
-"   redir => out
-"     silent! highlight CursorLine
-"   redir END
-"   execute 'highlight CursorWord1 cterm=underline gui=underline'
-"     \ matchstr(out, 'ctermbg=#\?\w\+')
-"     \ matchstr(out, 'guibg=#\?\w\+')
-" endfunction
-
-" ========== vim-cursor settings ===========
 
 " ========== nvim-tree.lua settings ===========
 nnoremap <C-n> :NvimTreeToggle<CR>
@@ -674,7 +635,6 @@ let g:NERDToggleCheckAllLines = 1
 
 " ============================== END Plugins settings ============================== 
 
-
 " ============================== Autocmd/Function settings ============================== 
 "autocmd ColorScheme * runtime lua/vim/lsp/diagnostic.lua
 
@@ -687,36 +647,17 @@ augroup YankHighlight
     autocmd!
     autocmd TextYankPost * silent! lua vim.highlight.on_yank()
 augroup end
-" auto reload when modified vimrc file (Windows)
-" autocmd! bufwritepost _vimrc source %
-" auto reload when modified vimrc file (Linux)
+
 autocmd! bufwritepost $HOME/.config/nvim/init.vim source %
 
-" some error occur
-" au CursorHold * checktime  
-" autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
-" notification after file change
 autocmd FileChangedShellPost *
             \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
-" --------------------------------------------------------------------------------------------
 
-" au FocusLost * :set norelativenumber number
-" au FocusGained * :set relativenumber
 autocmd InsertEnter * :set norelativenumber number    " use absolute line number.
 autocmd InsertLeave * :set relativenumber
-" function! NumberToggle()
-"     if(&relativenumber == 1)
-"         set norelativenumber number
-"     else
-"         set relativenumber
-"     endif
-" endfunc
-" remap <C-n> to switch between relative and absolute line number.
-" nnoremap <C-n> :call NumberToggle()<cr>
+
 
 " ============= Vundle Initialization ===============
-" This loads all the plugins specified in ~/.vim/vundles.vim
-" Use Vundle plugin to manage all other plugins
 if filereadable(expand("~/.vimrc.bundles"))
     source ~/.vimrc.bundles
 elseif filereadable(expand("~/.config/nvim/vimrc.bundles")) " neovim
@@ -725,19 +666,6 @@ endif
 au BufNewFile,BufRead *.vundle set filetype=vim
 
 " ================ Persistent Undo ==================
-"if has("persistent_undo")
-  " UndotreeTogglelet target_path = expand('~/.vim/backups')
-
-    " create the directory and any parent directories
-    " if the location does not exist.
-   " if !isdirectory(target_path)
-      "  call mkdir(target_path, "p", 0700)
-   " endif
-
-   " let &undodir=target_path
-  "  set undofile
-"endif
-
 " indent for different filetype
 autocmd FileType php,ruby,yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
