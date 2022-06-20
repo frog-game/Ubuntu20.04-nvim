@@ -644,39 +644,7 @@ let g:cursorword_delay = 0
 " endfunction
 
 " ========== vim-cursor settings ===========
-" lua require("lsp_config")
-" 
-" autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
-" autocmd BufWritePre *.go lua goimports(1000)
 
-
-" autocmd vimenter * NERDTree       " NERDTree automatically when vim starts up
-" map <C-n> :NERDTreeToggle<CR>
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
-" " auto refresh nerdtree when file changed
-" autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p
-
-" !! 弃用NerdTree 改为下面的nvim-tree.lua
-" ==========
-" map <C-n> :call NERDTreeToggleAndRefresh()<CR>
-" set splitright        " nerdtree split right instead of left
-" 
-" function NERDTreeToggleAndRefresh()
-"   :NERDTreeToggle
-"   if g:NERDTree.IsOpen()
-"     :NERDTreeRefreshRoot
-"   endif
-" endfunction
-" =========
-
-" autoload vim-workspace plugin
-" let g:workspace_autocreate = 1
-" nnoremap <leader>f :ToggleWorkspace<CR>
-" let g:workspace_session_name = 'Session.vim'
-" let g:workspace_autosave_always = 1
-" let g:workspace_session_directory = $HOME . '/.vim/sessions/'
-"
 " ========== nvim-tree.lua settings ===========
 nnoremap <C-n> :NvimTreeToggle<CR>
 set termguicolors " this variable must be enabled for colors to be applied properly
