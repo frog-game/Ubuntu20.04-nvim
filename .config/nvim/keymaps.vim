@@ -5,45 +5,24 @@ cmap w!! %!sudo tee >/dev/null %
 
 " Quicker window movement
 nnoremap U <C-r>
-" notworking on terminal neovim, only affect on Gvim!!!
-nnoremap <M-j> <C-w>j
-nnoremap <M-k> <C-w>k
-nnoremap <M-h> <C-w>h
-nnoremap <M-l> <C-w>l
 " =====================
-" nnoremap <A-Down> <C-w>j
-" nnoremap <A-Up> <C-w>k
-" nnoremap <A-Left> <C-w>h
-" nnoremap <A-Right> <C-w>l
 nmap <A-Left> :lua require('smart-splits').resize_left()<CR>
 nmap <A-Down> :lua require('smart-splits').resize_down()<CR>
 nmap <A-Up> :lua require('smart-splits').resize_up()<CR>
 nmap <A-Right> :lua require('smart-splits').resize_right()<CR>
 " delete something without yank
-"nnoremap d "_d
-"nnoremap D "_D
+
 "noremap H ^
 "noremap L $
 nnoremap / /\v
 vnoremap / /\v
 vnoremap // y/<c-r>"<cr>
-noremap <C-left> :bp<CR>
-noremap <C-right> :bn<CR>
 " noremap <C-h> :Goyo<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-t>     <Esc>:tabnew<CR>
 
 inoremap jk <ESC>
 " inoremap kj <ESC>
 
-nnoremap ; :
-" not working on macOS
-noremap <leader>1 1gt
-noremap <leader>2 2gt
-noremap <leader>3 3gt
 " ================
-noremap <leader>0 :tablast<cr>
-" nnoremap <leader>tt :FloatermNew<CR>
 nnoremap <leader>d ::bufdo! bd!<CR>
 " add quote for current word
 nnoremap <Leader>q" ciw""<Esc>P
@@ -51,10 +30,6 @@ nnoremap <Leader>q' ciw''<Esc>P
 nnoremap <Leader>q( ciw()<Esc>P
 nnoremap <Leader>q{ ciw{}<Esc>P
 nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
-" ========= coc.spelling settings ========
-" vmap <leader>s <Plug>(coc-codeaction-selected)
-" nmap <leader>s <Plug>(coc-codeaction-selected)
-
 
 " ========= Trouble plugin settings ========
 nnoremap <leader>xx <cmd>TroubleToggle<cr>
@@ -65,7 +40,6 @@ nnoremap <leader>xl <cmd>TroubleToggle loclist<cr>
 nnoremap gR <cmd>TroubleToggle lsp_references<cr>
 
 " ========= hop.nvim plugin settings ========
-"
 " nnoremap f <cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>
 " nnoremap F <cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>
 nnoremap f <cmd>HopWord<cr>
