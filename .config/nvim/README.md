@@ -46,7 +46,7 @@
 
 | Key                                    | Mode        | Action                                           |
 | -------------------------------------- | ----------- | ------------------------------------------------ |
-| <kbd>**,**</kbd>**+**<kbd>**fn**</kbd> | `nnoremap ` | **nnoremap `<leader>fn` :Telescope notify<CR> ** |
+| <kbd>**,**</kbd>**+**<kbd>**fn**</kbd> | `nnoremap ` | **nnoremap `<leader>fn` :Telescope notify<CR>** |
 
 ### vim-easy-align 
 
