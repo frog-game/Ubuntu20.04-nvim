@@ -40,12 +40,14 @@
 └── shpy-autoheader.vim			# 自动文件头部的vim-script
 ```
 
+## nvim - 快捷键
+
 - **Leader** key set as<kbd>**,**</kbd>
 
 ### nvim-notify
 
-| Key                                    | Mode        | Action                                           |
-| -------------------------------------- | ----------- | ------------------------------------------------ |
+| Key                                    | Mode        | Action                                          |
+| -------------------------------------- | ----------- | ----------------------------------------------- |
 | <kbd>**,**</kbd>**+**<kbd>**fn**</kbd> | `nnoremap ` | **nnoremap `<leader>fn` :Telescope notify<CR>** |
 
 ### vim-easy-align 
@@ -134,6 +136,15 @@
 | ------------------ | ----------- | ---------------------------------------------- |
 | <kbd>**c-n**</kbd> | `nnoremap ` | **nnoremap `<C-n>` :NvimTreeToggle<CR>**<br /> |
 
+### smart-splits
+
+| Key                    | Mode   | **Action**                                                   |
+| ---------------------- | ------ | ------------------------------------------------------------ |
+| <kbd>**A-Left**</kbd>  | `nmap` | **nmap `<A-Left>` :lua require('smart-splits').resize_left()<CR>**<br /> |
+| <kbd>**A-Down**</kbd>  | `nmap` | **nmap `<A-Down>` :lua require('smart-splits').resize_down()<CR>**<br /> |
+| <kbd>**A-Up**</kbd>    | `nmap` | **nmap `<A-Up>` :lua require('smart-splits').resize_up()<CR>**<br /> |
+| <kbd>**A-Right**</kbd> | `nmap` | **nmap `<A-Right>` :lua require('smart-splits').resize_right()<CR>**<br /> |
+
 ### RenameFile
 
 | Key                                   | Mode   | **Action**                                 |
@@ -151,6 +162,45 @@
 | <kbd>**,**</kbd>**+**<kbd>**xl**</kbd> | `nnoremap` | **nnoremap `<leader>xl` <cmd>TroubleToggle loclist<cr>**     |
 | <kbd>**gR**</kbd>                      | `nnoremap` | **nnoremap `gR` <cmd>TroubleToggle lsp_references<cr>**      |
 
+### hop.nvim
+
+| Key              | Mode       | **Action**                        |
+| ---------------- | ---------- | --------------------------------- |
+| <kbd>**f**</kbd> | `nnoremap` | **nnoremap `f `<cmd>HopWord<cr>** |
+| <kbd>**F**</kbd> | `nnoremap` | **nnoremap `F `<cmd>HopWord<cr>** |
+
+### vim-translate
+
+| Key                                    | Mode    | **Action**                                       |
+| -------------------------------------- | ------- | ------------------------------------------------ |
+| <kbd>**,**</kbd>**+**<kbd>**ts**</kbd> | `nmap ` | **nmap <silent> `<Leader>ts `<Plug>TranslateW**  |
+| <kbd>**,**</kbd>**+**<kbd>**ts**</kbd> | `vmap ` | **vmap <silent> `<Leader>ts` <Plug>TranslateWV** |
+
+### vim-bufferLine 
+
+| Key                                   | Mode          | **Action**                                                   |
+| ------------------------------------- | ------------- | ------------------------------------------------------------ |
+| <kbd>**Tab**</kbd>                    | `nmap  `      | **nmap `<Tab>` :BufferLineCycleNext<CR>**                    |
+| <kbd>**S-Tab**</kbd>                  | `nmap  `      | **nmap `<S-Tab>` :BufferLineCyclePrev<CR>**                  |
+| <kbd>**,**</kbd>**+**<kbd>**1**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>1` <Cmd>BufferLineGoToBuffer 1<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**2**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>2` <Cmd>BufferLineGoToBuffer 2<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**3**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>3` <Cmd>BufferLineGoToBuffer 3<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**4**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>4` <Cmd>BufferLineGoToBuffer 4<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**5**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>5` <Cmd>BufferLineGoToBuffer 5<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**6**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>6` <Cmd>BufferLineGoToBuffer 6<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**7**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>7` <Cmd>BufferLineGoToBuffer 7<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**8**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>8` <Cmd>BufferLineGoToBuffer 8<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**9**</kbd> | `nnoremap   ` | **nnoremap <silent>`<leader>9` <Cmd>BufferLineGoToBuffer 9<CR>** |
+
+### vim-sneak 
+
+| Key              | Mode   | **Action**                     |
+| ---------------- | ------ | ------------------------------ |
+| <kbd>**f**</kbd> | `map ` | ~~**map ` f` <Plug>Sneak_f**~~ |
+| <kbd>**F**</kbd> | `map ` | ~~**map `F` <Plug>Sneak_F**~~  |
+| <kbd>**t**</kbd> | `map ` | ~~**map `t` <Plug>Sneak_t**~~  |
+| <kbd>**T**</kbd> | `map ` | ~~**map `T` <Plug>Sneak_T**~~  |
+
 ### 一般设置
 
 | Key                                    | Mode                    | **Action**                                                   |
@@ -165,7 +215,26 @@
 | <kbd>**,**</kbd>**+**<kbd>**q(**</kbd> | `nnoremap  `            | **`add quote for current word`**<br />**nnoremap `<Leader>q(` ciw()<Esc>P** |
 | <kbd>**,**</kbd>**+**<kbd>**q{**</kbd> | `nnoremap  `            | **`add quote for current word`**<br />nnoremap `<Leader>q{` ciw{}<Esc>P** |
 | <kbd>**,**</kbd>**+**<kbd>**qd**</kbd> | `nnoremap  `            | **`add quote for current word`**<br />**nnoremap `<Leader>qd`  daW"=substitute(@@,"'\\\|\"","","g")<CR>P** |
-|                                        |                         |                                                              |
-|                                        |                         |                                                              |
+| <kbd>**C-h**</kbd>                     | `nnoremap`              | **nnoremap `<C-h>` <C-w>h**                                  |
+| <kbd>**C-j**</kbd>                     | `nnoremap`              | **nnoremap `<C-j>` <C-w>j**                                  |
+| <kbd>**C-k**</kbd>                     | `nnoremap`              | **nnoremap `<C-k>` <C-w>k**                                  |
+| <kbd>**C-l**</kbd>                     | `nnoremap`              | **nnoremap `<C-l>` <C-w>l**                                  |
+| <kbd>**C-q**</kbd>                     | `nnoremap`              | **nnoremap `<C-q>` <C-w>q**                                  |
+| <kbd>**(**</kbd>                       | `nnoremap`              | **nnoremap `( `%**                                           |
+| <kbd>**)**</kbd>                       | `nnoremap`              | **nnoremap `)` %**                                           |
+| <kbd>**TAB**</kbd>                     | `inoremap`              | **`use tab/shift tab to switch coc or native lsp cmp`**<br />**inoremap <silent><expr> `<TAB>` pumvisible() ? "\<C-n>" : "\<TAB>"** |
+| <kbd>**S-TAB**</kbd>                   | `inoremap`              | **`use tab/shift tab to switch coc or native lsp cmp`**<br />**inoremap <expr>`<S-TAB>` pumvisible() ? "\<C-p>" : "\<C-h>"** |
+| <kbd>**C-a**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-a>` <Home>** |
+| <kbd>**C-e**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-e>` <End>** |
+| <kbd>**esc**</kbd>                     | `cnoremap `             | **`清除上次搜索高亮显示`**<br />**nnoremap `<esc>` :noh<return><esc>** |
+
+
+
+
+
+
+
+
+
 
 
