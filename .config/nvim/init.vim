@@ -499,6 +499,8 @@ nnoremap <leader>sl <cmd>lua require("persistence").load({ last = true })<CR>
 nnoremap <leader>st <cmd>lua require("persistence").stop()<CR>
 
 " ========= vim-visual-multi settings ==========
+let g:VM_theme                      = 'ocean'
+let g:VM_highlight_matches          = 'underline'
 let g:VM_maps = {}
 let g:VM_maps['Find Under']         = '<C-m>'           " replace C-n
 let g:VM_maps['Find Subword Under'] = '<C-m>'           " replace visual C-n
