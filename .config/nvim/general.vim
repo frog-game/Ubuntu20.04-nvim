@@ -134,3 +134,11 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set wildignorecase
 set smartcase       " ...unless we type a capital
+
+=============vimdiff colour===================
+hi DiffChange    guibg=white  guifg=blue
+hi DiffText        guibg=white guifg=lightRed
+hi DiffAdd        guibg=white guifg=magenta
+hi DiffDelete   guibg=white guifg=blue 
+
+
