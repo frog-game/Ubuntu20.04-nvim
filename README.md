@@ -3,7 +3,6 @@
 bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.sh)
 ```
 
-
 ## nvim - 快捷键
 
 - **Leader** key set as<kbd>**,**</kbd>
@@ -20,14 +19,14 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | ----------------- | ----------- | ------------------------------------------------------------ |
 | <kbd>**ga**</kbd> | `xmap,nmap` | **`Start interactive EasyAlign in visual mode (e.g. vipga)`**<br />**xmap `ga `<Plug>(EasyAlign)**<br />**`Start interactive EasyAlign for a motion/text object (e.g. gaip)`**<br />**nmap` ga `<Plug>(EasyAlign)** |
 
-### nvim-spectre
+### nvim-spectre(neovim 搜索替换面板)
 
-| Key                                                          | Mode        | Action                                                       |
-| ------------------------------------------------------------ | ----------- | ------------------------------------------------------------ |
-| <kbd>**,**</kbd>**+**<kbd>**S**</kbd>                        | `nnoremap ` | **nnoremap `<leader>S `<cmd>lua require('spectre').open()<CR>** |
-| <span style="display:inline-block;width: 80px"> <kbd>**,**</kbd>**+**<kbd>**sw**</kbd> </span> | `vnoremap`  | **`search current word`**<br />**nnoremap` <leader>sw` <cmd>lua require('spectre').open_visual({select_word=true})<CR>** |
-| <kbd>**,**</kbd>**+**<kbd>**s**</kbd>                        | `vnoremap`  | **`search current word`**<br />**vnoremap `<leader>s `<cmd>lua require('spectre').open_visual()<CR>** |
-| <kbd>**,**</kbd>**+**<kbd>**sp**</kbd>                       | `nnoremap ` | **`search in current file`<br />nnoremap `<leader>sp` viw:lua require('spectre').open_file_search()<cr>** |
+| Key                                                          | Mode                                                         | Action                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <kbd>**,**</kbd>**+**<kbd>**S**</kbd>                        | <span style="display:inline-block;width: 90px">`nnoremap`</span> | **nnoremap `<leader>S `<cmd>lua require('spectre').open()<CR>** |
+| <span style="display:inline-block;width: 80px"> <kbd>**,**</kbd>**+**<kbd>**sw**</kbd> </span> | `vnoremap`                                                   | **`search current word`**<br />**nnoremap` <leader>sw` <cmd>lua require('spectre').open_visual({select_word=true})<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**s**</kbd>                        | `vnoremap`                                                   | **`search current word`**<br />**vnoremap `<leader>s `<cmd>lua require('spectre').open_visual()<CR>** |
+| <kbd>**,**</kbd>**+**<kbd>**sp**</kbd>                       | `nnoremap `                                                  | **`search in current file`<br />nnoremap `<leader>sp` viw:lua require('spectre').open_file_search()<cr>** |
 
 ### rnvimr 
 
@@ -40,23 +39,23 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 
 ### telescope 
 
-| Key                                                          | Mode       | **Action**                                                   |
-| ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**ff**</kbd></span> | `nnoremap` | **nnoremap <expr>`<leader>ff` ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fg**</kbd>                       | `nnoremap` | **nnoremap `<leader>fg` <cmd>lua require'telescope.builtin'.live_grep()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**f?**</kbd>                       | `nnoremap` | **nnoremap `<leader>f?` <cmd>lua require'telescope.builtin'.help_tags()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fh**</kbd>                       | `nnoremap` | **nnoremap `<leader>fh `<cmd>lua require'telescope.builtin'.oldfiles()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fb**</kbd>                       | `nnoremap` | **nnoremap `<leader>fb` <cmd>lua require'telescope.builtin'.marks()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fe**</kbd>                       | `nnoremap` | **nnoremap `<leader>fe` <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fp**</kbd>                       | `nnoremap` | **nnoremap `<leader>fp` <cmd>lua require'telescope'.extensions.project.project{}<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fr**</kbd>                       | `nnoremap` | **nnoremap `<leader>fr` <cmd>lua require'telescope'.extensions.frecency.frecency()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fm**</kbd>                       | `nnoremap` | **nnoremap `<leader>fm` <cmd>lua require'telescope'.extensions.media_files.media_files()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fn**</kbd>                       | `nnoremap` | **nnoremap`<leader>fn` <cmd>lua require'telescope'.extensions.notify.notify()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fde**</kbd>                      | `nnoremap` | **nnoremap `<leader>fde` <cmd>lua require'telescope'.extensions.dap.commands()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fdc**</kbd>                      | `nnoremap` | **nnoremap `<leader>fdc `<cmd>lua require'telescope'.extensions.dap.configurations()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fdb**</kbd>                      | `nnoremap` | **nnoremap `<leader>fdb`<cmd>lua require'telescope'.extensions.dap.list_breakpoints()<CR>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fdv**</kbd>                      | `nnoremap` | **nnoremap `<leader>fdv` <cmd>lua require'telescope'.extensions.dap.variables()<CR>>**<br /> |
-| <kbd>**,**</kbd>**+**<kbd>**fdf**</kbd>                      | `nnoremap` | **nnoremap `<leader>fdf `<cmd>lua require'telescope'.extensions.dap.frames()<CR>**<br /> |
+| Key                                                          | Mode                                                         | **Action**                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**ff**</kbd></span> | <span style="display:inline-block;width: 90px">`nnoremap`</span> | **nnoremap <expr>`<leader>ff` ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fg**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fg` <cmd>lua require'telescope.builtin'.live_grep()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**f?**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>f?` <cmd>lua require'telescope.builtin'.help_tags()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fh**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fh `<cmd>lua require'telescope.builtin'.oldfiles()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fb**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fb` <cmd>lua require'telescope.builtin'.marks()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fe**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fe` <cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fp**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fp` <cmd>lua require'telescope'.extensions.project.project{}<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fr**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fr` <cmd>lua require'telescope'.extensions.frecency.frecency()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fm**</kbd>                       | `nnoremap`                                                   | **nnoremap `<leader>fm` <cmd>lua require'telescope'.extensions.media_files.media_files()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fn**</kbd>                       | `nnoremap`                                                   | **nnoremap`<leader>fn` <cmd>lua require'telescope'.extensions.notify.notify()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fde**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fde` <cmd>lua require'telescope'.extensions.dap.commands()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fdc**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdc `<cmd>lua require'telescope'.extensions.dap.configurations()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fdb**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdb`<cmd>lua require'telescope'.extensions.dap.list_breakpoints()<CR>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fdv**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdv` <cmd>lua require'telescope'.extensions.dap.variables()<CR>>**<br /> |
+| <kbd>**,**</kbd>**+**<kbd>**fdf**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdf `<cmd>lua require'telescope'.extensions.dap.frames()<CR>**<br /> |
 
 ### simrat39/symbols-outline
 
@@ -128,10 +127,10 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 
 ### hop.nvim
 
-| Key              | Mode       | **Action**                        |
-| ---------------- | ---------- | --------------------------------- |
-| <kbd>**f**</kbd> | `nnoremap` | **nnoremap `f `<cmd>HopWord<cr>** |
-| <kbd>**F**</kbd> | `nnoremap` | **nnoremap `F `<cmd>HopWord<cr>** |
+| Key              | Mode                                                         | **Action**                        |
+| ---------------- | ------------------------------------------------------------ | --------------------------------- |
+| <kbd>**f**</kbd> | <span style="display:inline-block;width: 90px">`nnoremap`</span> | **nnoremap `f `<cmd>HopWord<cr>** |
+| <kbd>**F**</kbd> | `nnoremap`                                                   | **nnoremap `F `<cmd>HopWord<cr>** |
 
 ### vim-translate
 
@@ -165,6 +164,111 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | <kbd>**t**</kbd> | `map ` | ~~**map `t` <Plug>Sneak_t**~~  |
 | <kbd>**T**</kbd> | `map ` | ~~**map `T` <Plug>Sneak_T**~~  |
 
+### lsp
+
+| Key                                                          | Mode                                                         | **Action**                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <kbd>**gD**</kbd>                                            | <span style="display:inline-block;width: 50px">`nmap`</span> | **buf_set_keymap("n", `"gD"`, "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)** |
+| <kbd>**gd**</kbd>                                            | `nmap  `                                                     | **buf_set_keymap("n", `"gd"`, "<cmd>lua vim.lsp.buf.definition()<CR>", opts)** |
+| <kbd>**gi**</kbd>                                            | `nmap  `                                                     | **buf_set_keymap("n",` "gi"`, "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**wa**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n", `"<leader>wa"`, "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**wr**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n", `"<leader>wr"`, "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**wl**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n", `"<leader>wl"`, "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**ca**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n",` "<leader>ca"`, "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**e**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n", `"<leader>e"`, "<cmd>lua vim.diagnostic.open_float()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**q**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n",` "<leader>q"`, "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)** |
+| <span style="display:inline-block;width: 90px"> <kbd>**,**</kbd>**+**<kbd>**so**</kbd></span> | `nmap  `                                                     | **buf_set_keymap("n", `"<leader>so"`, [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]], opts)** |
+| <kbd>**gr**</kbd>                                            | `nmap  `                                                     | **buf_set_keymap('n', `'gr'`, '<cmd>lua vim.lsp.buf.references()<CR>', opts)** |
+| <kbd>**[d**</kbd>                                            | `nmap  `                                                     | **buf_set_keymap("n", `"[d"`, "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)** |
+| <kbd>**]d**</kbd>                                            | `nmap  `                                                     | **buf_set_keymap("n", `"]d"`, "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)** |
+
+### lspsaga 
+
+| Key               | Mode     | **Action**                                                   |
+| ----------------- | -------- | ------------------------------------------------------------ |
+| <kbd>**rn**</kbd> | `nmap  ` | **buf_set_keymap("n", `"rn"`, "<cmd>Lspsaga rename<cr>", opts)** |
+| <kbd>**gx**</kbd> | `nmap  ` | **buf_set_keymap("n", `"gx"`, "<cmd>Lspsaga code_action<cr>", opts)** |
+| <kbd>**gx**</kbd> | `xmap  ` | **buf_set_keymap("x", `"gx"`, ":<c-u>Lspsaga range_code_action<cr>", opts)** |
+| <kbd>**K**</kbd>  | `nmap  ` | **buf_set_keymap("n", `"K"`, "<cmd>Lspsaga hover_doc<cr>", opts)** |
+| <kbd>**go**</kbd> | `nmap  ` | **buf_set_keymap("n", `"go"`, "<cmd>Lspsaga show_line_diagnostics<cr>", opts)** |
+| <kbd>**gf**</kbd> | `nmap  ` | **buf_set_keymap("n", `"gf"`, "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>", opts)** |
+
+### goto preview 
+
+| Key                | Mode                                                         | **Action**                                                   |
+| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <kbd>**gpd**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **buf_set_keymap("n", `"gpd"`, "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opts)** |
+| <kbd>**gpi**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **buf_set_keymap("n", `"gpi"`, "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", opts)** |
+| <kbd>**gP**</kbd>  | <span style="display:inline-block;width: 50px">`nmap`</span> | **buf_set_keymap("n",`"gP"`,  "<cmd>lua require('goto-preview').close_all_win()<CR>", opts)** |
+| <kbd>**gF**</kbd>  | <span style="display:inline-block;width: 50px">`nmap`</span> | **buf_set_keymap("n", `"gF"`, "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opts)** |
+
+### nvim-bqf 
+
+| Key                   | Mode                                                         | **Action**                    |
+| --------------------- | ------------------------------------------------------------ | ----------------------------- |
+| <kbd>**ctrl-s**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **[`'ctrl-s'`] = 'split'**    |
+| <kbd>**ctrl-t**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **[`'ctrl-t'`] = 'tab drop'** |
+
+### nvim-gitsigns
+
+| Key                                    | Mode    | **Action**                                                   |
+| -------------------------------------- | ------- | ------------------------------------------------------------ |
+| <kbd>**,**</kbd>**+**<kbd>**hs**</kbd> | `nmap ` | **['n `<leader>hs`'] = '<cmd>Gitsigns stage_hunk<CR>**'      |
+| <kbd>**,**</kbd>**+**<kbd>**hs**</kbd> | `vmap ` | **['v `<leader>hs`'] = '<cmd>Gitsigns stage_hunk<CR>',**     |
+| <kbd>**,**</kbd>**+**<kbd>**hu**</kbd> | `nmap ` | **['n `<leader>hu`'] = '<cmd>Gitsigns undo_stage_hunk<CR>',** |
+| <kbd>**,**</kbd>**+**<kbd>**hr**</kbd> | `nmap ` | **['n `<leader>hr`'] = '<cmd>Gitsigns reset_hunk<CR>',**     |
+| <kbd>**,**</kbd>**+**<kbd>**hr**</kbd> | `vmap ` | **['v `<leader>hr`'] = '<cmd>Gitsigns reset_hunk<CR>',**     |
+| <kbd>**,**</kbd>**+**<kbd>**hR**</kbd> | `nmap ` | **['n `<leader>hR`'] = '<cmd>Gitsigns reset_buffer<CR>',**   |
+| <kbd>**,**</kbd>**+**<kbd>**hb**</kbd> | `nmap ` | **['n `<leader>hb`'] = '<cmd>lua require"gitsigns".blame_line{full=true}<CR>',** |
+| <kbd>**,**</kbd>**+**<kbd>**hS**</kbd> | `nmap ` | **['n `<leader>hS`'] = '<cmd>Gitsigns stage_buffer<CR>',**   |
+| <kbd>**,**</kbd>**+**<kbd>**hU**</kbd> | `nmap ` | **['n `<leader>hU`'] = '<cmd>Gitsigns reset_buffer_index<CR>',** |
+| <kbd>**,**</kbd>**+**<kbd>**gd**</kbd> | `nmap ` | **['n `<leader>gd`'] = '<cmd>Gitsigns diffthis<cr>',**       |
+| <kbd>**,**</kbd>**+**<kbd>**gw**</kbd> | `nmap ` | **['n `<leader>gw`'] = '<cmd>Gitsigns toggle_word_diff<cr>',** |
+| <kbd>**,**</kbd>**+**<kbd>**gp**</kbd> | `nmap ` | **['n `<leader>gp`'] = '<cmd>Gitsigns preview_hunk<CR>',**   |
+| <kbd>**C-U**</kbd>                     | `nmap ` | **['o ih'] = ':`<C-U>`Gitsigns select_hunk<CR>',**           |
+| <kbd>**C-U**</kbd>                     | `nmap ` | **['x ih'] = ':`<C-U>`Gitsigns select_hunk<CR>'**            |
+
+### nvim-neoscroll
+
+| Key                   | Mode                                                         | **Action**                                                   |
+| --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <kbd>**ctrl-u**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'-vim.wo.scroll', 'true', '250'}}**            |
+| <kbd>**ctrl-d**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', { 'vim.wo.scroll', 'true', '250'}}**            |
+| <kbd>**ctrl-b**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'-vim.api.nvim_win_get_height(0)', 'true', '450'}}** |
+| <kbd>**ctrl-f**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', { 'vim.api.nvim_win_get_height(0)', 'true', '450'}}** |
+| <kbd>**ctrl-y**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'-0.10', 'false', '100'}}**                    |
+| <kbd>**ctrl-e**</kbd> | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', { '0.10', 'false', '100'}}**                    |
+| <kbd>**zt**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'zt', {'250'}}**                                          |
+| <kbd>**zz**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'zz', {'250'}}**                                          |
+| <kbd>**zb**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'zb', {'250'}}**                                          |
+| <kbd>**gg**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'-2*vim.api.nvim_buf_line_count(0)', 'true', '1', '5', e}}** |
+| <kbd>**G**</kbd>      | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'2*vim.api.nvim_buf_line_count(0)', 'true', '1', '5', e}}** |
+
+### nvim-telescope.
+
+| Key                     | Mode        | **Action**                                                   |
+| ----------------------- | ----------- | ------------------------------------------------------------ |
+| <kbd>**C-n**</kbd>      | `nmap,imap` | **["<C-n>"] = actions.cycle_history_next,**                  |
+| <kbd>**C-p**</kbd>      | `nmap,imap` | **["<C-p>"] = actions.cycle_history_prev,**                  |
+| <kbd>**C-j**</kbd>      | `nmap,imap` | **["<C-j>"] = actions.move_selection_next,**                 |
+| <kbd>**C-k**</kbd>      | `nmap,imap` | **["<C-k>"] = actions.move_selection_previous,**             |
+| <kbd>**C-d**</kbd>      | `nmap,imap` | **["<C-d>"] = actions.close,**                               |
+| <kbd>**Down**</kbd>     | `nmap,imap` | **["<Down>"] = actions.move_selection_next,**                |
+| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
+| <kbd>**CR**</kbd>       | `nmap,imap` | **["<CR>"] = actions.select_default,**                       |
+| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
+| <kbd>**C-s**</kbd>      | `nmap,imap` | **["<C-s>"] = actions.select_horizontal,**                   |
+| <kbd>**C-t**</kbd>      | `nmap,imap` | **["<C-t>"] = actions.select_tab,**                          |
+| <kbd>**PageUp**</kbd>   | `nmap,imap` | **["<PageUp>"] = actions.results_scrolling_up,**             |
+| <kbd>**PageDown**</kbd> | `nmap,imap` | **["<PageDown>"] = actions.results_scrolling_down,**         |
+| <kbd>**Tab**</kbd>      | `nmap,imap` | **["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,** |
+| <kbd>**S-Tab**</kbd>    | `nmap,imap` | **["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,** |
+| <kbd>**C-q**</kbd>      | `nmap,imap` | **["<C-q>"] = actions.send_to_qflist + actions.open_qflist,** |
+| <kbd>**M-q**</kbd>      | `nmap,imap` | **["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,** |
+| <kbd>**C-l**</kbd>      | `nmap,imap` | **["<C-l>"] = actions.complete_tag,**                        |
+| <kbd>**C-_**</kbd>      | `nmap,imap` | **["<C-_>"] = actions.which_key, -- keys from pressing <C-/>** |
+| <kbd>**m-t**</kbd>      | `nmap,imap` | **["<m-t>"] = trouble.open_with_trouble,**                   |
+
 ### 一般设置
 
 | Key                                    | Mode                    | **Action**                                                   |
@@ -191,5 +295,6 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | <kbd>**C-a**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-a>` <Home>** |
 | <kbd>**C-e**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-e>` <End>** |
 | <kbd>**esc**</kbd>                     | `cnoremap `             | **`清除上次搜索高亮显示`**<br />**nnoremap `<esc>` :noh<return><esc>** |
+
 
 ## tmux - 快捷键
