@@ -106,14 +106,14 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 
 ### vim-visual-multi(多行编辑插件)
 
-使用`ctrl-n`选择单词
-使用`ctrl-down`/`ctrl-up`垂直创建光标
-使用`shift`箭头一次选择一个字符
-按`n/N`以获取下一个/上一个事件
-按`[/]`选择下一个/上一个光标
-按`q`键跳过当前事件并获取下一个事件
-按`Q`键删除当前光标/所选内容
-用`i,a,I,A`启动插入模式
+> 使用`ctrl-n`选择单词
+> 使用`ctrl-down`/`ctrl-up`垂直创建光标
+> 使用`shift`箭头一次选择一个字符
+> 按`n/N`以获取下一个/上一个事件
+> 按`[/]`选择下一个/上一个光标
+> 按`q`键跳过当前事件并获取下一个事件
+> 按`Q`键删除当前光标/所选内容
+> 用`i,a,I,A`启动插入模式
 
 ### toggleterm 
 
@@ -301,6 +301,5 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | <kbd>**C-a**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-a>` <Home>** |
 | <kbd>**C-e**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-e>` <End>** |
 | <kbd>**esc**</kbd>                     | `cnoremap `             | **`清除上次搜索高亮显示`**<br />**nnoremap `<esc>` :noh<return><esc>** |
-
 
 ## tmux - 快捷键
