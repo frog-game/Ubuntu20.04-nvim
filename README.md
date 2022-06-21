@@ -57,6 +57,32 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | <kbd>**,**</kbd>**+**<kbd>**fdv**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdv` <cmd>lua require'telescope'.extensions.dap.variables()<CR>>**<br /> |
 | <kbd>**,**</kbd>**+**<kbd>**fdf**</kbd>                      | `nnoremap`                                                   | **nnoremap `<leader>fdf `<cmd>lua require'telescope'.extensions.dap.frames()<CR>**<br /> |
 
+### nvim-telescope
+
+| Key                     | Mode        | **Action**                                                   |
+| ----------------------- | ----------- | ------------------------------------------------------------ |
+| <kbd>**C-n**</kbd>      | `nmap,imap` | **["<C-n>"] = actions.cycle_history_next,**                  |
+| <kbd>**C-p**</kbd>      | `nmap,imap` | **["<C-p>"] = actions.cycle_history_prev,**                  |
+| <kbd>**C-j**</kbd>      | `nmap,imap` | **["<C-j>"] = actions.move_selection_next,**                 |
+| <kbd>**C-k**</kbd>      | `nmap,imap` | **["<C-k>"] = actions.move_selection_previous,**             |
+| <kbd>**C-d**</kbd>      | `nmap,imap` | **["<C-d>"] = actions.close,**                               |
+| <kbd>**Down**</kbd>     | `nmap,imap` | **["<Down>"] = actions.move_selection_next,**                |
+| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
+| <kbd>**CR**</kbd>       | `nmap,imap` | **["<CR>"] = actions.select_default,**                       |
+| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
+| <kbd>**C-s**</kbd>      | `nmap,imap` | **["<C-s>"] = actions.select_horizontal,**                   |
+| <kbd>**C-t**</kbd>      | `nmap,imap` | **["<C-t>"] = actions.select_tab,**                          |
+| <kbd>**PageUp**</kbd>   | `nmap,imap` | **["<PageUp>"] = actions.results_scrolling_up,**             |
+| <kbd>**PageDown**</kbd> | `nmap,imap` | **["<PageDown>"] = actions.results_scrolling_down,**         |
+| <kbd>**Tab**</kbd>      | `nmap,imap` | **["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,** |
+| <kbd>**S-Tab**</kbd>    | `nmap,imap` | **["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,** |
+| <kbd>**C-q**</kbd>      | `nmap,imap` | **["<C-q>"] = actions.send_to_qflist + actions.open_qflist,** |
+| <kbd>**M-q**</kbd>      | `nmap,imap` | **["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,** |
+| <kbd>**C-l**</kbd>      | `nmap,imap` | **["<C-l>"] = actions.complete_tag,**                        |
+| <kbd>**C-_**</kbd>      | `nmap,imap` | **["<C-_>"] = actions.which_key, -- keys from pressing <C-/>** |
+| <kbd>**m-t**</kbd>      | `nmap,imap` | **["<m-t>"] = trouble.open_with_trouble,**                   |
+
+
 ### simrat39/symbols-outline
 
 | Key                | Mode       | **Action**                               |
@@ -80,9 +106,14 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 
 ### vim-visual-multi(多行编辑插件)
 
-| Key                | Mode       | **Action**                                                   |
-| ------------------ | ---------- | ------------------------------------------------------------ |
-| <kbd>**C-m**</kbd> | `vnoremap` | **let g:VM_maps['Find Under']         = `'<C-m>' `          " replace C-n**<br />**let g:VM_maps['Find Subword Under'] = `'<C-m>' `          " replace visual C-n** |
+使用`ctrl-n`选择单词
+使用`ctrl-down`/`ctrl-up`垂直创建光标
+使用`shift`箭头一次选择一个字符
+按`n/N`以获取下一个/上一个事件
+按`[/]`选择下一个/上一个光标
+按`q`键跳过当前事件并获取下一个事件
+按`Q`键删除当前光标/所选内容
+用`i,a,I,A`启动插入模式
 
 ### toggleterm 
 
@@ -95,9 +126,9 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 
 ### nvim-tree
 
-| Key                | Mode        | **Action**                                     |
-| ------------------ | ----------- | ---------------------------------------------- |
-| <kbd>**c-n**</kbd> | `nnoremap ` | **nnoremap `<C-n>` :NvimTreeToggle<CR>**<br /> |
+| Key                                    | Mode        | **Action**                                          |
+| -------------------------------------- | ----------- | --------------------------------------------------- |
+| <kbd>**,**</kbd>**+**<kbd>**nt**</kbd> | `nnoremap ` | **nnoremap `<leader>nt` :NvimTreeToggle<CR>**<br /> |
 
 ### smart-splits
 
@@ -243,31 +274,6 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.s
 | <kbd>**zb**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'zb', {'250'}}**                                          |
 | <kbd>**gg**</kbd>     | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'-2*vim.api.nvim_buf_line_count(0)', 'true', '1', '5', e}}** |
 | <kbd>**G**</kbd>      | <span style="display:inline-block;width: 50px">`nmap`</span> | **{'scroll', {'2*vim.api.nvim_buf_line_count(0)', 'true', '1', '5', e}}** |
-
-### nvim-telescope.
-
-| Key                     | Mode        | **Action**                                                   |
-| ----------------------- | ----------- | ------------------------------------------------------------ |
-| <kbd>**C-n**</kbd>      | `nmap,imap` | **["<C-n>"] = actions.cycle_history_next,**                  |
-| <kbd>**C-p**</kbd>      | `nmap,imap` | **["<C-p>"] = actions.cycle_history_prev,**                  |
-| <kbd>**C-j**</kbd>      | `nmap,imap` | **["<C-j>"] = actions.move_selection_next,**                 |
-| <kbd>**C-k**</kbd>      | `nmap,imap` | **["<C-k>"] = actions.move_selection_previous,**             |
-| <kbd>**C-d**</kbd>      | `nmap,imap` | **["<C-d>"] = actions.close,**                               |
-| <kbd>**Down**</kbd>     | `nmap,imap` | **["<Down>"] = actions.move_selection_next,**                |
-| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
-| <kbd>**CR**</kbd>       | `nmap,imap` | **["<CR>"] = actions.select_default,**                       |
-| <kbd>**Up**</kbd>       | `nmap,imap` | **["<Up>"] = actions.move_selection_previous,**              |
-| <kbd>**C-s**</kbd>      | `nmap,imap` | **["<C-s>"] = actions.select_horizontal,**                   |
-| <kbd>**C-t**</kbd>      | `nmap,imap` | **["<C-t>"] = actions.select_tab,**                          |
-| <kbd>**PageUp**</kbd>   | `nmap,imap` | **["<PageUp>"] = actions.results_scrolling_up,**             |
-| <kbd>**PageDown**</kbd> | `nmap,imap` | **["<PageDown>"] = actions.results_scrolling_down,**         |
-| <kbd>**Tab**</kbd>      | `nmap,imap` | **["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,** |
-| <kbd>**S-Tab**</kbd>    | `nmap,imap` | **["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,** |
-| <kbd>**C-q**</kbd>      | `nmap,imap` | **["<C-q>"] = actions.send_to_qflist + actions.open_qflist,** |
-| <kbd>**M-q**</kbd>      | `nmap,imap` | **["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,** |
-| <kbd>**C-l**</kbd>      | `nmap,imap` | **["<C-l>"] = actions.complete_tag,**                        |
-| <kbd>**C-_**</kbd>      | `nmap,imap` | **["<C-_>"] = actions.which_key, -- keys from pressing <C-/>** |
-| <kbd>**m-t**</kbd>      | `nmap,imap` | **["<m-t>"] = trouble.open_with_trouble,**                   |
 
 ### 一般设置
 
