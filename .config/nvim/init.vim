@@ -602,7 +602,7 @@ nnoremap <silent><leader>gg <Cmd>lua _LAZYGIT_TOGGLE()<CR>
 let g:cursorword_delay = 0
 
 " ========== nvim-tree.lua settings ===========
-nnoremap <C-m> :NvimTreeToggle<CR>
+nnoremap <leader>nt :NvimTreeToggle<CR>
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 set t_Co=256
