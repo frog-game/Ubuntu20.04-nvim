@@ -66,6 +66,13 @@ git config --global credential.helper store
 #git不监听文件权限变化
 git config core.fileMode false
 
+#git 配置mergetool为vimdiff
+git config --global merge.tool vimdiff
+git config --global merge.conflictstyle diff3
+git config --global mergetool.prompt false
+#让git mergetool不再生成备份文件(*.orig)  
+git config --global mergetool.keepBackup false
+
 #Cannot initiate the connection to dl.yarnpkg.com:443 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo DEBIAN_FRONTEND=noninteractive apt-key add -
