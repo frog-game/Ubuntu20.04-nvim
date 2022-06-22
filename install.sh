@@ -86,7 +86,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install npm
 sudo npm cache clean -f
-sudo npm install -g n
+sudo npm install --location=global n
 sudo n stable
 
 #ubuntu中source ~/.bash_profile时提示 source: not found
@@ -103,7 +103,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk vim-gtk3
 
 #安装lua-fmt
-sudo npm i -g lua-fmt
+sudo npm i --location=global lua-fmt
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
@@ -133,7 +133,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt -y install cargo
 #echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 #sudo DEBIAN_FRONTEND=noninteractive  apt -y update
 #sudo DEBIAN_FRONTEND=noninteractive apt -y install yarn
-sudo npm install yarn -g
+sudo npm install --location=global yarn 
 
 #安装nerd-fonts字体
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
