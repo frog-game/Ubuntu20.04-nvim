@@ -48,9 +48,6 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted unive
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
-# 给lua-language-server 设置权限
-sudo chmod -R a=rwx $HOME/.local/share/nvim/
-
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get install python3.8
 sudo ln -s /usr/bin/python3.8 /usr/bin/python
@@ -163,6 +160,9 @@ wget https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.
 tar xvf lazygit.tgz
 sudo mv lazygit /usr/local/bin/
 sudo rm -rf lazygit.tgz
+
+# 给lua-language-server 设置权限
+sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
 #安装zsh和oh-my-zsh
 sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
