@@ -78,7 +78,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
 #安装nodejs npm
 
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo DEBIAN_FRONTEND=noninteractive vapt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install npm
