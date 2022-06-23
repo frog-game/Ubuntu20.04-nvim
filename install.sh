@@ -138,8 +138,8 @@ sudo mkfontscale # 生成核心字体信息
 sudo mkfontdir # 生成字体文件夹
 sudo fc-cache -fv # 刷新系统字体缓存
 fc-list #查看已经安装的
-sudo rm -rf SourceCodePro.zip
 cd ~/
+sudo rm -rf SourceCodePro.zip
 
 #安装 live grep
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
