@@ -75,10 +75,11 @@ set updatetime=500
 set autoindent
 set smartindent
 set smarttab
+set softtabstop=4
+set tabstop=4
 set shiftwidth=4
-set softtabstop=2
-set tabstop=2
 set expandtab
+
 set completeopt=longest,menu
 " 
 " au FileType c,cpp,python,vim,go set textwidth=80
