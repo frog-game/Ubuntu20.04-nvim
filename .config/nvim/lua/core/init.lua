@@ -31,6 +31,7 @@ require('core.nvim-autosave')
 
 require('core.nvim-dap-config').setup()
 require('core.nvim-dap-ui')
+require('core.nvim-dap-util')
 require('core.nvim-dap-virtual-text')
 
 require'hop'.setup{}
