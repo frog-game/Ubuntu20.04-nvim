@@ -73,7 +73,7 @@ local function config_debuggers()
   -- require("user.dap.dap-cpp")
   -- require("user.dap.di-go")
 
-  require("core.dap-cpp")
+  require("core.nvim-dap-cpp")
   --require("user.dap.dap-go")
   --require("user.dap.dap-python")
   --require("user.dap.dap-lua")
