@@ -98,7 +98,6 @@ sudo npm i --location=global lua-fmt
 #安装clang-format
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo vim /etc/apt/sources.list
-## 插入从https://apt.llvm.org/ 找到的对应ubuntu版本的源代码
 sudo apt update
 sudo apt install clang-format-12
 
