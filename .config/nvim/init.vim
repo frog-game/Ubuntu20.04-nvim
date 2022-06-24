@@ -39,11 +39,11 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 " Plug 'm-demare/hlargs.nvim'
 
-" Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 
-" Plug 'voldikss/vim-floaterm'
+"Plug 'voldikss/vim-floaterm'
 Plug 'akinsho/toggleterm.nvim'
-" not longer use fzf, just use telescope
+"not longer use fzf, just use telescope
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 
@@ -61,7 +61,7 @@ Plug 'rcarriga/nvim-notify'
 Plug 'airblade/vim-rooter'
 
 "调试
-Plug 'ravenxrz/DAPInstall.nvim'
+Plug 'mfussenegger/nvim-dap'
 Plug 'ravenxrz/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
 
