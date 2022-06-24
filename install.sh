@@ -96,6 +96,13 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk v
 #安装lua-fmt
 sudo npm i --location=global lua-fmt
 
+#安装clang-format
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+sudo vim /etc/apt/sources.list
+## 插入从https://apt.llvm.org/ 找到的对应ubuntu版本的源代码
+sudo apt update
+sudo apt install clang-format-12
+
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
 cp -r $(pwd)/nvim/. $(pwd)/
