@@ -1,7 +1,7 @@
 local M = {}
 
 local function config_dapi_and_sign()
-  local dap_install = require "dap-install"
+  local dap_install = require("dap-install")
   dap_install.setup {
     installation_path = vim.fn.stdpath "data" .. "/dapinstall/",
   }
