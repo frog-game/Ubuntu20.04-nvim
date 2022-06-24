@@ -179,9 +179,6 @@ Plug 'Pocco81/AutoSave.nvim'
 
 "quickfix window better
 Plug 'kevinhwang91/nvim-bqf', { 'run': ':TSUpdate' }
-
-"gdb 调试"
-Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
     
 call plug#end()
 
