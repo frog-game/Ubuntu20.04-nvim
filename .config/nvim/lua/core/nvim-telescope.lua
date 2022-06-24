@@ -15,7 +15,6 @@ local extensions = {
   "project",
   "media_files",
   "notify",
-  "dap",
 }
 
 -- Hot-reloaded function for telescope-hop
