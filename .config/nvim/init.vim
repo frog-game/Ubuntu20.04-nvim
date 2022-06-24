@@ -61,9 +61,10 @@ Plug 'rcarriga/nvim-notify'
 Plug 'airblade/vim-rooter'
 
 "调试
-"Plug 'mfussenegger/nvim-dap'
-"Plug 'ravenxrz/nvim-dap'
-"Plug 'rcarriga/nvim-dap-ui'
+Plug 'Pocco81/DAPInstall.nvim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'theHamsta/nvim-dap-virtual-text'
 
 Plug 'simrat39/symbols-outline.nvim'
 
