@@ -99,7 +99,7 @@ sudo npm i --location=global lua-fmt
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo vim /etc/apt/sources.list
 sudo apt update
-sudo apt install clang-format-12
+sudo apt -y install clang-format-12
 
 "安装gdb-dashboard
 https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
