@@ -70,21 +70,6 @@ nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 " map t <Plug>Sneak_t
 " map T <Plug>Sneak_T
 
-" ========= dap debug settings ========
-keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint(); require'user.dap.dap-util'.store_breakpoints(true)<cr>", opts)
-keymap("n", "<leader>dB", "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", opts)
--- keymap("n", "<leader>dr", "lua require'dap'.repl.open()<cr>", opts)
-keymap("n", "<F9>", "<cmd>lua require'dap'.run_last()<cr>", opts)
-keymap('n', '<F10>', '<cmd>lua require"user.dap.dap-util".reload_continue()<CR>', opts)
-keymap("n", "<F4>", "<cmd>lua require'dap'.terminate()<cr>", opts)
-keymap("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>", opts)
-keymap("n", "<F6>", "<cmd>lua require'dap'.step_over()<cr>", opts)
-keymap("n", "<F7>", "<cmd>lua require'dap'.step_into()<cr>", opts)
-keymap("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>", opts)
-keymap("n", "K", "<cmd>lua require'dapui'.eval()<cr>", opts)
--- keymap("n", "<leader>dt", "<cmd>lua require'dapui'.toggle()<cr>", opts)
--- keymap("n", "<leader>dx", "<cmd>lua require'dap'.terminate()<cr>", opts)
-
 " =========================================
 " Auto indent pasted text
 "nnoremap p p=`]<C-o>
