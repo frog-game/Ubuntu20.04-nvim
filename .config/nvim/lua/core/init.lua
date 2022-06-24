@@ -28,7 +28,8 @@ require('core.nvim-tree')
 require('core.nvim-bqf')
 require('core.nvim-notify')
 require('core.nvim-autosave')
-"require('core.nvim-dap-ui')
+require('core.nvim-dap-ui')
+require('core.nvim-dap-config')
 
 require'hop'.setup{}
 
