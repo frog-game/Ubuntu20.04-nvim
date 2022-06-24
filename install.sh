@@ -70,7 +70,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs-legacy
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
 
 #安装nodejs npm
-
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
@@ -102,6 +101,10 @@ sudo vim /etc/apt/sources.list
 ## 插入从https://apt.llvm.org/ 找到的对应ubuntu版本的源代码
 sudo apt update
 sudo apt install clang-format-12
+
+"安装gdb-dashboard
+https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
+pip install pygments
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
