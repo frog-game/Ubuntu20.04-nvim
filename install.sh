@@ -174,3 +174,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git restore ~/.zshrc 
 source ~/.zshrc
 echo '505384662' | chsh -s /bin/zsh
+zsh
