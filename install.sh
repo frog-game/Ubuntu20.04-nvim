@@ -106,6 +106,7 @@ sudo apt update
 sudo apt -y install clang-format-12
 
 #安装gdb-dashboard
+sudo rm -rf .gdbinit
 sudo apt install gdb
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
@@ -113,7 +114,7 @@ pip install pygments
 #下载相关配置
 git clone https://github.com/505384662/nvim.git
 cp -r $(pwd)/nvim/. $(pwd)/
-rm -rf $(pwd)/nvim
+sudo rm -rf $(pwd)/nvim
 
 #安装nvim7.0
 mkdir /tmp
