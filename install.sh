@@ -70,13 +70,15 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs-legacy
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
 
-#安装nodejs npm
-sudo apt-get install gcc g++ make
-sudo apt-get update && sudo apt-get install yarn
+#安装nodejs
+sudo apt-get -y install gcc g++ make
+sudo apt-get -y update 
+sudo apt-get -y install yarn
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
+#安装npm
 sudo DEBIAN_FRONTEND=noninteractive apt-get install npm
 sudo npm cache clean -f
 sudo npm install -g n
@@ -172,7 +174,6 @@ sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
 #安装zsh和oh-my-zsh
 sudo DEBIAN_FRONTEND=noninteractive apt -y install zsh
-chsh -s /bin/zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
 sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -181,3 +182,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting 
 git restore ~/.zshrc 
 source ~/.zshrc
+chsh -s /bin/zsh
