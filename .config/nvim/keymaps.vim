@@ -65,19 +65,19 @@ nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
 nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 " ========= dap debug settings ========
-nnoremap <leader>db <cmd>lua require'dap'.toggle_breakpoint(); require'user.dap.dap-util'.store_breakpoints(true)<cr>"
-nnoremap<leader>dB" <cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>"
--- nnoremap <leader>dr <cmd>lua require'dap'.repl.open()<cr>"
+nnoremap <leader>db <cmd>lua require'dap'.toggle_breakpoint(); require'user.dap.dap-util'.store_breakpoints(true)<cr>
+nnoremap<leader>dB" <cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>
+-- nnoremap <leader>dr <cmd>lua require'dap'.repl.open()<cr>
 nnoremap <F9> <cmd>lua require'dap'.run_last()<cr>"
-nnoremap <F10> <cmd>lua require"user.dap.dap-util".reload_continue()<CR>'
-nnoremap <F4> <cmd>lua require'dap'.terminate()<cr>"
-nnoremap <F5> <cmd>lua require'dap'.continue()<cr>"
-nnoremap <F6> <cmd>lua require'dap'.step_over()<cr>"
-nnoremap <F7> <cmd>lua require'dap'.step_into()<cr>"
-nnoremap <F8> <cmd>lua require'dap'.step_out()<cr>"
-nnoremap K <cmd>lua require'dapui'.eval()<cr>"
--- nnoremap <leader>dt <cmd>lua require'dapui'.toggle()<cr>"
--- nnoremap <leader>dx <cmd>lua require'dap'.terminate()<cr>"
+nnoremap <F10> <cmd>lua require"user.dap.dap-util".reload_continue()<CR>
+nnoremap <F4> <cmd>lua require'dap'.terminate()<cr>
+nnoremap <F5> <cmd>lua require'dap'.continue()<cr>
+nnoremap <F6> <cmd>lua require'dap'.step_over()<cr>
+nnoremap <F7> <cmd>lua require'dap'.step_into()<cr>
+nnoremap <F8> <cmd>lua require'dap'.step_out()<cr>
+nnoremap K <cmd>lua require'dapui'.eval()<cr>
+-- nnoremap <leader>dt <cmd>lua require'dapui'.toggle()<cr>
+-- nnoremap <leader>dx <cmd>lua require'dap'.terminate()<cr>
 
 " ========= vim-sneak settings ========
 " map f <Plug>Sneak_f
