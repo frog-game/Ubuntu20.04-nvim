@@ -1,3 +1,4 @@
+set -v 
 #换源
 sudo rm -rf /etc/apt/sources.list
 sudo echo "deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
