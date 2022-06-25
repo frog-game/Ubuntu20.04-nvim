@@ -26,6 +26,6 @@ dap.configurations.cpp = {
 dap.adapters.cppdbg = {
   id = 'cppdbg',
   type = 'executable',
-  command = '/home/christopher/.config/nvim/lua/custom/plugins/dap/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+  command = '/home/hls/.config/nvim/lua/custom/plugins/dap/cpptools/extension/debugAdapters/bin/OpenDebugAD7',
 }
 dap.configurations.c = dap.configurations.cpp
