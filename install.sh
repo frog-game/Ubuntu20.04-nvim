@@ -76,7 +76,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 sudo DEBIAN_FRONTEND=noninteractive apt -y install npm
 sudo npm cache clean -f
-sudo npm install --location=global n
+sudo npm install -g n
 sudo n stable
 
 #ubuntu中source ~/.bash_profile时提示 source: not found
@@ -93,7 +93,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk vim-gtk3
 
 #安装lua-fmt
-sudo npm i --location=global lua-fmt
+sudo npm i -g lua-fmt
 
 #安装clang-format
 wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
