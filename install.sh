@@ -70,6 +70,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs-legacy
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
 
 #安装nodejs npm
+sudo apt-get install gcc g++ make
+sudo apt-get update && sudo apt-get install yarn
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
