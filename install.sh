@@ -131,15 +131,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 #安装cargo
 sudo DEBIAN_FRONTEND=noninteractive apt -y install cargo
 
-#安装yarn
-#sudo DEBIAN_FRONTEND=noninteractive apt -y remove cmdtest
-#sudo DEBIAN_FRONTEND=noninteractive apt -y remove yarn
-#curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-#echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-#sudo DEBIAN_FRONTEND=noninteractive  apt -y update
-#sudo DEBIAN_FRONTEND=noninteractive apt -y install yarn
-sudo npm install --location=global yarn 
-
 #安装nerd-fonts字体
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install fontconfig #是fc-cache -fv生效
