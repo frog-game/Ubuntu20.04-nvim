@@ -49,9 +49,9 @@ sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
 #安装python3.8
-sudo DEBIAN_FRONTEND=noninteractive apt-get install python3.8
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.8
 sudo ln -s /usr/bin/python3.8 /usr/bin/python
-sudo DEBIAN_FRONTEND=noninteractive apt install python3-pip
+sudo DEBIAN_FRONTEND=noninteractive apt -y install python3-pip
 
 #修改时区
 sudo rm -f /etc/localtime
