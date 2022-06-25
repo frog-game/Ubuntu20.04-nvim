@@ -74,7 +74,7 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
-sudo DEBIAN_FRONTEND=noninteractive apt -y install npm
+sudo DEBIAN_FRONTEND=noninteractive apt-get install npm
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
