@@ -101,6 +101,7 @@ sudo apt update
 sudo apt -y install clang-format-12
 
 "安装gdb-dashboard
+sudo apt install gdb
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
 
