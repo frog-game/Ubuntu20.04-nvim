@@ -105,7 +105,7 @@ wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo apt update
 sudo apt -y install clang-format-12
 
-"安装gdb-dashboard
+#安装gdb-dashboard
 sudo apt install gdb
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
