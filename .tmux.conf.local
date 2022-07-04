@@ -330,9 +330,6 @@ tmux_conf_copy_to_os_clipboard=false
 # increase history size
 #set -g history-limit 10000
 
-# start with mouse mode enabled
-set -g mouse on
-
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
 #set -g status-keys vi
@@ -417,3 +414,6 @@ tmux_conf_uninstall_plugins_on_reload=true
 #
 # "$@"
 # # /!\ do not remove the previous line
+
+# start with mouse mode enabled
+set -g mouse on
