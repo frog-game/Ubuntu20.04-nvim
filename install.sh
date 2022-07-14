@@ -168,6 +168,7 @@ sudo chmod -R a=rwx $HOME/.local/share/nvim/
 #安装zsh和oh-my-zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
+sudo apt install zsh
 echo y | sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
