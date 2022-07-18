@@ -112,7 +112,7 @@ wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
 
 #下载相关配置
-git clone https://github.com/505384662/nvim.git
+git clone https://github.com/505384662/nvim.git nvim
 cp -r $(pwd)/nvim/. $(pwd)/
 sudo rm -rf $(pwd)/nvim
 
