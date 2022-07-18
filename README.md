@@ -1,6 +1,6 @@
 # 安装教程
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/505384662/Ubuntu20.04-nvim/master/install.sh)
 ```
 
 ## nvim - 快捷键
