@@ -175,5 +175,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting 
 git restore ~/.zshrc 
 source ~/.zshrc
-echo '505384662' | chsh -s /bin/zsh
-zsh
+#echo '505384662' | chsh -s /bin/zsh
+#zsh
