@@ -11,9 +11,10 @@ zsh
 
 ## 演示
 
-<iframe src="//player.bilibili.com/player.html?aid=562348336&bvid=BV1vv4y1U7gT&cid=882587962&page=1" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+<iframe src="//player.bilibili.com/player.html?aid=647341215&bvid=BV1se4y1x7op&cid=882590240&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<iframe src="//player.bilibili.com/player.html?aid=647341215&bvid=BV1se4y1x7op&cid=882590240&page=1" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+
 
 ## nvim - 快捷键
 
