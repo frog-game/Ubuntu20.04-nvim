@@ -15,7 +15,6 @@ https://www.bilibili.com/video/BV1se4y1x7op/?vd_source=eda9685c1fd919172e56a90b8
 
 https://www.bilibili.com/video/BV1vv4y1U7gT/?vd_source=eda9685c1fd919172e56a90b8eb7b69e
 
-<iframe src="//player.bilibili.com/player.html?aid=61104141&amp;cid=106312750&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## nvim - 快捷键
 
