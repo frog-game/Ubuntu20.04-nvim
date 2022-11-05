@@ -1,7 +1,18 @@
-# 安装教程
+## 安装教程
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/505384662/Ubuntu20.04-nvim/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.sh)
 ```
+
+## 安装完成后执行
+
+```sh
+echo '505384662' | chsh -s /bin/zsh
+zsh
+```
+
+记得把505384662换成你的shell登录密码
+
+505384662是我的shell登录密码
 
 ## nvim - 快捷键
 
@@ -312,5 +323,5 @@ bash <(curl -s https://raw.githubusercontent.com/505384662/Ubuntu20.04-nvim/mast
 | <kbd>**C-e**</kbd>                     | `cnoremap `             | **`cmdline quickly go to head or tail`**<br />**cnoremap `<C-e>` <End>** |
 | <kbd>**esc**</kbd>                     | `cnoremap `             | **`清除上次搜索高亮显示`**<br />**nnoremap `<esc>` :noh<return><esc>** |
 
-
 ## tmux - 快捷键
+
