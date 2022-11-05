@@ -3,16 +3,11 @@
 bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.sh)
 ```
 
-## 安装完成后执行
+## 安装完成后执行如下命令就能进入zsh界面
 
 ```sh
-echo '505384662' | chsh -s /bin/zsh
 zsh
 ```
-
-记得把505384662换成你的shell登录密码
-
-505384662是我的shell登录密码
 
 ## nvim - 快捷键
 
