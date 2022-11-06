@@ -13,7 +13,11 @@ zsh
 
 https://www.bilibili.com/video/BV1se4y1x7op/?vd_source=eda9685c1fd919172e56a90b8eb7b69e
 
+![snapshot1](/snapshot/nvim2.gif)
+
 https://www.bilibili.com/video/BV1vv4y1U7gT/?vd_source=eda9685c1fd919172e56a90b8eb7b69e
+
+![snapshot2](/snapshot/nvim1.gif)
 
 
 ## nvim - 快捷键
