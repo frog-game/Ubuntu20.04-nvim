@@ -19,6 +19,10 @@ https://www.bilibili.com/video/BV1vv4y1U7gT/?vd_source=eda9685c1fd919172e56a90b8
 
 ![snapshot2](/snapshot/nvim1.gif)
 
+**gdb**
+
+![snapshot3](/snapshot/gdb.png)
+
 
 ## nvim - 快捷键
 
