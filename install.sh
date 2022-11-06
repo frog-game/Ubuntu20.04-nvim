@@ -117,20 +117,16 @@ sudo apt remove neovim-runtime
 sudo apt-get install software-properties-common   
 
 #安装nvim8.0
+mkdir /tmp
+cd /tmp
 wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
+cd ..
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git nvim
 cp -r $(pwd)/nvim/. $(pwd)/
 sudo rm -rf $(pwd)/nvim
-
-#安装nvim7.0
-mkdir /tmp
-cd /tmp
-wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
-sudo DEBIAN_FRONTEND=noninteractive apt -y install ./nvim-linux64.deb 
-cd ..
 
 #安装pip
 sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
