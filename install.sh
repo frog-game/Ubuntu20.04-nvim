@@ -111,6 +111,15 @@ sudo apt install gdb
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
 
+#卸载现有neovim
+sudo apt remove neovim    
+sudo apt remove neovim-runtime    
+sudo apt-get install software-properties-common   
+
+#安装nvim8.0
+wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb
+
 #下载相关配置
 git clone https://github.com/505384662/nvim.git nvim
 cp -r $(pwd)/nvim/. $(pwd)/
