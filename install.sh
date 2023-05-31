@@ -162,7 +162,7 @@ pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
 pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
 
 #安装lazygit
-wget https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
+wget -nc https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
 tar xvf lazygit.tgz
 sudo mv lazygit /usr/local/bin/
 sudo rm -rf lazygit.tgz
