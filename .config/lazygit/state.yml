@@ -1,5 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
+- /home/hls
+- /home/hls/work-github/server
 - /root/work/skynet-blueprint
 - /root
 startuppopupversion: 0
+customcommandshistory: []
+hidecommandlog: false
