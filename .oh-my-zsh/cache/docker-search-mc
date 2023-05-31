@@ -1,0 +1,4 @@
+result=( ${(Q)"${(z)$(<<\EO:result
+'linuxserver/mcmyadmin2' 'ibmcom/mcm-compliance' 'ibmcom/mcm-inception-amd64' 'ibmcom/mcm-ui' 'ibmcom/mcm-kui-proxy' 'ibmcom/mcm-controller' 'ibmcom/mcm-service-registry' 'ibmcom/mcm-ui-api' 'ibmcom/mcm-klusterlet' 'ibmcom/mcm-application' 'ibmcom/mcm-weave-scope' 'ibmcom/mcm-api' 'ibmcom/mcm-operator' 'ibmcom/mcm-topology-api' 'ibmcom/mcm-search' 'ibmcom/mcm-application-ui' 'ibmcom/mcm-mongodb' 'ibmcom/mcm-topology' 'ibmcom/mcm-gremlin-server' 'ibmcom/mcm-klusterlet-amd64' 'ibmcom/mcm-compliance-amd64' 'ibmcom/mcm-application-amd64' 'ibmcom/mcm-controller-amd64' 'ibmcom/mcm-ui-api-amd64' 'ibmcom/mcm-ui-amd64'
+EO:result
+)}"} )
