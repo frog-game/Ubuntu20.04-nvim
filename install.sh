@@ -101,32 +101,32 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk v
 sudo npm i -g lua-fmt
 
 #安装clang-format
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+wget -nc -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
 sudo apt update
 sudo apt -y install clang-format-12
 
 #安装gdb-dashboard
 sudo rm -rf .gdbinit
-sudo apt install gdb
-wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
+sudo apt install gdb -y
+wget -nc https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 pip install pygments
 
 #卸载现有neovim
-sudo apt remove neovim    
-sudo apt remove neovim-runtime    
-sudo apt-get install software-properties-common   
+sudo apt remove neovim -y
+sudo apt remove neovim-runtime -y   
+sudo apt-get install software-properties-common -y  
 
 #安装nvim8.0
 mkdir /tmp
 cd /tmp
-wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
-sudo apt install ./nvim-linux64.deb
+wget -nc https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb -y
 cd ..
 
 #下载相关配置
-git clone https://github.com/505384662/nvim.git nvim
-cp -r $(pwd)/nvim/. $(pwd)/
-sudo rm -rf $(pwd)/nvim
+git clone https://github.com/505384662/nvim.git temp_dir
+mv temp_dir/. .
+sudo rm -rf temp_dir 
 
 #安装pip
 sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
@@ -142,7 +142,7 @@ sudo rm -rf /usr/share/fonts/SourceCodePro
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install fontconfig #是fc-cache -fv生效
 sudo DEBIAN_FRONTEND=noninteractive rm -rf /usr/share/fonts/SourceCodePro
-sudo wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+sudo wget -nc https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
 sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
 cd /usr/share/fonts/SourceCodePro
 sudo mkdir -p ~/.local/share/fonts
