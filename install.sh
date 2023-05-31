@@ -94,9 +94,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 #安装multitail
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
 
-#安装剪切板
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install vim vim-scripts vim-gtk vim-gtk3
-
 #安装lua-fmt
 sudo npm i -g lua-fmt
 
@@ -151,7 +148,6 @@ sudo mkfontdir # 生成字体文件夹
 sudo fc-cache -fv # 刷新系统字体缓存
 fc-list #查看已经安装的
 cd ~/
-sudo rm -rf SourceCodePro.zip
 
 #安装 live grep
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
@@ -162,10 +158,9 @@ pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
 pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
 
 #安装lazygit
-wget -nc https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz -O lazygit.tgz
-tar xvf lazygit.tgz
-sudo mv lazygit /usr/local/bin/
-sudo rm -rf lazygit.tgz
+wget -nc https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz
+tar xvf lazygit_0.34_Linux_x86_64.tar.gz
+sudo mv lazygit_0.34_Linux_x86_64 /usr/local/bin/
 
 # 给lua-language-server 设置权限
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
