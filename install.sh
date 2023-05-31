@@ -108,7 +108,7 @@ sudo apt -y install clang-format-12
 #安装gdb-dashboard
 sudo rm -rf .gdbinit
 sudo apt install gdb -y
-wget -nc https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
+wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
 
 #卸载现有neovim
