@@ -46,7 +46,7 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted unive
 deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
-sudo apt autoremove
+sudo apt autoremove -y
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
 #让其不出现Package configuration提示
