@@ -49,6 +49,16 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted unive
 sudo apt autoremove
 sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
+#让其不出现Package configuration提示
+grep -q "DEBIAN_FRONTEND=noninteractive" /etc/environment || echo "DEBIAN_FRONTEND=noninteractive" | sudo tee -a /etc/environment  
+source /etc/environment
+
+#安装tmux
+sudo apt install tmux -y
+ git clone https://github.com/gpakosz/.tmux.git
+ ln -s -f .tmux/.tmux.conf
+ cp .tmux/.tmux.conf.local .
+
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.8
 sudo ln -s /usr/bin/python3.8 /usr/bin/python
