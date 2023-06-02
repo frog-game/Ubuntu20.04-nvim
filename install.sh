@@ -55,9 +55,9 @@ source /etc/environment
 
 #安装tmux
 sudo apt install tmux -y
- git clone https://github.com/gpakosz/.tmux.git
- ln -s -f .tmux/.tmux.conf
- cp .tmux/.tmux.conf.local .
+git clone https://github.com/gpakosz/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
 
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.8
