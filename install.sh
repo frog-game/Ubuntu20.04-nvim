@@ -186,5 +186,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 zsh
 git restore ~/.zshrc 
 source ~/.zshrc
-chsh -s /bin/zsh
+chsh -s $(which zsh)  
 #zsh
