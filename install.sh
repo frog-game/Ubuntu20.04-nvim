@@ -183,7 +183,8 @@ yes | sh -c "$(wget -nc -qO- https://gitee.com/oldsyang/ohmyzsh/raw/master/tools
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting 
+zsh
 git restore ~/.zshrc 
 source ~/.zshrc
-#echo '505384662' | chsh -s /bin/zsh
+chsh -s /bin/zsh
 #zsh
