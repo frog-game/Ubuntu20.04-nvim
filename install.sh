@@ -133,7 +133,6 @@ cd ..
 #下载相关配置
 git clone https://github.com/505384662/nvim.git temp_dir
 mv temp_dir/. .
-sudo rm -rf temp_dir 
 
 #安装pip
 sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
