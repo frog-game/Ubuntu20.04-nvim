@@ -13,7 +13,7 @@ deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe m
 deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
 
 sudo apt autoremove -y
-sudo apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 #让其不出现Package configuration提示
 grep -q "DEBIAN_FRONTEND=noninteractive" /etc/environment || echo "DEBIAN_FRONTEND=noninteractive" | sudo tee -a /etc/environment  
