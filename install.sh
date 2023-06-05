@@ -128,12 +128,12 @@ mkdir /tmp
 cd /tmp
 wget -nc https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb -y
-cd ..
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git temp_dir
-cp -r temp_dir/. .
-#sudo rm -rf temp_dir
+cp -r temp_dir/. $HOME
+sudo rm -rf temp_dir
+cd ..
 
 #安装pip
 sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
