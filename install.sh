@@ -27,6 +27,9 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
+#安装szrz
+sudo apt install lrzsz
+
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.8
 sudo ln -s /usr/bin/python3.8 /usr/bin/python
