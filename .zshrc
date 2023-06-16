@@ -118,3 +118,8 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias tmux="TERM=screen-256color-bce tmux"
 
+# 在登录时启动 tmux  
+if [[ ! $TERM =~ screen ]] && [ -z "$TMUX" ]; then  
+    exec ~/tmux_autostart.sh  
+fi  
+
