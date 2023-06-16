@@ -8,3 +8,5 @@ tmux split-window -h
 
 # 附加到新创建的 tmux 会话  
 tmux attach-session
+
+tmux -f <(echo 'set -g mouse on')  
