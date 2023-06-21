@@ -9,4 +9,5 @@ tmux split-window -h
 # 附加到新创建的 tmux 会话  
 tmux attach-session
 
+# 鼠标滚动屏幕开启
  tmux set mouse on
