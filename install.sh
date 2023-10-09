@@ -153,6 +153,8 @@ git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$H
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting 
 git restore ~/.zshrc 
+git restore ~/.tmux.conf 
+git restore ~/.tmux.conf.local
 zsh
 source ~/.zshrc
 chsh -s $(which zsh)  
