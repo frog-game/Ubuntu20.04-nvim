@@ -15,10 +15,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
 
-#让其不出现Package configuration提示
-grep -q "DEBIAN_FRONTEND=noninteractive" /etc/environment || echo "DEBIAN_FRONTEND=noninteractive" | sudo tee -a /etc/environment  
-source /etc/environment
-
 #安装tmux
 sudo apt install tmux -y
 git clone https://github.com/gpakosz/.tmux.git
@@ -29,8 +25,8 @@ cp .tmux/.tmux.conf.local .
 sudo apt install lrzsz
 
 #安装python3.8
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.8
-sudo ln -s /usr/bin/python3.8 /usr/bin/python
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.10
+sudo ln -s /usr/bin/python3.10 /usr/bin/python
 sudo DEBIAN_FRONTEND=noninteractive apt -y install python3-pip
 
 #修改时区
@@ -40,63 +36,15 @@ sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #安装git：
 sudo DEBIAN_FRONTEND=noninteractive apt -y install git
 
-#Cannot initiate the connection to dl.yarnpkg.com:443 
-sudo DEBIAN_FRONTEND=noninteractive apt -y install curl
-sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo DEBIAN_FRONTEND=noninteractive apt-key add -
-
-#卸载nodejs
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y remove --purge nodejs-legacy
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y autoremove
-
-#安装nodejs
-sudo apt-get -y install gcc g++ make
-sudo apt-get -y update 
-sudo apt-get -y install yarn
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo DEBIAN_FRONTEND=noninteractive apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
-
-#安装npm
-sudo DEBIAN_FRONTEND=noninteractive apt-get install npm
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
-
-#ubuntu中source ~/.bash_profile时提示 source: not found
-sudo DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash -n #执行过程中的选项选择no
-
 #安装unzip
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y update
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
-
-#安装multitail
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install multitail
-
-#安装lua-fmt
-sudo npm i -g lua-fmt
-
-#安装clang-format
-wget -nc -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-sudo apt update
-sudo apt -y install clang-format-12
 
 #安装gdb-dashboard
 sudo rm -rf .gdbinit
 sudo apt install gdb -y
 wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
-
-#卸载现有neovim
-sudo apt remove neovim -y
-sudo apt remove neovim-runtime -y   
-sudo apt-get install software-properties-common -y  
-
-#安装nvim8.0
-mkdir /tmp
-cd /tmp
-wget -nc https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
-sudo apt install ./nvim-linux64.deb -y
 
 #下载相关配置
 git clone https://github.com/505384662/nvim.git temp_dir
