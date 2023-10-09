@@ -52,43 +52,6 @@ cp -r temp_dir/. $HOME
 sudo rm -rf temp_dir
 cd ..
 
-#安装pip
-sudo DEBIAN_FRONTEND=noninteractive apt -y install pip
-
-#安装vim-plug插件
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-#安装cargo
-sudo DEBIAN_FRONTEND=noninteractive apt -y install cargo
-
-#安装nerd-fonts字体
-sudo rm -rf /usr/share/fonts/SourceCodePro
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ttf-mscorefonts-installer #使mkfontscale和mkfontdir生效
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install fontconfig #是fc-cache -fv生效
-sudo DEBIAN_FRONTEND=noninteractive rm -rf /usr/share/fonts/SourceCodePro
-sudo wget -nc https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
-sudo unzip SourceCodePro -d /usr/share/fonts/SourceCodePro
-cd /usr/share/fonts/SourceCodePro
-sudo mkdir -p ~/.local/share/fonts
-sudo mkfontscale # 生成核心字体信息
-sudo mkfontdir # 生成字体文件夹
-sudo fc-cache -fv # 刷新系统字体缓存
-fc-list #查看已经安装的
-cd ~/
-
-#安装 live grep
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ripgrep
-
-#pip3安装ranger
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install ranger
-pip3 install ranger-fm -i https://mirrors.aliyun.com/pypi/simple/
-pip3 install pynvim -i https://mirrors.aliyun.com/pypi/simple/
-
-#安装lazygit
-wget -nc https://github.com/jesseduffield/lazygit/releases/download/v0.34/lazygit_0.34_Linux_x86_64.tar.gz
-tar xvf lazygit_0.34_Linux_x86_64.tar.gz
-sudo mv lazygit_0.34_Linux_x86_64 /usr/local/bin/
-
 # 给lua-language-server 设置权限
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
