@@ -1,13 +1,12 @@
-#!/bin/bash  
-
-# 启动新的 tmux 会话  
-tmux new-session -d
-
-# 将当前窗口分割为两个垂直窗格  
-tmux split-window -h
-
-# 附加到新创建的 tmux 会话  
-tmux attach-session
-
-# 鼠标滚动屏幕开启
- tmux set mouse on
+#!/bin/sh  
+  
+# 检查名为train的会话是否存在  
+tmux has-session -t train 2>/dev/null  
+  
+# 如果上一条命令的退出状态码不为0，那么不存在名为train的会话，所以创建一个  
+if [ $? != 0 ]; then  
+   tmux new-session -d -s train  
+fi  
+  
+# 连接到名为train的会话  
+tmux attach-session -t train  
