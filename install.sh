@@ -1,4 +1,4 @@
-set -v 
+set -v
 #换源
 sudo rm -rf /etc/apt/sources.list
 sudo echo "deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
@@ -14,12 +14,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
-
-#安装tmux
-sudo apt install tmux -y
-git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
 
 #安装szrz
 sudo apt install lrzsz
@@ -63,13 +57,13 @@ sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
 sudo apt -y install zsh
 yes | sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting 
-git restore ~/.zshrc 
-git restore ~/.tmux.conf 
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
+git restore ~/.zshrc
+git restore ~/.tmux.conf
 git restore ~/.tmux.conf.local
 zsh
 source ~/.zshrc
-chsh -s $(which zsh)  
+chsh -s $(which zsh)
 #zsh
