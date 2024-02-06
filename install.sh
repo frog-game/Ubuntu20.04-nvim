@@ -41,7 +41,7 @@ wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
 
 #下载相关配置
-git clone https://github.com/505384662/nvim.git temp_dir && cp -r temp_dir/. $HOME &&sudo rm -rf temp_dir
+git clone https://github.com/505384662/nvim.git temp_dir && cp -r temp_dir/. $HOME && sudo rm -rf temp_dir
 cd ..
 
 # 给lua-language-server 设置权限
