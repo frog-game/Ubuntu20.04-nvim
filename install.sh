@@ -42,7 +42,6 @@ pip install pygments
 
 #下载相关配置
 sudo rm -rf temp_dir && git clone https://github.com/505384662/nvim.git temp_dir
-cd ..
 
 # 给lua-language-server 设置权限
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
