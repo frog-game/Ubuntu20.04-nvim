@@ -53,7 +53,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
 
 
-sudo rm -rf ~/.zshrc
+sudo rm -rf ~/.zshrc*
 
 sudo rm -rf temp_dir && git clone https://github.com/frog-game/Ubuntu20.04-nvim.git temp_dir  && cp -r temp_dir/. .
 zsh
