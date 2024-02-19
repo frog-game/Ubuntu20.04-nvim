@@ -46,9 +46,6 @@ sudo rm -rf temp_dir && git clone https://github.com/505384662/nvim.git temp_dir
 # 给lua-language-server 设置权限
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
-#克隆tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 #安装zsh和oh-my-zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo rm -rf ~/.zshrc.*
