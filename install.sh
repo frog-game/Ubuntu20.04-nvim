@@ -15,9 +15,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
 
-sudo rm -rf ~/.oh-my-zsh
-sudo rm -rf ~/.zshrc
-
 #安装szrz
 sudo apt install lrzsz
 
@@ -55,6 +52,11 @@ yes | sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting
+
+sudo rm -rf ~/.oh-my-zsh
+sudo rm -rf ~/.zshrc
+
+sudo rm -rf temp_dir && git clone https://github.com/frog-game/Ubuntu20.04-nvim.git temp_dir  && cp -r temp_dir/. .
 zsh
 source ~/.zshrc
 chsh -s $(which zsh)
