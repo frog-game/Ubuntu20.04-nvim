@@ -15,6 +15,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
 
+sudo rm -rf ~/.oh-my-zsh
+sudo rm -rf ~/.zshrc
+
 #安装szrz
 sudo apt install lrzsz
 
@@ -47,7 +50,6 @@ sudo rm -rf temp_dir && git clone https://github.com/frog-game/Ubuntu20.04-nvim.
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
 #安装zsh和oh-my-zsh
-sudo rm -rf ~/.oh-my-zsh
 sudo apt -y install zsh
 yes | sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
