@@ -1,6 +1,6 @@
 ## 安装教程
 ```sh
-bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/505384662/nvim/master/install.sh))
+bash <(curl -s bash <(curl -s https://raw.githubusercontent.com/frog-game/Ubuntu20.04-nvim/master/install.sh))
 ```
 
 ## 安装完成后执行如下命令就能进入zsh界面
