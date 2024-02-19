@@ -41,7 +41,7 @@ wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
 
 #下载相关配置
-sudo rm -rf temp_dir && git clone https://github.com/505384662/nvim.git temp_dir
+sudo rm -rf temp_dir && git clone https://github.com/frog-game/Ubuntu20.04-nvim.git temp_dir
 
 # 给lua-language-server 设置权限
 sudo chmod -R a=rwx $HOME/.local/share/nvim/
