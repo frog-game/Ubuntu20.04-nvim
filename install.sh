@@ -15,9 +15,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted univer
 sudo apt autoremove -y
 sudo apt update && sudo apt upgrade -y
 
-#安装szrz
-sudo apt install lrzsz
-
 #安装python3.8
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python3.10
 sudo ln -s /usr/bin/python3.10 /usr/bin/python
@@ -39,9 +36,6 @@ sudo rm -rf .gdbinit
 sudo apt install gdb -y
 wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
-
-# 给lua-language-server 设置权限
-sudo chmod -R a=rwx $HOME/.local/share/nvim/
 
 #安装zsh和oh-my-zsh
 sudo rm -rf ~/.oh-my-zsh
