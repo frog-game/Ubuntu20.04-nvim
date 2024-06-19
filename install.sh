@@ -47,8 +47,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 sudo rm -rf ~/.zshrc*
+wget https://raw.githubusercontent.com/frog-game/Ubuntu20.04-nvim/master/.zshrc
+wget https://raw.githubusercontent.com/frog-game/Ubuntu20.04-nvim/master/.p10k.zsh
 
-sudo rm -rf temp_dir && git clone https://github.com/frog-game/Ubuntu20.04-nvim.git temp_dir  && cp -r temp_dir/. .
 zsh
 source ~/.zshrc
 chsh -s $(which zsh)
