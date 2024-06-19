@@ -37,6 +37,10 @@ sudo apt install gdb -y
 wget -nc https://gitee.com/Jello_Smith/gdbinit/raw/master/.gdbinit
 pip install pygments
 
+#关闭代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
 #安装zsh和oh-my-zsh
 sudo rm -rf ~/.oh-my-zsh
 sudo apt -y install zsh
@@ -47,6 +51,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 sudo rm -rf ~/.zshrc*
+
+#下载需要的配置文件
 wget https://raw.githubusercontent.com/frog-game/Ubuntu20.04-nvim/master/.zshrc
 wget https://raw.githubusercontent.com/frog-game/Ubuntu20.04-nvim/master/.p10k.zsh
 
